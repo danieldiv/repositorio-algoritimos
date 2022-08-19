@@ -1,0 +1,4 @@
+dado 1
+dado 2
+25
+dado 45.7 1 99 teste
