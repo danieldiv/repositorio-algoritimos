@@ -1,4 +1,5 @@
 # funcoes-uteis-cplusplus
+
 Funcoes uteis utilizadas em C++
 
 # Compilacao
@@ -6,6 +7,8 @@ Funcoes uteis utilizadas em C++
 > make run
 
 # Funcionalidades
+
+util, main, read
 
 - [LENDO E ESCREVENDO NO ARQUIVO](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L43)
   - [readFile](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/read.cpp#L11)
@@ -20,4 +23,3 @@ Funcoes uteis utilizadas em C++
   - [printMap](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/util.cpp#L27)
 - [UTILIZANDO CLASSE COM TEMPLATE PARA IMPRIMIR O MAP](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L125)
   - [printMapTemplate](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/include/class_template.hpp#L49)
-

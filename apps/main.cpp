@@ -40,16 +40,37 @@ int main() {
 	Read r;
 	Util u;
 
+
 	cout << "\nLENDO E ESCREVENDO NO ARQUIVO" << endl << endl;
 
-	r.readFile("text.txt");
+	char *str = (char *)malloc(sizeof(char) * 100);
+	string texto;
+
+	cout << "C" << endl << endl;
+
+	strcpy(str, "text2");
+	r.readFile(str);
+	r.createFile();
+
+	cout << endl << "\nC++" << endl << endl;
+
+	texto.assign("text.txt");
+	r.readFile(texto);
 	r.createFile("newFile.txt");
 
 	cout << "\n======================" << endl << endl;
 
 	cout << "TOKENIZANDO UMA STRING POR VIRGULA" << endl << endl;
 
-	u.tokenizar("texto,possui,virgulas");
+	texto = "texto de string,possui,virgulas";
+	str = (char *)malloc(sizeof(char) * 100);
+	strcpy(str, "texto de char,possui,virgulas");
+
+	cout << "C" << endl << endl;
+	u.tokenizar(str);
+
+	cout << "\nC++" << endl << endl;
+	u.tokenizar(texto);
 
 	cout << "\n======================" << endl << endl;
 

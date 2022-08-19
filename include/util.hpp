@@ -6,6 +6,8 @@
 #include <string>
 #include <map>
 
+#include <string.h>
+
 using namespace std;
 
 class Util {
@@ -14,6 +16,10 @@ public:
 	Util();
 	~Util();
 
+	// C
+	void tokenizar(char *str);
+
+	// C++
 	void tokenizar(string text);
 	void printMap(map<int, int> mapeamento);
 };

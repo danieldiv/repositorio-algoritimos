@@ -11,6 +11,11 @@ public:
 	Read();
 	~Read();
 
+	// C
+	void readFile(char *path);
+	void createFile();
+
+	// C++
 	void readFile(string path);
 	void createFile(string path);
 };

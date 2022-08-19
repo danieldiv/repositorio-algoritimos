@@ -6,7 +6,65 @@ Read::~Read() {}
 /**
  * @brief realiza a leitura de um arquivo e faz a sua impressao
  *
+ * @param path caminho do arquivo
+ *
+ * utilizada em C
+ */
+void Read::readFile(char *path) {
+	char *str = (char *)malloc(100);
+	sprintf(str, "files/%s.txt", path);
+
+	FILE *file = fopen(str, "r");
+
+	char *result, linha[100];
+
+	if (file == NULL) {
+		printf("Nao foi possivel abrir o arquivo\n");
+	} else {
+		while (!feof(file)) {
+			result = fgets(linha, sizeof(linha), file);
+
+			if (result) {
+				printf("%s", linha);
+			}
+		}
+	}
+	fclose(file);
+}
+
+/**
+ * @brief cria um arquivo e guarda informacoes
+ *
+ * utilizada em C
+ */
+void Read::createFile() {
+	char *str = (char *)malloc(100);
+	strcpy(str, "files/newFile2.txt");
+
+	FILE *file = fopen(str, "w");
+
+	if (file == NULL) {
+		printf("Nao foi possivel abrir o arquivo\n");
+	} else {
+		char *var = (char *)malloc(50);
+		strcpy(var, "texto da variavel\n");
+
+		fprintf(file, "%s", "texto da linha 1\n");
+		fprintf(file, "%s", var);
+		fprintf(file, "%s", "texto da linha 3\n");
+
+		free(var);
+	}
+	fclose(file);
+	free(str);
+}
+
+/**
+ * @brief realiza a leitura de um arquivo e faz a sua impressao
+ *
  * @param file nome do arquivo a ser aberto
+ *
+ * utilizada em C++
  */
 void Read::readFile(string path) {
 	path.insert(0, "files/");
@@ -25,6 +83,8 @@ void Read::readFile(string path) {
  * @brief cria um arquivo e guarda informacoes
  *
  * @param file nome do arquivo a ser criado
+ *
+ * utilizada em C++
  */
 void Read::createFile(string path) {
 	path.insert(0, "files/");

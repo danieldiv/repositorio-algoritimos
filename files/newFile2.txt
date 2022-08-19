@@ -1,0 +1,3 @@
+texto da linha 1
+texto da variavel
+texto da linha 3
