@@ -54,7 +54,7 @@ Funcoes uteis utilizadas em C e C++
     <tr>
       <td>Funcao com template</td>
       <td> <!-- nao possui em C -->
-          <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
+          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
       </td>
       <td> <!-- C++ -->
           <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L13">
