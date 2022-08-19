@@ -10,6 +10,93 @@ Funcoes uteis utilizadas em C e C++
 
 # Funcionalidades
 
+<html>
+  <table>
+    <tr>
+      <td>Ler arquivo</td>
+      <td> <!-- C -->
+          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/read.cpp#L13">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+          </a>
+      </td>
+      <td> <!-- C++ -->
+          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/read.cpp#L69">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
+          </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Criar arquivo</td>
+      <td> <!-- C -->
+          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/read.cpp#L40">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+          </a>
+      </td>
+      <td> <!-- C++ -->
+          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/read.cpp#L89">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
+          </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Tokenizar string</td>
+      <td> <!-- C -->
+          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/util.cpp#L13">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+          </a>
+      </td>
+      <td> <!-- C++ -->
+          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/util.cpp#L33">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
+          </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Funcao com template</td>
+      <td> <!-- nao possui em C -->
+          <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
+      </td>
+      <td> <!-- C++ -->
+          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L13">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
+          </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Vector com template</td>
+      <td> <!-- nao possui em C -->
+          <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
+      </td>
+      <td> <!-- C++ -->
+          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L98">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
+          </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Map</td>
+      <td> <!-- nao possui em C -->
+          <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
+      </td>
+      <td> <!-- C++ -->
+          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L114">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
+          </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Map com template</td>
+      <td> <!-- nao possui em C -->
+          <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
+      </td>
+      <td> <!-- C++ -->
+          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L146">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
+          </a>
+      </td>
+    </tr>
+</html>
+
 - [LENDO E ESCREVENDO NO ARQUIVO](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L44)
   - [readFile C](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/read.cpp#L13)
   - [createFile C](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/read.cpp#L40)
