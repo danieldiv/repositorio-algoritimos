@@ -4,6 +4,7 @@ Funcoes uteis utilizadas em C++
 # Compilacao
 
 > make run
+> Utilizado sistema linux (Ubuntu)
 
 # Funcionalidades
 
