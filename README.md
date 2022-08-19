@@ -19,5 +19,5 @@ Funcoes uteis utilizadas em C++
 - [UTILIZANDO MAP DE FORMA COMUM](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L93)
   - [printMap](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/util.cpp#L27)
 - [UTILIZANDO CLASSE COM TEMPLATE PARA IMPRIMIR O MAP](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L125)
-  - [printMatTemplate](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/include/class_template.hpp#L49)
+  - [printMapTemplate](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/include/class_template.hpp#L49)
 
