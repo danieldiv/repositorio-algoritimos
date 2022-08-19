@@ -8,8 +8,9 @@ Funcoes uteis utilizadas em C e C++
 # Funcionalidades
 
 - [LENDO E ESCREVENDO NO ARQUIVO](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L43)
-  - [readFile](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/read.cpp#L11)
-  - [createFile](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/read.cpp#L29)
+  > # [readFile](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/read.cpp#L11)
+
+  > # [createFile](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/read.cpp#L29)
 - [TOKENIZANDO UMA STRING POR VIRGULA](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L50)
 - [UTILIZANDO FUNCAO COM TEMPLATE](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L56)
 - [UTILIZANDO CLASSE COM TEMPLATE PARA IMPRIMIR O VECTOR](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L77)
