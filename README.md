@@ -97,6 +97,7 @@ Funcoes uteis utilizadas em C e C++
     </tr>
 </html>
 
+  <!--
 - [LENDO E ESCREVENDO NO ARQUIVO](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L44)
   - [readFile C](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/read.cpp#L13)
   - [createFile C](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/read.cpp#L40)
@@ -113,3 +114,4 @@ Funcoes uteis utilizadas em C e C++
   - [printMap C++](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/util.cpp#L48)
 - [UTILIZANDO CLASSE COM TEMPLATE PARA IMPRIMIR O MAP](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L146)
   - [printMapTemplate C++](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/include/class_template.hpp#L49)
+-->
