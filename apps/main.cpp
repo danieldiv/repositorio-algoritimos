@@ -40,7 +40,6 @@ int main() {
 	Read r;
 	Util u;
 
-
 	cout << "\nLENDO E ESCREVENDO NO ARQUIVO" << endl << endl;
 
 	char *str = (char *)malloc(sizeof(char) * 100);
