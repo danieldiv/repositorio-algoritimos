@@ -2,7 +2,9 @@
 #define UTIL_HPP
 
 #include <iostream>
+#include <sstream>
 #include <string>
+#include <map>
 
 using namespace std;
 
@@ -11,6 +13,9 @@ private:
 public:
 	Util();
 	~Util();
+
+	void tokenizar(string text);
+	void printMap(map<int, int> mapeamento);
 };
 
 #endif
