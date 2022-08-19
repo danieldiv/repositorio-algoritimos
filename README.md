@@ -70,7 +70,9 @@ Funcoes uteis utilizadas em C e C++
         </a>
       </td>
       <td> <!-- nao possui em C -->
-        <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
+        <a href="#">
+          <img align="center" height="25" opacity="0.6" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
+        </a>
       </td>
       <td> <!-- C++ -->
           <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L13">
