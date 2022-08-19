@@ -16,8 +16,7 @@ libed: \
 	$(OBJ)/util.o
 	ar -rcs $(LIB)/libed.a $(OBJ)/*.o
 
-myapps: clean_apps \
-	$(BIN)/main
+myapps: $(BIN)/main
 
 $(OBJ)/%.o: $(SRC)/%.cpp $(INCLUDE)/%.hpp
 	g++ $(FLAGS) -c $< -I $(INCLUDE) -o $@
@@ -27,11 +26,5 @@ $(BIN)/%: $(APPS)/%.cpp
 
 run:
 	$(BIN)/main
-
-clean:
-	rm -rf $(BIN)/* $(LIB)/* $(OBJ)/*
-
-clean_apps:
-	rm -rf $(BIN)/*
 
 r: all run
