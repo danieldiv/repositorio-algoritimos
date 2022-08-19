@@ -1,6 +1,6 @@
-# funcoes-uteis-cplusplus
+# funcoes-uteis-c-e-cplusplus
 
-Funcoes uteis utilizadas em C++
+Funcoes uteis utilizadas em C e C++
 
 # Compilacao
 
@@ -9,8 +9,6 @@ Funcoes uteis utilizadas em C++
 > Utilizado sistema linux (Ubuntu)
 
 # Funcionalidades
-
-util, main, read
 
 - [LENDO E ESCREVENDO NO ARQUIVO](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L44)
   - [readFile C](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/read.cpp#L13)
