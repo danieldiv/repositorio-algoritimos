@@ -79,7 +79,7 @@ Funcoes uteis utilizadas em C e C++
           <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L114">
+          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/util.cpp#L48">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
@@ -90,7 +90,7 @@ Funcoes uteis utilizadas em C e C++
           <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L146">
+          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/include/class_template.hpp#L49">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
