@@ -1,5 +1,5 @@
-# funcoes-uteis-c-e-cplusplus
-Funcoes uteis utilizadas em C e C++
+# funcoes-uteis-cplusplus
+Funcoes uteis utilizadas em C++
 
 # Compilacao
 
