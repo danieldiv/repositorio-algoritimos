@@ -71,7 +71,7 @@ Funcoes uteis utilizadas em C e C++
       </td>
       <td> <!-- nao possui em C -->
         <a href="#">
-          <img align="center" height="25" style="background:#eff2df;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
+          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
         </a>
       </td>
       <td> <!-- C++ -->
