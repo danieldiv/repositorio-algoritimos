@@ -1,6 +1,10 @@
 # funcoes-uteis-c-e-cplusplus
 Funcoes uteis utilizadas em C e C++
 
+# Compilacao
+
+> make run
+
 # Funcionalidades
 
 - [LENDO E ESCREVENDO NO ARQUIVO](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L43)
