@@ -10,7 +10,7 @@ Funcoes uteis utilizadas em C e C++
 
 # Observacao
 
-- O clean nao foi utilizado pois pode remover o sistema recursivamente caso seja feita de forma errada, sendo necessario fazer a remocao dos arquivos manualmente dentro de bin, lib e obj
+- O clean nao foi utilizado pois pode remover o sistema recursivamente caso seja feita de forma incorreta, sendo necessario fazer a remocao dos arquivos manualmente dentro de bin, lib e obj
 - Comando removido do Makefile: [#clean](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/b3cb62901ab1a2a780e446be335d18b95d989dfa/Makefile#L31), [#clean_apps](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/b3cb62901ab1a2a780e446be335d18b95d989dfa/Makefile#L34)
 - Comando modificado: [#myapps](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/b3cb62901ab1a2a780e446be335d18b95d989dfa/Makefile#L19)
 
