@@ -20,41 +20,41 @@ Funcoes uteis utilizadas em C e C++
   <table>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L43">
+        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L64">
              Ler arquivo
         </a>
       </td>
       <td> <!-- C -->
-          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/read.cpp#L13">
+          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/arquivo.cpp#L13">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
           </a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/read.cpp#L69">
+          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/arquivo.cpp#L69">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L43">
+        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L64">
                Criar arquivo
         </a>
       </td>
       <td> <!-- C -->
-          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/read.cpp#L40">
+          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/arquivo.cpp#L40">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
           </a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/read.cpp#L89">
+          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/arquivo.cpp#L89">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L62">
+        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L192">
                Tokenizar string
         </a>
       </td>
@@ -71,7 +71,7 @@ Funcoes uteis utilizadas em C e C++
     </tr>
     <tr>
      <td>
-      <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L149">
+      <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L165">
              Comparando strings
       </a>
     </td>
@@ -88,7 +88,7 @@ Funcoes uteis utilizadas em C e C++
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L76">
+        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L90">
                Funcao com template
         </a>
       </td>
@@ -98,14 +98,14 @@ Funcoes uteis utilizadas em C e C++
         </a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L12">
+          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L29">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L97">
+        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L111">
                Vector com template
         </a>
       </td>
@@ -120,7 +120,7 @@ Funcoes uteis utilizadas em C e C++
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L113">
+        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L215">
                Map
         </a>
       </td>
@@ -135,7 +135,7 @@ Funcoes uteis utilizadas em C e C++
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L145">
+        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L144">
                Map com template
         </a>
       </td>
