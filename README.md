@@ -71,8 +71,7 @@ Funcoes uteis utilizadas em C e C++
           </a>
         </td>
         <td> <!-- C++ -->
-            <a href="https://github.com/daniel
-                     /funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L12">
+            <a href="https://github.com/daniel/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L12">
                 <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
             </a>
         </td>
