@@ -1,6 +1,22 @@
 #include "arquivo.hpp"
 #include "class_template.hpp"
 
+void _arquivo();
+void _class_template();
+void _util();
+
+template <typename T> T function_template(T a, T b);
+template <typename T, typename U> void controlVector(vector<T> vec);
+template <typename T, typename U> void controlMap(map<T, vector<U>> mapeamento);
+
+int main() {
+	_arquivo();
+	_class_template();
+	_util();
+
+	return EXIT_SUCCESS;
+}
+
 /**
  * @brief realiza a soma de duas variaveis somaveis
  *
@@ -22,9 +38,9 @@ T function_template(T a, T b) {
  * @tparam U
  * @param vec
  */
-template <typename T, typename U>
+template <typename T>
 void controlVector(vector<T> vec) {
-	ClassTemplate <T, U>ct;
+	ClassTemplate <T, void>ct;
 
 	ct.printVector(vec);
 }
@@ -94,8 +110,8 @@ void _class_template() {
 
 	cout << "UTILIZANDO CLASSE COM TEMPLATE PARA IMPRIMIR O VECTOR" << endl << endl;
 
-	controlVector<string, void>(v1);
-	controlVector<int, void>(v2);
+	controlVector<string>(v1);
+	controlVector<int>(v2);
 
 	cout << "\n======================" << endl << endl;
 
@@ -201,12 +217,4 @@ void _util() {
 	u.printMap(mapeamento);
 
 	cout << "\n======================" << endl << endl;
-}
-
-int main() {
-	_arquivo();
-	_class_template();
-	_util();
-
-	return EXIT_SUCCESS;
 }
