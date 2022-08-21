@@ -71,6 +71,23 @@ Funcoes uteis utilizadas em C e C++
     </tr>
     <tr>
       <td>
+        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L156">
+               Comparando strings
+        </a>
+      </td>
+      <td> <!-- C -->
+          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/util.cpp#L64">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+          </a>
+      </td>
+      <td> <!-- C++ -->
+          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/util.cpp#L74">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
+          </a>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L76">
                Funcao com template
         </a>
