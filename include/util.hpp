@@ -18,10 +18,12 @@ public:
 
 	// C
 	void tokenizar(char *str);
+	bool compararString(char *str1, char *str2);
 
 	// C++
 	void tokenizar(string text);
 	void printMap(map<int, int> mapeamento);
+	void compararString(string str1, string str2);
 };
 
 #endif

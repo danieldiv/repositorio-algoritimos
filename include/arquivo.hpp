@@ -1,15 +1,15 @@
-#ifndef READ_HPP
-#define READ_HPP
+#ifndef ARQUIVO_HPP
+#define ARQUIVO_HPP
 
 #include <util.hpp>
 
 #include <fstream>
 
-class Read {
+class Arquivo {
 private:
 public:
-	Read();
-	~Read();
+	Arquivo();
+	~Arquivo();
 
 	// C
 	void readFile(char *path);

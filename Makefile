@@ -11,12 +11,13 @@ LIBS = -lm -led -L $(LIB)
 all: libed myapps
 
 libed: \
-	$(OBJ)/read.o \
+	$(OBJ)/arquivo.o \
 	$(OBJ)/class_template.o \
 	$(OBJ)/util.o
 	ar -rcs $(LIB)/libed.a $(OBJ)/*.o
 
-myapps: $(BIN)/main
+myapps: \
+	$(BIN)/main
 
 $(OBJ)/%.o: $(SRC)/%.cpp $(INCLUDE)/%.hpp
 	g++ $(FLAGS) -c $< -I $(INCLUDE) -o $@

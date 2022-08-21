@@ -52,3 +52,30 @@ void Util::printMap(map<int, int> mapeamento) {
 		cout << itr->first << " " << itr->second << endl;
 	}
 }
+
+/**
+ * @brief compara duas string e retorna um booleano
+ *
+ * @param str1 string 1
+ * @param str2 string 2
+ * @return true caso as duas string sejam iguais
+ * @return false caso as duas string sejam diferentes
+ */
+bool Util::compararString(char *str1, char *str2) {
+	return strcmp(str1, str2) == 0 ? true : false;
+}
+
+/**
+ * @brief compara duas string e imprime se sao iguais ou diferente
+ *
+ * @param str1 string 1
+ * @param str2 string 2
+ */
+void Util::compararString(string str1, string str2) {
+	cout << str1 << " - " << str2 << " -> ";
+
+	if (str1.compare(str2) == 0)
+		cout << "igual" << endl;
+	else
+		cout << "diferente" << endl;
+}

@@ -1,7 +1,7 @@
-#include "read.hpp"
+#include "arquivo.hpp"
 
-Read::Read() {}
-Read::~Read() {}
+Arquivo::Arquivo() {}
+Arquivo::~Arquivo() {}
 
 /**
  * @brief realiza a leitura de um arquivo e faz a sua impressao
@@ -10,7 +10,7 @@ Read::~Read() {}
  *
  * utilizada em C
  */
-void Read::readFile(char *path) {
+void Arquivo::readFile(char *path) {
 	char *str = (char *)malloc(100);
 	sprintf(str, "files/%s.txt", path);
 
@@ -37,7 +37,7 @@ void Read::readFile(char *path) {
  *
  * utilizada em C
  */
-void Read::createFile() {
+void Arquivo::createFile() {
 	char *str = (char *)malloc(100);
 	strcpy(str, "files/newFile2.txt");
 
@@ -66,7 +66,7 @@ void Read::createFile() {
  *
  * utilizada em C++
  */
-void Read::readFile(string path) {
+void Arquivo::readFile(string path) {
 	path.insert(0, "files/");
 
 	ifstream myfile(path);
@@ -86,7 +86,7 @@ void Read::readFile(string path) {
  *
  * utilizada em C++
  */
-void Read::createFile(string path) {
+void Arquivo::createFile(string path) {
 	path.insert(0, "files/");
 
 	ofstream myfile(path);

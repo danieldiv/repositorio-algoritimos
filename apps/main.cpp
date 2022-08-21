@@ -1,4 +1,4 @@
-#include "read.hpp"
+#include "arquivo.hpp"
 #include "class_template.hpp"
 
 /**
@@ -37,12 +37,14 @@ void controlMap(map<T, vector<U>> mapeamento) {
 }
 
 int main() {
-	Read r;
+	Arquivo r;
 	Util u;
 
 	cout << "\nLENDO E ESCREVENDO NO ARQUIVO" << endl << endl;
 
 	char *str = (char *)malloc(sizeof(char) * 100);
+	char *str2 = (char *)malloc(sizeof(char) * 100);
+
 	string texto;
 
 	cout << "C" << endl << endl;
@@ -148,6 +150,35 @@ int main() {
 	controlMap(map2); // se nao informa o tipo <T, U>, eh pego altomaticamente <int, int>
 	controlMap(map3); // se nao informa o tipo <T, U>, eh pego altomaticamente <int, string>
 	controlMap<string, string>(map4); // <string, string>
+
+	cout << "======================" << endl << endl;
+
+	cout << "COMPARAR STRINGS" << endl << endl;
+
+	strcpy(str, "daniel");
+	strcpy(str2, "daniel");
+
+	cout << "C" << endl << endl;
+	cout << str << " - " << str2 << " -> ";
+	cout << u.compararString(str, str2) << endl;
+
+	strcpy(str2, "alves");
+
+	cout << str << " - " << str2 << " -> ";
+	cout << u.compararString(str, str2) << endl;
+
+	string s1, s2;
+
+	s1.assign("teste");
+	s2 = "teste";
+
+	cout << "\nC++" << endl << endl;
+	u.compararString(s1, s2);
+
+	s1.assign("hello");
+	u.compararString(s1, s2);
+
+	cout << "\n======================" << endl << endl;
 
 	return EXIT_SUCCESS;
 }
