@@ -6,7 +6,8 @@
     "iostream": "cpp",
     "vector": "cpp",
     "ostream": "cpp",
-    "map": "cpp"
+    "map": "cpp",
+    "sstream": "cpp"
   },
   "prettier.tabWidth": 2
 }

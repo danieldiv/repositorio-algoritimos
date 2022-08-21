@@ -36,16 +36,18 @@ void controlMap(map<T, vector<U>> mapeamento) {
 	ct.printMap(&mapeamento);
 }
 
-int main() {
+/**
+ * @brief trabalhando com arquivos
+ *
+ */
+void _arquivo() {
 	Arquivo r;
 	Util u;
+	string texto;
 
 	cout << "\nLENDO E ESCREVENDO NO ARQUIVO" << endl << endl;
 
 	char *str = (char *)malloc(sizeof(char) * 100);
-	char *str2 = (char *)malloc(sizeof(char) * 100);
-
-	string texto;
 
 	cout << "C" << endl << endl;
 
@@ -61,19 +63,15 @@ int main() {
 
 	cout << "\n======================" << endl << endl;
 
-	cout << "TOKENIZANDO UMA STRING POR VIRGULA" << endl << endl;
 
-	texto = "texto de string,possui,virgulas";
-	str = (char *)malloc(sizeof(char) * 100);
-	strcpy(str, "texto de char,possui,virgulas");
+}
 
-	cout << "C" << endl << endl;
-	u.tokenizar(str);
-
-	cout << "\nC++" << endl << endl;
-	u.tokenizar(texto);
-
-	cout << "\n======================" << endl << endl;
+/**
+ * @brief funcoes que utilizam template
+ *
+ */
+void _class_template() {
+	string texto;
 
 	cout << "UTILIZANDO FUNCAO COM TEMPLATE" << endl << endl;
 
@@ -100,21 +98,6 @@ int main() {
 
 	controlVector<string, void>(v1);
 	controlVector<int, void>(v2);
-
-	cout << "\n======================" << endl << endl;
-
-	map<int, int> mapeamento;
-
-	mapeamento.insert({ 2,6 });
-	mapeamento.insert({ 1,5 });
-	mapeamento.insert({ 6,26 });
-	mapeamento.insert({ 7,222 });
-	mapeamento[66] = 55;
-	mapeamento[67] = 555;
-
-	cout << "UTILIZANDO MAP DE FORMA COMUM" << endl << endl;
-
-	u.printMap(mapeamento);
 
 	cout << "\n======================" << endl << endl;
 
@@ -152,6 +135,18 @@ int main() {
 	controlMap<string, string>(map4); // <string, string>
 
 	cout << "======================" << endl << endl;
+}
+
+/**
+ * @brief funcoes uteis
+ *
+ */
+void _util() {
+	Arquivo r;
+	Util u;
+
+	char *str = (char *)malloc(sizeof(char) * 100);
+	char *str2 = (char *)malloc(sizeof(char) * 100);
 
 	cout << "COMPARAR STRINGS" << endl << endl;
 
@@ -167,7 +162,7 @@ int main() {
 	cout << str << " - " << str2 << " -> ";
 	cout << u.compararString(str, str2) << endl;
 
-	string s1, s2;
+	string s1, s2, texto;
 
 	s1.assign("teste");
 	s2 = "teste";
@@ -179,6 +174,41 @@ int main() {
 	u.compararString(s1, s2);
 
 	cout << "\n======================" << endl << endl;
+
+	cout << "TOKENIZANDO UMA STRING POR VIRGULA" << endl << endl;
+
+	texto = "texto de string,possui,virgulas";
+	str = (char *)malloc(sizeof(char) * 100);
+	strcpy(str, "texto de char,possui,virgulas");
+
+	cout << "C" << endl << endl;
+	u.tokenizar(str);
+
+	cout << "\nC++" << endl << endl;
+	u.tokenizar(texto);
+
+	cout << "\n======================" << endl << endl;
+
+	map<int, int> mapeamento;
+
+	mapeamento.insert({ 2,6 });
+	mapeamento.insert({ 1,5 });
+	mapeamento.insert({ 6,26 });
+	mapeamento.insert({ 7,222 });
+	mapeamento[66] = 55;
+	mapeamento[67] = 555;
+
+	cout << "UTILIZANDO MAP DE FORMA COMUM" << endl << endl;
+
+	u.printMap(mapeamento);
+
+	cout << "\n======================" << endl << endl;
+}
+
+int main() {
+	_arquivo();
+	_class_template();
+	_util();
 
 	return EXIT_SUCCESS;
 }
