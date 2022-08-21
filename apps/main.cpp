@@ -62,8 +62,6 @@ void _arquivo() {
 	r.createFile("newFile.txt");
 
 	cout << "\n======================" << endl << endl;
-
-
 }
 
 /**
