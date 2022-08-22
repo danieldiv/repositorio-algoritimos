@@ -8,6 +8,30 @@ Funcoes uteis utilizadas em C e C++
 > 
 > Utilizado sistema linux (Ubuntu)
 
+<html>
+  <table>
+    <tr>
+      <td>
+        oi
+      </td>
+    </tr>
+  </table>
+</html>
+
+# (extra)
+
+- Organizacao estruturas de pastas
+  
+  | Pasta | Detalhe |
+  | ----- | ------- |
+  | apps | |
+  | bin | |
+  | include | |
+  | lib | |
+  | obj | |
+  | src | |
+  
+
 # Observacao
 
 - O clean nao foi utilizado pois pode remover o sistema recursivamente caso seja feita de forma errada, sendo necessario fazer a remocao dos arquivos manualmente dentro de bin, lib e obj
