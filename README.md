@@ -151,11 +151,35 @@
 
 ## Organizacao das estruturas de pastas
   
-  | Pasta   | Detalhe                                 |
-  | ------- | --------------------------------------- |
-  | apps    | arquivo main.cpp                        |
-  | bin     | arquivo executavel                      |
-  | include | arquivos .hpp                           |
-  | lib     | biblioteca gerada apos a compilacao     |
-  | obj     | objetos gerados dos arquivos compilados |
-  | src     | arquivos .cpp                           |
+  | Pasta   | Detalhe                                    |
+  | ------- | ------------------------------------------ |
+  | apps    | arquivo main.cpp                           |
+  | bin     | arquivo executavel                         |
+  | include | arquivos .hpp                              |
+  | lib     | biblioteca gerada apos a compilacao        |
+  | obj     | objetos gerados dos arquivos de compilacao |
+  | src     | arquivos .cpp                              |
+  
+ ## Modificacao no Makefile para criacao de novos arquivos
+ 
+ - O Makefile atual possui 3 arquivos .o informados, ou seja, ao executar o comando make sera verificado dentro da pasta include e src se possui os arquivos `.hpp` e `.cpp` referente ao .o adicionado, isso se faz necessario para a criacao dos objetos dos arquivos.
+ 
+- Caso seja necessario adicionar mais arquivo, por exemplo, uma classe para salvar as informacoes de uma Pessoa, é necessario criar o arquivo pessoa.hpp na pasta `include`, o arquivo pessoa.cpp na pasta `src` e tambem adicionar a linha `$(OBJ)/pessoa.o` no Makefile.
+
+- Para funcionar corretamente, a linha que fica acima de `ar -rcs $(LIB)/libed.a $(OBJ)/*.o` nao pode possui uma `\` ao final, as demais linhas acima é necessario colocar
+
+```
+  libed: \
+    $(OBJ)/arquivo.o \
+    $(OBJ)/class_template.o \
+    $(OBJ)/util.o \
+    $(OBJ)/pessoa.o
+    ar -rcs $(LIB)/libed.a $(OBJ)/*.o
+  ```
+  
+ - Caso nao seja necessario adicionar arquivos para compilacao,apenas o main, no Makefile pode ficar assim
+ 
+```
+  libed: \
+    ar -rcs $(LIB)/libed.a $(OBJ)/*.o
+  ```
