@@ -1,44 +1,12 @@
-# funcoes-uteis-c-e-cplusplus
+# Funcoes uteis utilizadas em C e C++
 
-Funcoes uteis utilizadas em C e C++
-
-# Compilacao
+## Compilacao
 
 > make run
 > 
 > Utilizado sistema linux (Ubuntu)
 
-<html>
-  <table>
-    <tr>
-      <td>
-        oi
-      </td>
-    </tr>
-  </table>
-</html>
-
-# (extra)
-
-- Organizacao estruturas de pastas
-  
-  | Pasta | Detalhe |
-  | ----- | ------- |
-  | apps | |
-  | bin | |
-  | include | |
-  | lib | |
-  | obj | |
-  | src | |
-  
-
-# Observacao
-
-- O clean nao foi utilizado pois pode remover o sistema recursivamente caso seja feita de forma errada, sendo necessario fazer a remocao dos arquivos manualmente dentro de bin, lib e obj
-- Comando removido do Makefile: [#clean](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/b3cb62901ab1a2a780e446be335d18b95d989dfa/Makefile#L31), [#clean_apps](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/b3cb62901ab1a2a780e446be335d18b95d989dfa/Makefile#L34)
-- Comando para modificado: [#myapps](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/b3cb62901ab1a2a780e446be335d18b95d989dfa/Makefile#L19)
-
-# Funcionalidades
+## Funcionalidades
 
 <html>
   <table>
@@ -172,4 +140,22 @@ Funcoes uteis utilizadas em C e C++
           </a>
       </td>
     </tr>
+  </table>
 </html>
+
+## Observacoes
+
+- O clean nao foi utilizado pois pode remover o sistema recursivamente caso seja feita de forma errada, sendo necessario fazer a remocao dos arquivos manualmente dentro de bin, lib e obj
+- Comando removido do Makefile: [#clean](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/b3cb62901ab1a2a780e446be335d18b95d989dfa/Makefile#L31), [#clean_apps](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/b3cb62901ab1a2a780e446be335d18b95d989dfa/Makefile#L34)
+- Comando para modificado: [#myapps](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/b3cb62901ab1a2a780e446be335d18b95d989dfa/Makefile#L19)
+
+## Organizacao das estruturas de pastas
+  
+  | Pasta   | Detalhe                                 |
+  | ------- | --------------------------------------- |
+  | apps    | arquivo main.cpp                        |
+  | bin     | arquivo executavel                      |
+  | include | arquivos .hpp                           |
+  | lib     | biblioteca gerada apos a compilacao     |
+  | obj     | objetos gerados dos arquivos compilados |
+  | src     | arquivos .cpp                           |
