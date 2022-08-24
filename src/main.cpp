@@ -68,7 +68,7 @@ void _arquivo() {
 	cout << "C" << endl << endl;
 
 	strcpy(str, "text2");
-	r.readFile(str);
+	// r.readFile(str);
 	r.createFile();
 
 	cout << endl << "\nC++" << endl << endl;

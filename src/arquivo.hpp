@@ -1,4 +1,24 @@
-#include "arquivo.hpp"
+#ifndef ARQUIVO_HPP
+#define ARQUIVO_HPP
+
+#include "util.hpp"
+
+#include <fstream>
+
+class Arquivo {
+private:
+public:
+	Arquivo();
+	~Arquivo();
+
+	// C
+	void readFile(char *path);
+	void createFile();
+
+	// C++
+	void readFile(string path);
+	void createFile(string path);
+};
 
 Arquivo::Arquivo() {}
 Arquivo::~Arquivo() {}
@@ -12,7 +32,8 @@ Arquivo::~Arquivo() {}
  */
 void Arquivo::readFile(char *path) {
 	char *str = (char *)malloc(100);
-	sprintf(str, "files/%s.txt", path);
+	sprintf(str, "src/files/%s.txt", path);
+	cout << str << endl;
 
 	FILE *file = fopen(str, "r");
 
@@ -39,7 +60,7 @@ void Arquivo::readFile(char *path) {
  */
 void Arquivo::createFile() {
 	char *str = (char *)malloc(100);
-	strcpy(str, "files/newFile2.txt");
+	strcpy(str, "src/files/newFile2.txt");
 
 	FILE *file = fopen(str, "w");
 
@@ -101,3 +122,5 @@ void Arquivo::createFile(string path) {
 		myfile.close();
 	} else cout << "Nao foi possivel abrir o arquivo" << endl;
 }
+
+#endif

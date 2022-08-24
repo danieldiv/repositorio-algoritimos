@@ -1,7 +1,7 @@
 #ifndef CLASS_TEMPLATE_HPP
 #define CLASS_TEMPLATE_HPP
 
-#include <util.hpp>
+#include "util.hpp"
 
 #include <vector>
 

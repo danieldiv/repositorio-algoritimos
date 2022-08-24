@@ -1,31 +1,42 @@
-APPS = ./apps
-BIN = ./bin
-INCLUDE = ./include
-LIB = ./lib
-OBJ = ./obj
-SRC = ./src
+CXX      := -g++
+CXXFLAGS := -Wall -Wextra -Werror
+LDFLAGS  := -lstdc++ -lm
+BUILD    := ./build
+OBJ_DIR  := $(BUILD)/objects
+APP_DIR  := $(BUILD)/
+TARGET   := app
+INCLUDE  := -Iinclude/
+SRC      :=  $(wildcard src/*.cpp)
 
-FLAGS = -O3 -Wall
-LIBS = -lm -led -L $(LIB)
+OBJECTS := $(SRC:%.cpp=$(OBJ_DIR)/%.o)
 
-all: libed myapps
+all: build $(APP_DIR)/$(TARGET)
 
-libed: \
-	$(OBJ)/arquivo.o \
-	$(OBJ)/class_template.o \
-	$(OBJ)/util.o
-	ar -rcs $(LIB)/libed.a $(OBJ)/*.o
+$(OBJ_DIR)/%.o: %.cpp
+	@mkdir -p $(@D)
+	$(CXX) $(CXXFLAGS) $(INCLUDE) -o $@ -c $<
 
-myapps: \
-	$(BIN)/main
+$(APP_DIR)/$(TARGET): $(OBJECTS)
+	@mkdir -p $(@D)
+	$(CXX) $(CXXFLAGS) $(INCLUDE) -o $(APP_DIR)/$(TARGET) $(OBJECTS) $(LDFLAGS)
 
-$(OBJ)/%.o: $(SRC)/%.cpp $(INCLUDE)/%.hpp
-	g++ $(FLAGS) -c $< -I $(INCLUDE) -o $@
+.PHONY: all build clean debug release run
 
-$(BIN)/%: $(APPS)/%.cpp
-	g++ $(FLAGS) $< $(LIBS) -I $(INCLUDE) -o $@
+build:
+	@mkdir -p $(APP_DIR)
+	@mkdir -p $(OBJ_DIR)
+
+debug: CXXFLAGS += -DDEBUG -g
+debug: all
+
+release: CXXFLAGS += -O3
+release: all
+
+clean:
+	-@rm -rvf $(OBJ_DIR)/*
+	-@rm -rvf $(APP_DIR)/*
 
 run:
-	$(BIN)/main
+	./$(BUILD)/$(TARGET)
 
-r: all run
+r: clean all run
