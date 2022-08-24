@@ -2,9 +2,13 @@
 
 ## Compilacao
 
+> make clean
+>
+> make
+>
 > make run
-> 
-> Utilizado sistema linux (Ubuntu)
+
+- Utilizado sistema linux (Ubuntu)
 
 ## Funcionalidades
 
@@ -12,75 +16,75 @@
   <table>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L64">
+        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L64">
              Ler arquivo
         </a>
       </td>
       <td> <!-- C -->
-          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/arquivo.cpp#L13">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.hpp#L33">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
           </a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/arquivo.cpp#L69">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.hpp#L90">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L64">
+        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L64">
                Criar arquivo
         </a>
       </td>
       <td> <!-- C -->
-          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/arquivo.cpp#L40">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.hpp#L61">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
           </a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/arquivo.cpp#L89">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.hpp#L110">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L192">
+        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L192">
                Tokenizar string
         </a>
       </td>
       <td> <!-- C -->
-          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/util.cpp#L13">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.hpp#L39">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
           </a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/util.cpp#L33">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.hpp#L59">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
     </tr>
     <tr>
      <td>
-      <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L165">
+      <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L165">
              Comparando strings
       </a>
     </td>
     <td> <!-- C -->
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/util.cpp#L64">
+        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.hpp#L90">
             <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
         </a>
     </td>
     <td> <!-- C++ -->
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/util.cpp#L74">
+        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.hpp#L100">
             <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
         </a>
     </td>
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L90">
+        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L90">
                Funcao com template
         </a>
       </td>
@@ -90,14 +94,14 @@
         </a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L29">
+          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L29">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L111">
+        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L111">
                Vector com template
         </a>
       </td>
@@ -105,14 +109,14 @@
         <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/include/class_template.hpp#L33">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/class_template.hpp#L33">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L215">
+        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L215">
                Map
         </a>
       </td>
@@ -120,14 +124,14 @@
           <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/util.cpp#L48">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.hpp#L74">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/apps/main.cpp#L144">
+        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L144">
                Map com template
         </a>
       </td>
@@ -135,51 +139,10 @@
           <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/include/class_template.hpp#L49">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/class_template.hpp#L49">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
     </tr>
   </table>
 </html>
-
-## Observacoes
-
-- O clean nao foi utilizado pois pode remover o sistema recursivamente caso seja feita de forma errada, sendo necessario fazer a remocao dos arquivos manualmente dentro de bin, lib e obj
-- Comando removido do Makefile: [#clean](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/b3cb62901ab1a2a780e446be335d18b95d989dfa/Makefile#L31), [#clean_apps](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/b3cb62901ab1a2a780e446be335d18b95d989dfa/Makefile#L34)
-- Comando para modificado: [#myapps](https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/b3cb62901ab1a2a780e446be335d18b95d989dfa/Makefile#L19)
-
-## Organizacao das estruturas de pastas
-  
-  | Pasta   | Detalhe                                    |
-  | ------- | ------------------------------------------ |
-  | apps    | arquivo main.cpp                           |
-  | bin     | arquivo executavel                         |
-  | include | arquivos .hpp                              |
-  | lib     | biblioteca gerada apos a compilacao        |
-  | obj     | objetos gerados dos arquivos de compilacao |
-  | src     | arquivos .cpp                              |
-  
- ## Modificacao no Makefile para criacao de novos arquivos
- 
- - O Makefile atual possui 3 arquivos .o informados, ou seja, ao executar o comando make sera verificado dentro da pasta include e src se possui os arquivos `.hpp` e `.cpp` referente ao .o adicionado, isso se faz necessario para a criacao dos objetos dos arquivos.
- 
-- Caso seja necessario adicionar mais arquivo, por exemplo, uma classe para salvar as informacoes de uma Pessoa, é necessario criar o arquivo pessoa.hpp na pasta `include`, o arquivo pessoa.cpp na pasta `src` e tambem adicionar a linha `$(OBJ)/pessoa.o` no Makefile.
-
-- Para funcionar corretamente, a linha que fica acima de `ar -rcs $(LIB)/libed.a $(OBJ)/*.o` nao pode possui uma `\` ao final, as demais linhas acima é necessario colocar
-
-```
-  libed: \
-    $(OBJ)/arquivo.o \
-    $(OBJ)/class_template.o \
-    $(OBJ)/util.o \
-    $(OBJ)/pessoa.o
-    ar -rcs $(LIB)/libed.a $(OBJ)/*.o
-  ```
-  
- - Caso nao seja necessario adicionar arquivos para compilacao,apenas o main, no Makefile pode ficar assim
- 
-```
-  libed: \
-    ar -rcs $(LIB)/libed.a $(OBJ)/*.o
-  ```
