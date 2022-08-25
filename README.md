@@ -39,7 +39,7 @@
       </td>
       <td> <!-- C -->
           <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.hpp#L33">
-              <img align="center" height="25" src="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.hpp#L57" />
+              <img align="center" height="25" src="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.hpp#L33" />
           </a>
       </td>
       <td> <!-- nao possui em C++ -->
