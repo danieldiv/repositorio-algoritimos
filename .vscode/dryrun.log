@@ -1,9 +1,10 @@
-make --dry-run --always-make --keep-going --print-directory
+make --dry-run --keep-going --print-directory
 make: Entering directory '/home/daniel/Documentos/Cefet/git/repositorio-c-e-cplusplus'
-g++ -O3 -Wall -c src/arquivo.cpp -I ./include -o obj/arquivo.o
-g++ -O3 -Wall -c src/class_template.cpp -I ./include -o obj/class_template.o
-g++ -O3 -Wall -c src/util.cpp -I ./include -o obj/util.o
-ar -rcs ./lib/libed.a ./obj/*.o
-g++ -O3 -Wall apps/main.cpp -lm -led -L ./lib -I ./include -o bin/main
+mkdir -p ./build/
+mkdir -p ./build/objects
+mkdir -p build/objects/src
+g++  -Iinclude/ -o build/objects/src/main.o -c src/main.cpp
+mkdir -p build/
+g++  -Iinclude/ -o ./build//app ./build/objects/src/main.o -lstdc++ -lm
 make: Leaving directory '/home/daniel/Documentos/Cefet/git/repositorio-c-e-cplusplus'
  

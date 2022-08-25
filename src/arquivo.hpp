@@ -4,6 +4,7 @@
 #include "util.hpp"
 
 #include <fstream>
+#include <stdio.h>
 
 class Arquivo {
 private:
@@ -13,6 +14,7 @@ public:
 
 	// C
 	void readFile(char *path);
+	void readFile10in10();
 	void createFile();
 
 	// C++
@@ -33,7 +35,6 @@ Arquivo::~Arquivo() {}
 void Arquivo::readFile(char *path) {
 	char *str = (char *)malloc(100);
 	sprintf(str, "src/files/%s.txt", path);
-	cout << str << endl;
 
 	FILE *file = fopen(str, "r");
 
@@ -51,6 +52,50 @@ void Arquivo::readFile(char *path) {
 		}
 	}
 	fclose(file);
+}
+
+void Arquivo::readFile10in10() {
+	FILE *fp;
+	fp = fopen("src/files/text2.txt", "r");
+
+	if (fp == NULL) {
+		printf("Nao foi possivel abrir o arquivo 10 in 10\n");
+	} else {
+		char *teste = (char *)malloc(sizeof(char) * 100);
+
+		// aponta para o fim da ultima linha
+		fseek(fp, 0, SEEK_END);
+
+		long int tam;
+		long int max = 10; // de quanto em quanto ira caminhar no arquivo
+		tam = ftell(fp); // pega a posicao atual 83
+
+		/**
+		 * @brief funcionamento
+		 *
+		 * fseek(fp, 5, SEEK_SET)
+		 *
+		 * fp -> ponteiro do arquivo
+		 * 5 -> posicao apontada no arquivo
+		 * SEEK_SET -> informa que deve comecar a ler a partir da posicao 5
+		 *
+		 * fread(teste, 1, 10, fp)
+		 *
+		 * teste -> variavel para armazenar o resultado
+		 * 1 -> tamanho do tipo para armazenar, como eh char, utiliza 1, se fosse inteiro seria 4
+		 * 10 -> tamanho maximo para ler, neste caso vai ler 10 caracteres a partir da posicao 5 do arquivo
+		 *
+		 */
+
+		for (long int i = 0; i <= tam; i += 10) {
+			teste = (char *)malloc(sizeof(char) * (max + 1)); // precisa fazer a alocacao a cada interacao
+			fseek(fp, i, SEEK_SET); // seta a posicao informada
+			fread(teste, 1, max, fp); // busca no arquivo o intervalo informado
+			cout << teste << endl << "#####" << endl;
+		}
+	}
+
+	fclose(fp);
 }
 
 /**
@@ -88,7 +133,7 @@ void Arquivo::createFile() {
  * utilizada em C++
  */
 void Arquivo::readFile(string path) {
-	path.insert(0, "files/");
+	path.insert(0, "src/files/");
 
 	ifstream myfile(path);
 	string line;
@@ -108,7 +153,7 @@ void Arquivo::readFile(string path) {
  * utilizada em C++
  */
 void Arquivo::createFile(string path) {
-	path.insert(0, "files/");
+	path.insert(0, "src/files/");
 
 	ofstream myfile(path);
 	string line;
