@@ -34,6 +34,23 @@
     <tr>
       <td>
         <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L64">
+             Ler arquivo em partes
+        </a>
+      </td>
+      <td> <!-- C -->
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.hpp#L33">
+              <img align="center" height="25" src="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.hpp#L57" />
+          </a>
+      </td>
+      <td> <!-- nao possui em C++ -->
+        <a href="#">
+          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L64">
                Criar arquivo
         </a>
       </td>
