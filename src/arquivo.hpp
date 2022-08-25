@@ -91,7 +91,7 @@ void Arquivo::readFile10in10() {
 			teste = (char *)malloc(sizeof(char) * (max + 1)); // precisa fazer a alocacao a cada interacao
 			fseek(fp, i, SEEK_SET); // seta a posicao informada
 			fread(teste, 1, max, fp); // busca no arquivo o intervalo informado
-			cout << teste << endl << "#####" << endl;
+			cout << teste << endl << "######" << endl;
 		}
 	}
 

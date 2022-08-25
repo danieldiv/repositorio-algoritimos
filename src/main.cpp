@@ -72,6 +72,7 @@ void _arquivo() {
 	r.createFile();
 
 	cout << endl << endl;
+
 	r.readFile10in10();
 
 	cout << endl << "\nC++" << endl << endl;
