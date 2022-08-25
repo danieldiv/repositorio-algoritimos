@@ -21,12 +21,12 @@
         </a>
       </td>
       <td> <!-- C -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.hpp#L33">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.hpp#L35">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
           </a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.hpp#L90">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.hpp#L135">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
@@ -38,8 +38,8 @@
         </a>
       </td>
       <td> <!-- C -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.hpp#L33">
-              <img align="center" height="25" src="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.hpp#L33" />
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.hpp#L57">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
           </a>
       </td>
       <td> <!-- nao possui em C++ -->
@@ -55,19 +55,19 @@
         </a>
       </td>
       <td> <!-- C -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.hpp#L61">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.hpp#L106">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
           </a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.hpp#L110">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.hpp#L155">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L192">
+        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L196">
                Tokenizar string
         </a>
       </td>
@@ -84,7 +84,7 @@
     </tr>
     <tr>
      <td>
-      <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L165">
+      <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L169">
              Comparando strings
       </a>
     </td>
@@ -101,7 +101,7 @@
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L90">
+        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L94">
                Funcao com template
         </a>
       </td>
@@ -118,7 +118,7 @@
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L111">
+        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L115">
                Vector com template
         </a>
       </td>
@@ -133,7 +133,7 @@
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L215">
+        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L219">
                Map
         </a>
       </td>
@@ -148,7 +148,7 @@
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L144">
+        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L148">
                Map com template
         </a>
       </td>
