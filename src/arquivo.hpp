@@ -97,10 +97,9 @@ void Arquivo::readFile10in10() {
 					texto = (char *)malloc(sizeof(char) * (index + 1));
 					fseek(fp, i, SEEK_SET);
 					fread(texto, 1, index - 1, fp);
-					printf("%s", texto);
-					printf("\n---> [fim da linha]\n");
-				} else
-					printf("---> [fim da linha]\n");
+					printf("%s\n", texto);
+				}
+				printf("---> [fim da linha]\n");
 				i -= max - index - 1;
 			} else {
 				printf("%s\n", texto);

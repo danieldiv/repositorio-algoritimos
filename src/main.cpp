@@ -11,8 +11,8 @@ template <typename T, typename U> void controlMap(map<T, vector<U>> mapeamento);
 
 int main() {
 	_arquivo();
-	_class_template();
-	_util();
+	// _class_template();
+	// _util();
 
 	return EXIT_SUCCESS;
 }
