@@ -8,6 +8,7 @@
     "ostream": "cpp",
     "sstream": "cpp",
     "map": "cpp",
+    "limits": "cpp"
   },
   "prettier.tabWidth": 2
 }

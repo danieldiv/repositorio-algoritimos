@@ -13,8 +13,8 @@ public:
 
 	// C
 	void readFile(char *path);
-	void readFile10in10();
 	void createFile();
+	void readFileIntervalo(int intervalo, char *arquivo);
 
 	// C++
 	void readFile(string path);
@@ -51,66 +51,6 @@ void Arquivo::readFile(char *path) {
 		}
 	}
 	fclose(file);
-}
-
-/**
- * @brief le o arquivo de 10 em 10 carateres encontrando fim da linha
- *
- * fseek(fp, 5, SEEK_SET)
- *
- * fp -> ponteiro do arquivo
- * 5 -> posicao apontada no arquivo
- * SEEK_SET -> informa que deve comecar a ler a partir da posicao 5
- *
- * fread(teste, 1, 10, fp)
- *
- * teste -> variavel para armazenar o resultado
- * 1 -> tamanho do tipo para armazenar, como eh char, utiliza 1, se fosse inteiro seria 4
- * 10 -> tamanho maximo para ler, neste caso vai ler 10 caracteres a partir da posicao 5 do arquivo
- *
- */
-void Arquivo::readFile10in10() {
-	FILE *fp;
-	fp = fopen("src/files/text2.txt", "r");
-
-	if (fp != NULL) {
-		long int max = 10; // de quanto em quanto ira caminhar no arquivo, > 0
-
-		if (max > 0) {
-			long int tam;
-			char *texto = (char *)malloc(sizeof(char) * 100);
-
-			fseek(fp, 0, SEEK_END); // aponta para o fim da ultima linha
-			tam = ftell(fp); // pega a posicao atual, neste caso o ultimo caracter 86, cada \n contabiliza 2 caracteres
-
-			long int index;
-
-			for (long int i = 0; i <= tam; i += max) {
-				texto = (char *)malloc(sizeof(char) * (max + 1)); // precisa fazer a alocacao a cada iteracao
-				fseek(fp, i, SEEK_SET); // seta a posicao informada
-				fread(texto, 1, max, fp); // busca no arquivo o intervalo informado
-
-				index = strcspn(texto, "\n"); // encontra a posicao que possui o primeiro \n
-
-				if (index != max && (i + index) < tam) {
-					if (index > 1) {
-						texto = (char *)malloc(sizeof(char) * (index + 1));
-						fseek(fp, i, SEEK_SET);
-						fread(texto, 1, index - 1, fp);
-						printf("%s\n", texto);
-					}
-					printf(AZUL "---> [fim da linha]\n" RESET);
-					i -= max - index - 1;
-				} else {
-					printf("%s\n", texto);
-				}
-			}
-			printf(VERDE "---> [fim do arquivo]\n" RESET);
-		} else
-			printf(VERMELHO "max nao pode ser <= 0\n" RESET);
-		fclose(fp);
-	} else
-		printf(VERMELHO "Nao foi possivel abrir o arquivo 10 in 10\n" RESET);
 }
 
 /**
@@ -181,6 +121,58 @@ void Arquivo::createFile(string path) {
 
 		myfile.close();
 	} else cout << "Nao foi possivel abrir o arquivo" << endl;
+}
+
+/**
+ * @brief le o arquivo pelo intervalo informado
+ *
+ * @param intervalo de quanto em quanto ira ler o arquivo
+ */
+void Arquivo::readFileIntervalo(int intervalo, char *arquivo) {
+	char *path = (char *)malloc(sizeof(char) * 100);
+	FILE *fp;
+
+	sprintf(path, "src/files/%s.txt", arquivo);
+	fp = fopen(path, "r");
+
+	if (fp != NULL) {
+		if (intervalo > 0) {
+			long int tam;
+			char *texto = (char *)malloc(sizeof(char) * 100);
+
+			fseek(fp, 0, SEEK_END); // aponta para o fim da ultima linha
+			tam = ftell(fp); // pega a posicao atual, neste caso a ultima posicao do arquivo
+
+			long int index;
+
+			for (long int i = 0; i <= tam; i += intervalo) {
+				texto = (char *)malloc(sizeof(char) * (intervalo + 1));
+				fseek(fp, i, SEEK_SET); // seta a posicao informada
+				fread(texto, 1, intervalo, fp); // busca no arquivo o intervalo informado
+
+				index = strcspn(texto, "\n"); // encontra a posicao que possui o primeiro \n
+
+				if (index != intervalo && (i + index) < tam) {
+					if (index > 1) {
+						texto = (char *)malloc(sizeof(char) * (index + 1));
+						fseek(fp, i, SEEK_SET);
+						fread(texto, 1, index - 1, fp);
+						printf("%s\n", texto);
+					}
+					printf(AZUL "---> [fim da linha]\n" RESET);
+					i -= intervalo - index - 1;
+				} else {
+					printf("%s\n", texto);
+				}
+			}
+			printf(VERDE "---> [fim do arquivo]\n" RESET);
+			free(texto);
+		} else
+			printf(VERMELHO "intervalo nao pode ser <= 0\n" RESET);
+		fclose(fp);
+	} else
+		printf(VERMELHO "Nao foi possivel abrir o arquivo 10 in 10\n" RESET);
+	free(path);
 }
 
 #endif
