@@ -26,7 +26,7 @@
           </a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.hpp#L150">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.hpp#L90">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
@@ -38,7 +38,7 @@
         </a>
       </td>
       <td> <!-- C -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.hpp#L72">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.hpp#L131">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
           </a>
       </td>
@@ -55,12 +55,12 @@
         </a>
       </td>
       <td> <!-- C -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.hpp#L121">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.hpp#L61">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
           </a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.hpp#L170">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.hpp#L110">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
