@@ -73,7 +73,7 @@ void _arquivo() {
 
 	cout << endl << endl;
 
-	r.readFileIntervalo(10, str);
+	r.readFileIntervalo(11, str);
 
 	cout << endl << "\nC++" << endl << endl;
 
