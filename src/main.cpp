@@ -220,5 +220,9 @@ void _util() {
 
 	u.printMap(mapeamento);
 
+	cout << "\nMODIFICAR COR DA LINHA NO TERMINAL" << endl << endl;
+
+	u.mudarCorTerminal();
+
 	cout << "\n======================" << endl << endl;
 }

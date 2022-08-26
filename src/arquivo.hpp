@@ -4,7 +4,6 @@
 #include "util.hpp"
 
 #include <fstream>
-#include <stdio.h>
 
 class Arquivo {
 private:
@@ -41,7 +40,7 @@ void Arquivo::readFile(char *path) {
 	char *result, linha[100];
 
 	if (file == NULL) {
-		printf("Nao foi possivel abrir o arquivo\n");
+		printf(VERMELHO "Nao foi possivel abrir o arquivo\n" RESET);
 	} else {
 		while (!feof(file)) {
 			result = fgets(linha, sizeof(linha), file);
@@ -75,40 +74,43 @@ void Arquivo::readFile10in10() {
 	fp = fopen("src/files/text2.txt", "r");
 
 	if (fp != NULL) {
-		char *texto = (char *)malloc(sizeof(char) * 100);
+		long int max = 10; // de quanto em quanto ira caminhar no arquivo, > 0
 
-		fseek(fp, 0, SEEK_END); // aponta para o fim da ultima linha
+		if (max > 0) {
+			long int tam;
+			char *texto = (char *)malloc(sizeof(char) * 100);
 
-		long int tam;
-		long int max = 10; // de quanto em quanto ira caminhar no arquivo
-		tam = ftell(fp); // pega a posicao atual, neste caso o ultimo caracter 86, cada \n contabiliza 2 caracteres
+			fseek(fp, 0, SEEK_END); // aponta para o fim da ultima linha
+			tam = ftell(fp); // pega a posicao atual, neste caso o ultimo caracter 86, cada \n contabiliza 2 caracteres
 
-		long int index;
+			long int index;
 
-		for (long int i = 0; i <= tam; i += max) {
-			texto = (char *)malloc(sizeof(char) * (max + 1)); // precisa fazer a alocacao a cada iteracao
-			fseek(fp, i, SEEK_SET); // seta a posicao informada
-			fread(texto, 1, max, fp); // busca no arquivo o intervalo informado
+			for (long int i = 0; i <= tam; i += max) {
+				texto = (char *)malloc(sizeof(char) * (max + 1)); // precisa fazer a alocacao a cada iteracao
+				fseek(fp, i, SEEK_SET); // seta a posicao informada
+				fread(texto, 1, max, fp); // busca no arquivo o intervalo informado
 
-			index = strcspn(texto, "\n"); // encontra a posicao que possui o primeiro \n
+				index = strcspn(texto, "\n"); // encontra a posicao que possui o primeiro \n
 
-			if (index != max && (i + index) < tam) {
-				if (index > 1) {
-					texto = (char *)malloc(sizeof(char) * (index + 1));
-					fseek(fp, i, SEEK_SET);
-					fread(texto, 1, index - 1, fp);
+				if (index != max && (i + index) < tam) {
+					if (index > 1) {
+						texto = (char *)malloc(sizeof(char) * (index + 1));
+						fseek(fp, i, SEEK_SET);
+						fread(texto, 1, index - 1, fp);
+						printf("%s\n", texto);
+					}
+					printf(AZUL "---> [fim da linha]\n" RESET);
+					i -= max - index - 1;
+				} else {
 					printf("%s\n", texto);
 				}
-				printf("---> [fim da linha]\n");
-				i -= max - index - 1;
-			} else {
-				printf("%s\n", texto);
 			}
-		}
-		printf("---> [fim do arquivo]\n");
+			printf(VERDE "---> [fim do arquivo]\n" RESET);
+		} else
+			printf(VERMELHO "max nao pode ser <= 0\n" RESET);
 		fclose(fp);
 	} else
-		printf("Nao foi possivel abrir o arquivo 10 in 10\n");
+		printf(VERMELHO "Nao foi possivel abrir o arquivo 10 in 10\n" RESET);
 }
 
 /**
@@ -123,7 +125,7 @@ void Arquivo::createFile() {
 	FILE *file = fopen(str, "w");
 
 	if (file == NULL) {
-		printf("Nao foi possivel abrir o arquivo\n");
+		printf(VERMELHO "Nao foi possivel abrir o arquivo\n" RESET);
 	} else {
 		char *var = (char *)malloc(50);
 		strcpy(var, "texto da variavel\n");

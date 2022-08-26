@@ -7,8 +7,14 @@
 #include <map>
 
 #include <string.h>
+#include <stdio.h>
 
 using namespace std;
+
+#define VERMELHO "\x1b[31m"
+#define VERDE    "\x1b[32m"
+#define AZUL     "\x1b[34m"
+#define RESET    "\x1b[0m"
 
 class Util {
 private:
@@ -19,6 +25,7 @@ public:
 	// C
 	void tokenizar(char *str);
 	bool compararString(char *str1, char *str2);
+	void mudarCorTerminal();
 
 	// C++
 	void tokenizar(string text);
@@ -104,6 +111,16 @@ void Util::compararString(string str1, string str2) {
 		cout << "igual" << endl;
 	else
 		cout << "diferente" << endl;
+}
+
+/**
+ * @brief Modifica a cor da linha no terminal
+ *
+ */
+void Util::mudarCorTerminal() {
+	printf(VERMELHO "Texto em vermelho" RESET "\n");
+	printf(VERDE "Texto em verde" RESET "\n");
+	printf(AZUL "Texto em azul" RESET "\n");
 }
 
 #endif
