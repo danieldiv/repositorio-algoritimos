@@ -161,9 +161,8 @@ void Arquivo::readFileIntervalo(int intervalo, char *arquivo) {
 					}
 					printf(AZUL "---> [fim da linha]\n" RESET);
 					i -= intervalo - index - 1;
-				} else {
+				} else
 					printf("%s\n", texto);
-				}
 			}
 			printf(VERDE "---> [fim do arquivo]\n" RESET);
 			free(texto);
