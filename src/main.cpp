@@ -1,9 +1,9 @@
-#include "arquivo.hpp"
+#include "_arquivo.hpp"
+#include "_util.hpp"
+
 #include "class_template.hpp"
 
-void _arquivo();
 void _class_template();
-void _util();
 
 template <typename T> T function_template(T a, T b);
 template <typename T, typename U> void controlVector(vector<T> vec);
@@ -50,38 +50,6 @@ void controlMap(map<T, vector<U>> mapeamento) {
 	ClassTemplate <T, U>ct;
 
 	ct.printMap(&mapeamento);
-}
-
-/**
- * @brief trabalhando com arquivos
- *
- */
-void _arquivo() {
-	Arquivo r;
-	Util u;
-	string texto;
-
-	cout << "\nLENDO E ESCREVENDO NO ARQUIVO" << endl << endl;
-
-	char *str = (char *)malloc(sizeof(char) * 100);
-
-	cout << "C" << endl << endl;
-
-	strcpy(str, "text2");
-	r.readFile(str);
-	r.createFile();
-
-	cout << endl << endl;
-
-	r.readFileIntervalo(11, str);
-
-	cout << endl << "\nC++" << endl << endl;
-
-	texto.assign("text.txt");
-	r.readFile(texto);
-	r.createFile("newFile.txt");
-
-	cout << "\n======================" << endl << endl;
 }
 
 /**
@@ -153,76 +121,4 @@ void _class_template() {
 	controlMap<string, string>(map4); // <string, string>
 
 	cout << "======================" << endl << endl;
-}
-
-/**
- * @brief funcoes uteis
- *
- */
-void _util() {
-	Arquivo r;
-	Util u;
-
-	char *str = (char *)malloc(sizeof(char) * 100);
-	char *str2 = (char *)malloc(sizeof(char) * 100);
-
-	cout << "COMPARAR STRINGS" << endl << endl;
-
-	strcpy(str, "daniel");
-	strcpy(str2, "daniel");
-
-	cout << "C" << endl << endl;
-	cout << str << " - " << str2 << " -> ";
-	cout << u.compararString(str, str2) << endl;
-
-	strcpy(str2, "alves");
-
-	cout << str << " - " << str2 << " -> ";
-	cout << u.compararString(str, str2) << endl;
-
-	string s1, s2, texto;
-
-	s1.assign("teste");
-	s2 = "teste";
-
-	cout << "\nC++" << endl << endl;
-	u.compararString(s1, s2);
-
-	s1.assign("hello");
-	u.compararString(s1, s2);
-
-	cout << "\n======================" << endl << endl;
-
-	cout << "TOKENIZANDO UMA STRING POR VIRGULA" << endl << endl;
-
-	texto = "texto de string,possui,virgulas";
-	str = (char *)malloc(sizeof(char) * 100);
-	strcpy(str, "texto de char,possui,virgulas");
-
-	cout << "C" << endl << endl;
-	u.tokenizar(str);
-
-	cout << "\nC++" << endl << endl;
-	u.tokenizar(texto);
-
-	cout << "\n======================" << endl << endl;
-
-	map<int, int> mapeamento;
-
-	mapeamento.insert({ 2,6 });
-	mapeamento.insert({ 1,5 });
-	mapeamento.insert({ 6,26 });
-	mapeamento.insert({ 7,222 });
-	mapeamento[66] = 55;
-	mapeamento[67] = 555;
-
-	cout << "UTILIZANDO MAP DE FORMA COMUM" << endl << endl;
-
-	u.printMap(mapeamento);
-
-	cout << "\nMODIFICAR COR DA LINHA NO TERMINAL" << endl << endl;
-
-	u.mudarCorTerminal();
-
-	cout << "\n======================" << endl << endl;
 }
