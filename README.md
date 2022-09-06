@@ -1,5 +1,11 @@
 # Funcoes uteis utilizadas em C e C++
 
+![C](https://img.shields.io/badge/Linguagem-C-green.svg)
+![C++](https://img.shields.io/badge/Linguagem-C++-green.svg)
+![Make](https://img.shields.io/badge/Compilacao-Make-orange)
+![VSCode](https://img.shields.io/badge/IDE-VSCode-informational)
+![ISO](https://img.shields.io/badge/ISO-Linux-blueviolet)
+
 ## Compilacao
 
 > make clean
@@ -7,8 +13,6 @@
 > make
 >
 > make run
-
-- Utilizado sistema linux (Ubuntu)
 
 ## Funcionalidades
 
