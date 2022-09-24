@@ -186,5 +186,5 @@
 
 # Referencias
 
-https://cplusplus.com/reference/
-https://stackoverflow.com/a/16118872
+- https://cplusplus.com/reference/
+- https://stackoverflow.com/a/16118872
