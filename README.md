@@ -182,3 +182,9 @@
     </tr>
   </table>
 </html>
+
+
+# Referencias
+
+https://cplusplus.com/reference/
+https://stackoverflow.com/a/16118872
