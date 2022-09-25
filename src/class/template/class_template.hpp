@@ -1,9 +1,11 @@
 #ifndef CLASS_TEMPLATE_HPP
 #define CLASS_TEMPLATE_HPP
 
-#include "util.hpp"
-
+#include <iostream>
 #include <vector>
+#include <map>
+
+using namespace std;
 
 template <typename T, typename U>
 class ClassTemplate {

@@ -1,4 +1,4 @@
-#include "arquivo.hpp"
+#include "./class/arquivo.hpp"
 
 Arquivo::Arquivo() {}
 Arquivo::~Arquivo() {}
@@ -12,7 +12,7 @@ Arquivo::~Arquivo() {}
  */
 void Arquivo::readFile(char *path) {
 	char *str = (char *)malloc(100);
-	sprintf(str, "src/files/%s.txt", path);
+	sprintf(str, "src/resource/%s.txt", path);
 
 	FILE *file = fopen(str, "r");
 
@@ -39,7 +39,7 @@ void Arquivo::readFile(char *path) {
  */
 void Arquivo::createFile() {
 	char *str = (char *)malloc(100);
-	strcpy(str, "src/files/newFile2.txt");
+	strcpy(str, "src/resource/newFile2.txt");
 
 	FILE *file = fopen(str, "w");
 
@@ -67,7 +67,7 @@ void Arquivo::createFile() {
  * utilizada em C++
  */
 void Arquivo::readFile(string path) {
-	path.insert(0, "src/files/");
+	path.insert(0, "src/resource/");
 
 	ifstream myfile(path);
 	string line;
@@ -87,7 +87,7 @@ void Arquivo::readFile(string path) {
  * utilizada em C++
  */
 void Arquivo::createFile(string path) {
-	path.insert(0, "src/files/");
+	path.insert(0, "src/resource/");
 
 	ofstream myfile(path);
 	string line;
@@ -111,7 +111,7 @@ void Arquivo::readFileIntervalo(int intervalo, char *arquivo) {
 	char *path = (char *)malloc(sizeof(char) * 100);
 	FILE *fp;
 
-	sprintf(path, "src/files/%s.txt", arquivo);
+	sprintf(path, "src/resource/%s.txt", arquivo);
 	fp = fopen(path, "r");
 
 	if (fp != NULL) {

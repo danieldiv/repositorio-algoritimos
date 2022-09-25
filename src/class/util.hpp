@@ -1,15 +1,13 @@
 #ifndef UTIL_HPP
 #define UTIL_HPP
 
-#include <iostream>
+#include "./template/class_template.hpp"
+
 #include <sstream>
 #include <string>
-#include <map>
 
 #include <string.h>
 #include <stdio.h>
-
-using namespace std;
 
 #define VERMELHO "\x1b[31m"
 #define VERDE    "\x1b[32m"

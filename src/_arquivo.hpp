@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-#include "arquivo.hpp"
+#include "./class/arquivo.hpp"
 
 using namespace std;
 
