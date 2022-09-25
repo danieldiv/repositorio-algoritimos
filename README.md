@@ -107,7 +107,7 @@
         </a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L29">
+          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L31">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
@@ -120,7 +120,7 @@
         <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/class_template.hpp#L33">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/class/template/class_template.hpp#L35">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
@@ -146,7 +146,7 @@
           <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/class_template.hpp#L49">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/class/template/class_template.hpp#L51">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
@@ -171,12 +171,14 @@
         </a>
       </td>
       <td> <!-- C -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L87">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L93">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
           </a>
       </td>
-      <td> <!-- nao possui em C++ -->
-          <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
+      <td> <!-- C -->
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L115">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+          </a>
       </td>
     </tr>
   </table>
