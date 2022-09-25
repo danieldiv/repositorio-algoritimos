@@ -20,9 +20,7 @@
   <table>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L64">
-             Ler arquivo
-        </a>
+        Ler arquivo
       </td>
       <td> <!-- C -->
           <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.cpp#L13">
@@ -37,9 +35,7 @@
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L64">
-             Ler arquivo em partes
-        </a>
+        Ler arquivo em partes
       </td>
       <td> <!-- C -->
           <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.cpp#L110">
@@ -54,9 +50,7 @@
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L64">
-               Criar arquivo
-        </a>
+        Criar arquivo
       </td>
       <td> <!-- C -->
           <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.cpp#L40">
@@ -71,9 +65,7 @@
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L196">
-               Tokenizar string
-        </a>
+        Tokenizar string
       </td>
       <td> <!-- C -->
           <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L13">
@@ -88,9 +80,7 @@
     </tr>
     <tr>
      <td>
-      <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L169">
-             Comparando strings
-      </a>
+      Comparando strings
     </td>
     <td> <!-- C -->
         <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L64">
@@ -105,9 +95,7 @@
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L94">
-               Funcao com template
-        </a>
+        Funcao com template
       </td>
       <td> <!-- nao possui em C -->
         <a href="#">
@@ -122,9 +110,7 @@
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L115">
-               Vector com template
-        </a>
+        Vector com template
       </td>
       <td> <!-- nao possui em C -->
         <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
@@ -137,9 +123,7 @@
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L219">
-               Map
-        </a>
+        Map
       </td>
       <td> <!-- nao possui em C -->
           <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
@@ -152,9 +136,7 @@
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L148">
-               Map com template
-        </a>
+        Map com template
       </td>
       <td> <!-- nao possui em C -->
           <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
@@ -167,8 +149,21 @@
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L223">
-               Modificar cor terminal
+        Modificar cor terminal
+      </td>
+      <td> <!-- C -->
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L87">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+          </a>
+      </td>
+      <td> <!-- nao possui em C++ -->
+          <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="https://stackoverflow.com/a/16118872">
+          Combinações
         </a>
       </td>
       <td> <!-- C -->
@@ -182,7 +177,6 @@
     </tr>
   </table>
 </html>
-
 
 # Referencias
 
