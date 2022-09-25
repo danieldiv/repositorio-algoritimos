@@ -89,3 +89,47 @@ void Util::mudarCorTerminal() {
 	printf(VERDE "Texto em verde" RESET "\n");
 	printf(AZUL "Texto em azul" RESET "\n");
 }
+
+void Util::combinacoes(int *vec, int perm[], int index, int n, int k) {
+	static int count = 0;
+
+	if (count == k) {
+		for (int i = 0; i < n; i++)
+			if (perm[i] == 1)
+				printf("%d ", vec[i]);
+		printf("\n");
+
+	} else if ((n - index) >= (k - count)) {
+
+		perm[index] = 1;
+		count++;
+		combinacoes(vec, perm, index + 1, n, k);
+
+		perm[index] = 0;
+		count--;
+		combinacoes(vec, perm, index + 1, n, k);
+
+	}
+}
+
+void Util::combinacoes(vector<int> *vec, int perm[], int index, int n, int k) {
+	static int count = 0;
+
+	if (count == k) {
+		for (int i = 0; i < n; i++)
+			if (perm[i] == 1)
+				cout << vec->at(i) << " ";
+		cout << endl;
+
+	} else if ((n - index) >= (k - count)) {
+
+		perm[index] = 1;
+		count++;
+		combinacoes(vec, perm, index + 1, n, k);
+
+		perm[index] = 0;
+		count--;
+		combinacoes(vec, perm, index + 1, n, k);
+
+	}
+}

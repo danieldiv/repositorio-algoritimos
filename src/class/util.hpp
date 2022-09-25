@@ -24,11 +24,13 @@ public:
 	void tokenizar(char *str);
 	bool compararString(char *str1, char *str2);
 	void mudarCorTerminal();
+	void combinacoes(int *vec, int perm[], int index, int n, int k);
 
 	// C++
 	void tokenizar(string text);
 	void printMap(map<int, int> mapeamento);
 	void compararString(string str1, string str2);
+	void combinacoes(vector<int> *vec, int perm[], int index, int n, int k);
 };
 
 #endif
