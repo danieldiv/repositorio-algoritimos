@@ -1,7 +1,7 @@
 #include "_arquivo.hpp"
 #include "_util.hpp"
 
-#include "class_template.hpp"
+#include "./class/template/class_template.hpp"
 
 void _class_template();
 

@@ -1,8 +1,8 @@
 #ifndef _UTIL_HPP
 #define _UTIL_HPP
 
-#include "util.hpp"
-#include "arquivo.hpp"
+#include "./class/util.hpp"
+#include "./class/arquivo.hpp"
 
 void _util();
 
