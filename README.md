@@ -177,7 +177,7 @@
       </td>
       <td> <!-- C -->
           <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L115">
-              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+             <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
     </tr>
