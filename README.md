@@ -6,6 +6,10 @@
 ![VSCode](https://img.shields.io/badge/IDE-VSCode-informational)
 ![ISO](https://img.shields.io/badge/ISO-Linux-blueviolet)
 
+# Observacao
+
+- Links desatualizados
+
 ## Compilacao
 
 > make clean
