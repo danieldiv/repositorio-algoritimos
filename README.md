@@ -183,7 +183,9 @@
     </tr>
     <tr>
       <td>
+        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/class/util.hpp#L4">
           String em minusculo
+        </a>
       </td>
       <td> <!-- nao possui em C -->
           <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
