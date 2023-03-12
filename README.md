@@ -181,6 +181,21 @@
           </a>
       </td>
     </tr>
+    <tr>
+      <td>
+        <a href="https://stackoverflow.com/a/16118872">
+          Combinações
+        </a>
+      </td>
+      <td> <!-- nao possui em C -->
+          <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
+      </td>
+      <td> <!-- C++ -->
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/class/template/class_template.hpp#L51">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
+          </a>
+      </td>
+    </tr>
   </table>
 </html>
 

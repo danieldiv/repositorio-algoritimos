@@ -157,8 +157,6 @@ void _arquivo() {
 	cout << "\n======================" << endl << endl;
 }
 
-void _util();
-
 /**
  * @brief funcoes uteis
  *
@@ -251,6 +249,10 @@ void _util() {
 
 	cout << "\nC++" << endl << endl;
 	u.combinacoes(&vec2, perm, 0, MAX, 3);
+
+	cout << "\nColocar string em minusculo" << endl << endl;
+	cout << "C++" << endl << endl;
+	u.stringMinuscula();
 
 	cout << "\n======================" << endl << endl;
 }

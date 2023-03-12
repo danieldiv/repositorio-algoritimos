@@ -133,3 +133,11 @@ void Util::combinacoes(vector<int> *vec, int perm[], int index, int n, int k) {
 
 	}
 }
+
+void Util::stringMinuscula() {
+	string str = "Possui caractereS MAiuscUlos";
+
+	cout << str << endl;
+	tolowerStr(str);
+	cout << str << endl;
+}
