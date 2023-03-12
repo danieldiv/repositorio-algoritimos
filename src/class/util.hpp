@@ -1,9 +1,6 @@
 #ifndef UTIL_HPP
 #define UTIL_HPP
 
-#define loopStr(str) for (int d_inc = 0; d_inc < str.length(); d_inc++)
-#define tolowerStr(str) loopStr(str) str[d_inc] = tolower(str[d_inc])
-
 #include "./template/class_template.hpp"
 
 #include <sstream>
@@ -11,6 +8,9 @@
 
 #include <string.h>
 #include <stdio.h>
+
+#define loopStr(str) for (long unsigned d_inc = 0; d_inc < str.length(); d_inc++)
+#define tolowerStr(str) loopStr(str) str[d_inc] = tolower(str[d_inc])
 
 #define VERMELHO "\x1b[31m"
 #define VERDE    "\x1b[32m"
