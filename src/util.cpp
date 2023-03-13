@@ -1,7 +1,7 @@
 #include "./class/util.hpp"
 
-Util::Util() {}
-Util::~Util() {}
+Util::Util() { }
+Util::~Util() { }
 
 /**
  * @brief recebe um ponteiro de char e tokeniza
@@ -140,4 +140,37 @@ void Util::stringMinuscula() {
 	cout << str << endl;
 	tolowerStr(str);
 	cout << str << endl;
+}
+
+// matriz tridimensional quadrada
+void Util::matrizTridimensional() {
+	cout << "TAM: " << TAM << endl;
+	cout << "Linha x Coluna: " << N << " : " << N << endl << endl;
+
+	int ***m = (int ***)malloc(sizeof(int **) * TAM);
+
+	for (int i = 0; i < TAM; i++) {
+		m[i] = (int **)malloc(sizeof(int *) * N);
+
+		for (int j = 0; j < N; j++) {
+			m[i][j] = (int *)malloc(sizeof(int) * N);
+		}
+	}
+
+	for (int i = 0; i < TAM; i++) {
+		for (int j = 0; j < N; j++) {
+			for (int k = 0; k < N; k++)
+				m[i][j][k] = i + j + k;
+		}
+	}
+
+	for (int i = 0; i < TAM; i++) {
+		for (int j = 0; j < N; j++) {
+			for (int k = 0; k < N; k++) {
+				cout << m[i][j][k] << " ";
+			}
+			cout << endl;
+		}
+		cout << endl;
+	}
 }

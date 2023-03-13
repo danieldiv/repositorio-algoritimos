@@ -17,6 +17,9 @@
 #define AZUL     "\x1b[34m"
 #define RESET    "\x1b[0m"
 
+#define N 5
+#define TAM 3
+
 class Util {
 private:
 public:
@@ -28,6 +31,7 @@ public:
 	bool compararString(char *str1, char *str2);
 	void mudarCorTerminal();
 	void combinacoes(int *vec, int perm[], int index, int n, int k);
+	void matrizTridimensional();
 
 	// C++
 	void tokenizar(string text);

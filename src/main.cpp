@@ -250,9 +250,16 @@ void _util() {
 	cout << "\nC++" << endl << endl;
 	u.combinacoes(&vec2, perm, 0, MAX, 3);
 
-	cout << "\nColocar string em minusculo" << endl << endl;
+	cout << "\n======================" << endl << endl;
+
+	cout << "Colocar string em minusculo" << endl << endl;
 	cout << "C++" << endl << endl;
 	u.stringMinuscula();
 
 	cout << "\n======================" << endl << endl;
+
+	cout << "Utilizando vetor de matriz" << endl << endl;
+	u.matrizTridimensional();
+
+	cout << "======================" << endl << endl;
 }
