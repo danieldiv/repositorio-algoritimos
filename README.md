@@ -199,7 +199,7 @@
     <tr>
       <td>
         <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/images/matriz.png">
-          String em minusculo
+          Matriz tridimensional
         </a>
       </td>
       <td> <!-- C -->
