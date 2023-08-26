@@ -1,4 +1,4 @@
-CXX      := -g++
+CXX      := -g++ -std=c++20
 CXXFLAGS := -Wall -Wextra -Werror
 LDFLAGS  := -lstdc++ -lm
 BUILD    := ./build
@@ -39,4 +39,6 @@ clean:
 run:
 	./$(BUILD)/$(TARGET)
 
-r: clean all run
+c: clean all run
+
+r: all run

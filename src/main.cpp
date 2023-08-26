@@ -16,6 +16,25 @@ int main() {
 	_class_template();
 	_util();
 
+	map<int, int> mapeamento;
+
+	mapeamento.insert({ 2,6 });
+	mapeamento.insert({ 1,5 });
+	mapeamento.insert({ 6,26 });
+
+	int val = 2;
+	auto it = mapeamento.find(val);
+
+	cout << "o find retorna o indice do mapeamento" << endl;
+	if (it != mapeamento.end()) cout << "encontrou" << endl;
+	else cout << "nao encontrou" << endl;
+
+	bool b = mapeamento.contains(val);
+
+	cout << "\no contains retorna true ou false" << endl;
+	if (b) cout << "encontrou" << endl;
+	else cout << "nao encontrou" << endl;
+
 	return EXIT_SUCCESS;
 }
 
