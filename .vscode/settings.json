@@ -8,7 +8,8 @@
     "ostream": "cpp",
     "sstream": "cpp",
     "map": "cpp",
-    "limits": "cpp"
+    "limits": "cpp",
+    "iosfwd": "cpp"
   },
   "prettier.tabWidth": 2
 }

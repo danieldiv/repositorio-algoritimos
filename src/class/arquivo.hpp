@@ -18,6 +18,7 @@ public:
 
 	// C++
 	void readFile(string path);
+	void readFileTokenizando(string path);
 	void createFile(string path);
 };
 

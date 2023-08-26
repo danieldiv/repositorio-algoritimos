@@ -13,8 +13,8 @@ template <typename T, typename U> void controlMap(map<T, vector<U>> mapeamento);
 
 int main() {
 	_arquivo();
-	_class_template();
-	_util();
+	// _class_template();
+	// _util();
 
 	map<int, int> mapeamento;
 
@@ -172,6 +172,9 @@ void _arquivo() {
 	texto.assign("text.txt");
 	r.readFile(texto);
 	r.createFile("newFile.txt");
+
+	cout << endl;
+	r.readFileTokenizando("text.txt");
 
 	cout << "\n======================" << endl << endl;
 }

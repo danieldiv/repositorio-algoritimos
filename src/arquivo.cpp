@@ -62,7 +62,7 @@ void Arquivo::createFile() {
 /**
  * @brief realiza a leitura de um arquivo e faz a sua impressao
  *
- * @param file nome do arquivo a ser aberto
+ * @param path nome do arquivo a ser aberto
  *
  * utilizada em C++
  */
@@ -75,6 +75,27 @@ void Arquivo::readFile(string path) {
 	if (myfile.is_open()) {
 		while (getline(myfile, line))
 			cout << line << endl;
+		myfile.close();
+	} else cout << "Nao foi possivel abrir o arquivo" << endl;
+}
+
+/**
+ * @brief realiza a leitura de um arquivo tokenizando por espaco e faz a sua impressao
+ *
+ * @param path nome do arquivo a ser aberto
+ *
+ * utilizada em C++
+ */
+void Arquivo::readFileTokenizando(string path) {
+	path.insert(0, "src/resource/");
+
+	ifstream myfile(path);
+	string line;
+
+	if (myfile.is_open()) {
+		string buffer;
+		while (myfile >> buffer)
+			cout << buffer << endl;
 		myfile.close();
 	} else cout << "Nao foi possivel abrir o arquivo" << endl;
 }
