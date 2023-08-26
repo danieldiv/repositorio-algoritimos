@@ -14,8 +14,8 @@ public:
 	ClassTemplate();
 	~ClassTemplate();
 
-	void printVector(vector<T> vec);
-	void printMap(map<T, vector<U>> *mapeamento);
+	void printVector(vector<T> &vec);
+	void printMap(map<T, vector<U>> &mapeamento);
 };
 
 template <typename T, typename U>
@@ -32,7 +32,7 @@ ClassTemplate<T, U>::~ClassTemplate() {}
  * @param vec
  */
 template <typename T, typename U>
-void ClassTemplate<T, U>::printVector(vector<T> vec) {
+void ClassTemplate<T, U>::printVector(vector<T> &vec) {
 	for (T val : vec)
 		cout << val << " ";
 	cout << endl;
@@ -48,8 +48,8 @@ void ClassTemplate<T, U>::printVector(vector<T> vec) {
  * @param mapeamento
  */
 template <typename T, typename U>
-void ClassTemplate<T, U>::printMap(map<T, vector<U>> *mapeamento) {
-	for (auto itr = mapeamento->begin(); itr != mapeamento->end(); ++itr) {
+void ClassTemplate<T, U>::printMap(map<T, vector<U>> &mapeamento) {
+	for (auto itr = mapeamento.begin(); itr != mapeamento.end(); ++itr) {
 		cout << itr->first << endl;
 
 		for (U dado : itr->second) {

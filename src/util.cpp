@@ -30,7 +30,7 @@ void Util::tokenizar(char *str) {
  *
  * utilizada em C++
  */
-void Util::tokenizar(string text) {
+void Util::tokenizar(string &text) {
 	char del = ',';
 
 	stringstream sstream(text);
@@ -45,7 +45,7 @@ void Util::tokenizar(string text) {
  *
  * @param mapeamento
  */
-void Util::printMap(map<int, int> mapeamento) {
+void Util::printMap(map<int, int> &mapeamento) {
 	for (auto itr = mapeamento.begin(); itr != mapeamento.end(); ++itr) {
 		cout << itr->first << " " << itr->second << endl;
 	}
@@ -69,7 +69,7 @@ bool Util::compararString(char *str1, char *str2) {
  * @param str1 string 1
  * @param str2 string 2
  */
-void Util::compararString(string str1, string str2) {
+void Util::compararString(string &str1, string &str2) {
 	cout << str1 << " - " << str2 << " -> ";
 
 	if (str1.compare(str2) == 0)
@@ -110,13 +110,13 @@ void Util::combinacoes(int *vec, int perm[], int index, int n, int k) {
 	}
 }
 
-void Util::combinacoes(vector<int> *vec, int perm[], int index, int n, int k) {
+void Util::combinacoes(vector<int> &vec, int perm[], int index, int n, int k) {
 	static int count = 0;
 
 	if (count == k) {
 		for (int i = 0; i < n; i++)
 			if (perm[i] == 1)
-				cout << vec->at(i) << " ";
+				cout << vec.at(i) << " ";
 		cout << endl;
 
 	} else if ((n - index) >= (k - count)) {

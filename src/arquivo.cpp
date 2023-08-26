@@ -66,7 +66,7 @@ void Arquivo::createFile() {
  *
  * utilizada em C++
  */
-void Arquivo::readFile(string path) {
+void Arquivo::readFile(string &path) {
 	path.insert(0, "src/resource/");
 
 	ifstream myfile(path);
@@ -86,7 +86,7 @@ void Arquivo::readFile(string path) {
  *
  * utilizada em C++
  */
-void Arquivo::readFileTokenizando(string path) {
+void Arquivo::readFileTokenizando(string &path) {
 	path.insert(0, "src/resource/");
 
 	ifstream myfile(path);
@@ -107,7 +107,7 @@ void Arquivo::readFileTokenizando(string path) {
  *
  * utilizada em C++
  */
-void Arquivo::createFile(string path) {
+void Arquivo::createFile(string &path) {
 	path.insert(0, "src/resource/");
 
 	ofstream myfile(path);

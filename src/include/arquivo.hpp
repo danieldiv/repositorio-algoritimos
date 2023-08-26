@@ -17,9 +17,9 @@ public:
 	void readFileIntervalo(int intervalo, char *arquivo);
 
 	// C++
-	void readFile(string path);
-	void readFileTokenizando(string path);
-	void createFile(string path);
+	void readFile(string &path);
+	void readFileTokenizando(string &path);
+	void createFile(string &path);
 };
 
 #endif

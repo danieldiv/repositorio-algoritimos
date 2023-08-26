@@ -8,8 +8,8 @@ void _arquivo();
 void _util();
 
 template <typename T> T function_template(T a, T b);
-template <typename T, typename U> void controlVector(vector<T> vec);
-template <typename T, typename U> void controlMap(map<T, vector<U>> mapeamento);
+template <typename T, typename U> void controlVector(vector<T> &vec);
+template <typename T, typename U> void controlMap(map<T, vector<U>> &mapeamento);
 
 int main() {
 	_arquivo();
@@ -60,17 +60,17 @@ T function_template(T a, T b) {
  * @param vec
  */
 template <typename T>
-void controlVector(vector<T> vec) {
+void controlVector(vector<T> &vec) {
 	ClassTemplate <T, void>ct;
 
 	ct.printVector(vec);
 }
 
 template <typename T, typename U>
-void controlMap(map<T, vector<U>> mapeamento) {
+void controlMap(map<T, vector<U>> &mapeamento) {
 	ClassTemplate <T, U>ct;
 
-	ct.printMap(&mapeamento);
+	ct.printMap(mapeamento);
 }
 
 /**
@@ -171,10 +171,10 @@ void _arquivo() {
 
 	texto.assign("text.txt");
 	r.readFile(texto);
-	r.createFile("newFile.txt");
+	r.readFileTokenizando(texto);
 
-	cout << endl;
-	r.readFileTokenizando("text.txt");
+	texto.assign("newFile.txt");
+	r.createFile(texto);
 
 	cout << "\n======================" << endl << endl;
 }
@@ -270,7 +270,7 @@ void _util() {
 	vec2.push_back(7);
 
 	cout << "\nC++" << endl << endl;
-	u.combinacoes(&vec2, perm, 0, MAX, 3);
+	u.combinacoes(vec2, perm, 0, MAX, 3);
 
 	cout << "\n======================" << endl << endl;
 

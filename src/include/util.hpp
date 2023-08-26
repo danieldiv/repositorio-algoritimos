@@ -34,10 +34,10 @@ public:
 	void matrizTridimensional();
 
 	// C++
-	void tokenizar(string text);
-	void printMap(map<int, int> mapeamento);
-	void compararString(string str1, string str2);
-	void combinacoes(vector<int> *vec, int perm[], int index, int n, int k);
+	void tokenizar(string &text);
+	void printMap(map<int, int> &mapeamento);
+	void compararString(string &str1, string &str2);
+	void combinacoes(vector<int> &vec, int perm[], int index, int n, int k);
 	void stringMinuscula();
 };
 
