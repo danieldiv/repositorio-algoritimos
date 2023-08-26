@@ -1,7 +1,7 @@
 #include "./class/util.hpp"
 
-Util::Util() { }
-Util::~Util() { }
+Util::Util() {}
+Util::~Util() {}
 
 /**
  * @brief recebe um ponteiro de char e tokeniza
@@ -46,9 +46,7 @@ void Util::tokenizar(string text) {
  * @param mapeamento
  */
 void Util::printMap(map<int, int> mapeamento) {
-	map<int, int>::iterator itr;
-
-	for (itr = mapeamento.begin(); itr != mapeamento.end(); ++itr) {
+	for (auto itr = mapeamento.begin(); itr != mapeamento.end(); ++itr) {
 		cout << itr->first << " " << itr->second << endl;
 	}
 }

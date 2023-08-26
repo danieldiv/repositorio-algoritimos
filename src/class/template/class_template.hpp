@@ -49,9 +49,7 @@ void ClassTemplate<T, U>::printVector(vector<T> vec) {
  */
 template <typename T, typename U>
 void ClassTemplate<T, U>::printMap(map<T, vector<U>> *mapeamento) {
-	typename map<T, vector<U>>::iterator itr;
-
-	for (itr = mapeamento->begin(); itr != mapeamento->end(); ++itr) {
+	for (auto itr = mapeamento->begin(); itr != mapeamento->end(); ++itr) {
 		cout << itr->first << endl;
 
 		for (U dado : itr->second) {
