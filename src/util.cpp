@@ -1,4 +1,4 @@
-#include "./class/util.hpp"
+#include "./include/util.hpp"
 
 Util::Util() {}
 Util::~Util() {}

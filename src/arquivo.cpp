@@ -1,4 +1,4 @@
-#include "./class/arquivo.hpp"
+#include "./include/arquivo.hpp"
 
 Arquivo::Arquivo() {}
 Arquivo::~Arquivo() {}

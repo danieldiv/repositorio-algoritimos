@@ -1,5 +1,5 @@
-#include "./class/util.hpp"
-#include "./class/arquivo.hpp"
+#include "./include/util.hpp"
+#include "./include/arquivo.hpp"
 
 #define MAX 4
 
@@ -13,8 +13,8 @@ template <typename T, typename U> void controlMap(map<T, vector<U>> mapeamento);
 
 int main() {
 	_arquivo();
-	// _class_template();
-	// _util();
+	_class_template();
+	_util();
 
 	map<int, int> mapeamento;
 
