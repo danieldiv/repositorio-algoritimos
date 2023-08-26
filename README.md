@@ -42,7 +42,7 @@
         Ler arquivo em partes
       </td>
       <td> <!-- C -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.cpp#L110">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.cpp#L131">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
           </a>
       </td>
@@ -50,6 +50,21 @@
         <a href="#">
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
         </a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Ler arquivo tokenizado por espaco
+      </td>
+      <td> <!-- nao possui C -->
+          <a href="#">
+          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
+        </a>
+      </td>
+      <td> <!-- C++ -->
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.cpp#L89">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
+          </a>
       </td>
     </tr>
     <tr>
@@ -62,7 +77,7 @@
           </a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.cpp#L89">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.cpp#L110">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
@@ -87,12 +102,12 @@
       Comparando strings
     </td>
     <td> <!-- C -->
-        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L64">
+        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L62">
             <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
         </a>
     </td>
     <td> <!-- C++ -->
-        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L74">
+        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L72">
             <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
         </a>
     </td>
@@ -107,7 +122,7 @@
         </a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L31">
+          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L49">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
@@ -156,7 +171,7 @@
         Modificar cor terminal
       </td>
       <td> <!-- C -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L87">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L85">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
           </a>
       </td>
@@ -171,19 +186,19 @@
         </a>
       </td>
       <td> <!-- C -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L93">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L91">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
           </a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L115">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L113">
              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/class/util.hpp#L12">
+        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/include/util.hpp#L12">
           String em minusculo
         </a>
       </td>
@@ -191,7 +206,7 @@
           <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L137">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L135">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
