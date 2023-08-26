@@ -168,6 +168,19 @@
     </tr>
     <tr>
       <td>
+        Imprimir Map com forEach
+      </td>
+      <td> <!-- nao possui em C -->
+          <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
+      </td>
+      <td> <!-- C++ -->
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/include/class_template.hpp#L72">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
+          </a>
+      </td>
+    </tr>
+    <tr>
+      <td>
         Modificar cor terminal
       </td>
       <td> <!-- C -->

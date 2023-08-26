@@ -16,6 +16,7 @@ public:
 
 	void printVector(vector<T> &vec);
 	void printMap(map<T, vector<U>> &mapeamento);
+	void printMapForEach(map<T, vector<U>> &mapeamento);
 };
 
 template <typename T, typename U>
@@ -59,4 +60,24 @@ void ClassTemplate<T, U>::printMap(map<T, vector<U>> &mapeamento) {
 	}
 	cout << endl;
 }
+
+/**
+ * @brief imprime um map atravez de um template
+ *
+ * @tparam T
+ * @tparam U
+ * @param mapeamento
+ */
+template <typename T, typename U>
+void ClassTemplate<T, U>::printMapForEach(map<T, vector<U>> &mapeamento) {
+	for (const auto &[key, value] : mapeamento) {
+		cout << key << endl;
+
+		for (U dado : value) {
+			cout << dado << " ";
+		}
+		cout << endl;
+	}
+}
+
 #endif

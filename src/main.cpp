@@ -71,6 +71,9 @@ void controlMap(map<T, vector<U>> &mapeamento) {
 	ClassTemplate <T, U>ct;
 
 	ct.printMap(mapeamento);
+
+	cout << "Utilizando for each para imprimir map" << endl << endl;
+	ct.printMapForEach(mapeamento);
 }
 
 /**
