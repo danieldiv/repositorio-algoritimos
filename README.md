@@ -238,6 +238,118 @@
   </table>
 </html>
 
+## Arvores
+
+<html>
+  <table>
+    <tr>
+      <td>
+        Binaria
+      </td>
+      <td> <!-- C -->
+          <a href="#">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+          </a>
+      </td>
+      <td> <!-- nao possui em C++ -->
+        <a href="#">
+          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        AVL
+      </td>
+      <td> <!-- C -->
+          <a href="#">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+          </a>
+      </td>
+      <td> <!-- nao possui em C++ -->
+        <a href="#">
+          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        RB
+      </td>
+      <td> <!-- C -->
+          <a href="#">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+          </a>
+      </td>
+      <td> <!-- nao possui em C++ -->
+        <a href="#">
+          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        B
+      </td>
+      <td> <!-- C -->
+          <a href="#">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+          </a>
+      </td>
+      <td> <!-- nao possui em C++ -->
+        <a href="#">
+          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        B+
+      </td>
+      <td> <!-- C -->
+          <a href="#">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+          </a>
+      </td>
+      <td> <!-- nao possui em C++ -->
+        <a href="#">
+          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        B*
+      </td>
+      <td> <!-- C -->
+          <a href="#">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+          </a>
+      </td>
+      <td> <!-- nao possui em C++ -->
+        <a href="#">
+          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Huffman
+      </td>
+      <td> <!-- C -->
+          <a href="#">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+          </a>
+      </td>
+      <td> <!-- nao possui em C++ -->
+        <a href="#">
+          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
+        </a>
+      </td>
+    </tr>
+  </table>
+</html>
+
 # Referencias
 
 - https://cplusplus.com/reference/
