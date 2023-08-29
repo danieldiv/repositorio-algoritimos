@@ -1,11 +1,13 @@
 #include "./include/util.hpp"
 #include "./include/arquivo.hpp"
+#include "./include/binary_tree.hpp"
 
 #define MAX 4
 
 void _class_template();
 void _arquivo();
 void _util();
+void _arvores();
 
 template <typename T> T function_template(T a, T b);
 template <typename T, typename U> void controlVector(vector<T> &vec);
@@ -15,25 +17,26 @@ int main() {
 	_arquivo();
 	_class_template();
 	_util();
+	_arvores();
 
-	map<int, int> mapeamento;
+	// map<int, int> mapeamento;
 
-	mapeamento.insert({ 2,6 });
-	mapeamento.insert({ 1,5 });
-	mapeamento.insert({ 6,26 });
+	// mapeamento.insert({ 2,6 });
+	// mapeamento.insert({ 1,5 });
+	// mapeamento.insert({ 6,26 });
 
-	int val = 2;
-	auto it = mapeamento.find(val);
+	// int val = 2;
+	// auto it = mapeamento.find(val);
 
-	cout << "o find retorna o indice do mapeamento" << endl;
-	if (it != mapeamento.end()) cout << "encontrou" << endl;
-	else cout << "nao encontrou" << endl;
+	// cout << "o find retorna o indice do mapeamento" << endl;
+	// if (it != mapeamento.end()) cout << "encontrou" << endl;
+	// else cout << "nao encontrou" << endl;
 
-	bool b = mapeamento.contains(val);
+	// bool b = mapeamento.contains(val);
 
-	cout << "\no contains retorna true ou false" << endl;
-	if (b) cout << "encontrou" << endl;
-	else cout << "nao encontrou" << endl;
+	// cout << "\no contains retorna true ou false" << endl;
+	// if (b) cout << "encontrou" << endl;
+	// else cout << "nao encontrou" << endl;
 
 	return EXIT_SUCCESS;
 }
@@ -286,5 +289,51 @@ void _util() {
 	cout << "Utilizando vetor de matriz" << endl << endl;
 	u.matrizTridimensional();
 
-	cout << "======================" << endl << endl;
+	cout << "======================" << endl;
+}
+
+void _arvores() {
+	cout << "Arvore binaria simples C\n\n";
+
+	Tree *raiz;
+	Record r;
+
+	raiz = createTree();
+
+	int vetor[] = { 33, 47, 28, 19, 25, 60, 8, 39 };
+	int tam = sizeof(vetor) / sizeof(vetor[0]);
+
+	Tree *aux;
+
+	printf("Elementos arvore: { ");
+	for (int i = 0; i < tam; i++) {
+		r.key = vetor[i];
+		printf("%d ", r.key);
+		insertItem(&raiz, r);
+	}
+	printf("}\n\n");
+
+	printf("Pre Ordem: { ");
+	preordem(raiz);
+
+	printf("}\nCentral: { ");
+	central(raiz);
+
+	printf("}\nPos Ordem: { ");
+	posordem(raiz);
+	printf("}\n");
+
+	r.key = 39;
+	removeItem(&raiz, r);
+
+	printf("\nRemove (39) \nCentral: { ");
+	central(raiz);
+
+	printf("}\nPre Ordem: { ");
+	preordem(raiz);
+
+	printf("}\nPos Ordem: { ");
+	posordem(raiz);
+	printf("}\n");
+
 }
