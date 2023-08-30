@@ -5,6 +5,8 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+#include <iostream>
+
 typedef struct Record_1 Record_1;
 typedef struct Tree_1 Tree_1;
 

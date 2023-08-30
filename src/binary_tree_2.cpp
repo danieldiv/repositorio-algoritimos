@@ -74,7 +74,8 @@ void Tree_2::removeItemClass(Tree_2 **t, Record_2 r) {
 
 void Tree_2::preordemClass(Tree_2 *t) {
 	if (!(t == NULL)) {
-		printf("%d ", t->reg.key);
+		// printf("%d ", t->reg.key);
+		std::cout << t->reg.key << " ";
 		preordemClass(t->esq);
 		preordemClass(t->dir);
 	}
@@ -83,7 +84,8 @@ void Tree_2::preordemClass(Tree_2 *t) {
 void Tree_2::centralClass(Tree_2 *t) {
 	if (!(t == NULL)) {
 		centralClass(t->esq);
-		printf("%d ", t->reg.key);
+		// printf("%d ", t->reg.key);
+		std::cout << t->reg.key << " ";
 		centralClass(t->dir);
 	}
 }
@@ -92,6 +94,7 @@ void Tree_2::posordemClass(Tree_2 *t) {
 	if (!(t == NULL)) {
 		posordemClass(t->esq);
 		posordemClass(t->dir);
-		printf("%d ", t->reg.key);
+		// printf("%d ", t->reg.key);
+		std::cout << t->reg.key << " ";
 	}
 }
