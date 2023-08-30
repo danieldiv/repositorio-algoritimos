@@ -244,11 +244,13 @@
   <table>
     <tr>
       <td>
-        Binaria
+        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/include/binary_tree.hpp">
+          Binaria
+        </a>
       </td>
       <td> <!-- C -->
-          <a href="#">
-              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/binary_tree.cpp">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
           </a>
       </td>
       <td> <!-- nao possui em C++ -->

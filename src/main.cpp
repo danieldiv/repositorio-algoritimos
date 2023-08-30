@@ -1,6 +1,7 @@
 #include "./include/util.hpp"
 #include "./include/arquivo.hpp"
-#include "./include/binary_tree.hpp"
+#include "./tree/binary_tree_c.h"
+#include "./tree/binary_tree_cplusplus.hpp"
 
 #define MAX 4
 
@@ -14,9 +15,9 @@ template <typename T, typename U> void controlVector(vector<T> &vec);
 template <typename T, typename U> void controlMap(map<T, vector<U>> &mapeamento);
 
 int main() {
-	_arquivo();
-	_class_template();
-	_util();
+	// _arquivo();
+	// _class_template();
+	// _util();
 	_arvores();
 
 	// map<int, int> mapeamento;
@@ -316,7 +317,7 @@ void _arvores() {
 	printf("Pre Ordem: { ");
 	preordem(raiz);
 
-	printf("}\nCentral: { ");
+	printf("}\nCentral:   { ");
 	central(raiz);
 
 	printf("}\nPos Ordem: { ");
@@ -326,7 +327,7 @@ void _arvores() {
 	r.key = 39;
 	removeItem(&raiz, r);
 
-	printf("\nRemove (39) \nCentral: { ");
+	printf("\nRemove (39) \nCentral:   { ");
 	central(raiz);
 
 	printf("}\nPre Ordem: { ");
@@ -334,6 +335,47 @@ void _arvores() {
 
 	printf("}\nPos Ordem: { ");
 	posordem(raiz);
+	printf("}\n");
+
+	cout << "======================" << endl << endl;
+
+	cout << "Arvore binaria simples C++\n\n";
+
+	TreeClass *raizClass = new TreeClass();
+	RecordClass recClass;
+	raizClass = raizClass->createTreeClass();
+
+	Tree *auxClass;
+
+	printf("Elementos arvore: { ");
+	for (int i = 0; i < tam; i++) {
+		recClass.key = vetor[i];
+		printf("%d ", recClass.key);
+		raizClass->insertItemClass(&raizClass, recClass);
+	}
+	printf("}\n\n");
+
+	printf("Pre Ordem: { ");
+	raizClass->preordemClass(raizClass);
+
+	printf("}\nCentral:   { ");
+	raizClass->centralClass(raizClass);
+
+	printf("}\nPos Ordem: { ");
+	raizClass->posordemClass(raizClass);
+	printf("}\n");
+
+	recClass.key = 25;
+	raizClass->removeItemClass(&raizClass, recClass);
+
+	printf("\nRemove Class(25) \nPre Ordem: { ");
+	raizClass->preordemClass(raizClass);
+
+	printf("}\nCentral:   { ");
+	raizClass->centralClass(raizClass);
+
+	printf("}\nPos Ordem: { ");
+	raizClass->posordemClass(raizClass);
 	printf("}\n");
 
 }

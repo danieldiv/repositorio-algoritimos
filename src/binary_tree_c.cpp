@@ -1,4 +1,4 @@
-#include "./include/binary_tree.hpp"
+#include "./tree/binary_tree_c.h"
 
 Tree *createTree() {
 	return NULL;
