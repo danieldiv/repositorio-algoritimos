@@ -1,7 +1,8 @@
 #include "./include/util.hpp"
 #include "./include/arquivo.hpp"
-#include "./tree/binary_tree_c.h"
-#include "./tree/binary_tree_cplusplus.hpp"
+#include "./tree/binary_tree_1.hpp"
+#include "./tree/binary_tree_2.hpp"
+#include "./tree/binary_tree_3.hpp"
 
 #define MAX 4
 
@@ -296,15 +297,15 @@ void _util() {
 void _arvores() {
 	cout << "Arvore binaria simples C\n\n";
 
-	Tree *raiz;
-	Record r;
+	Tree_1 *raiz;
+	Record_1 r;
 
 	raiz = createTree();
 
 	int vetor[] = { 33, 47, 28, 19, 25, 60, 8, 39 };
 	int tam = sizeof(vetor) / sizeof(vetor[0]);
 
-	Tree *aux;
+	Tree_1 *aux;
 
 	printf("Elementos arvore: { ");
 	for (int i = 0; i < tam; i++) {
@@ -341,41 +342,60 @@ void _arvores() {
 
 	cout << "Arvore binaria simples C++\n\n";
 
-	TreeClass *raizClass = new TreeClass();
-	RecordClass recClass;
-	raizClass = raizClass->createTreeClass();
+	Tree_2 *raiz_2 = new Tree_2();
+	Record_2 rec_2;
+	raiz_2 = raiz_2->createTreeClass();
 
-	Tree *auxClass;
+	Tree_2 *auxClass;
 
 	printf("Elementos arvore: { ");
 	for (int i = 0; i < tam; i++) {
-		recClass.key = vetor[i];
-		printf("%d ", recClass.key);
-		raizClass->insertItemClass(&raizClass, recClass);
+		rec_2.key = vetor[i];
+		printf("%d ", rec_2.key);
+		raiz_2->insertItemClass(&raiz_2, rec_2);
 	}
 	printf("}\n\n");
 
 	printf("Pre Ordem: { ");
-	raizClass->preordemClass(raizClass);
+	raiz_2->preordemClass(raiz_2);
 
 	printf("}\nCentral:   { ");
-	raizClass->centralClass(raizClass);
+	raiz_2->centralClass(raiz_2);
 
 	printf("}\nPos Ordem: { ");
-	raizClass->posordemClass(raizClass);
+	raiz_2->posordemClass(raiz_2);
 	printf("}\n");
 
-	recClass.key = 25;
-	raizClass->removeItemClass(&raizClass, recClass);
+	rec_2.key = 25;
+	raiz_2->removeItemClass(&raiz_2, rec_2);
 
 	printf("\nRemove Class(25) \nPre Ordem: { ");
-	raizClass->preordemClass(raizClass);
+	raiz_2->preordemClass(raiz_2);
 
 	printf("}\nCentral:   { ");
-	raizClass->centralClass(raizClass);
+	raiz_2->centralClass(raiz_2);
 
 	printf("}\nPos Ordem: { ");
-	raizClass->posordemClass(raizClass);
+	raiz_2->posordemClass(raiz_2);
 	printf("}\n");
 
+	cout << "======================" << endl << endl;
+
+	cout << "Arvore binaria simples com nó C++\n\n";
+
+	Tree_3 raiz_3;
+
+	vector<Record_3> vecR = {
+		Record_3(5),
+		Record_3(23),
+		Record_3(96),
+		Record_3(33),
+		Record_3(68)
+	};
+
+	for (auto &r : vecR) raiz_3.insert(r);
+
+	raiz_3.preOrdem();
+	raiz_3.central();
+	raiz_3.posOrdem();
 }

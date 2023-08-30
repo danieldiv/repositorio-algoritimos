@@ -1,12 +1,12 @@
-#include "./tree/binary_tree_cplusplus.hpp"
+#include "./tree/binary_tree_2.hpp"
 
-TreeClass *TreeClass::createTreeClass() {
+Tree_2 *Tree_2::createTreeClass() {
 	return NULL;
 }
 
-void TreeClass::insertItemClass(TreeClass **t, RecordClass r) {
+void Tree_2::insertItemClass(Tree_2 **t, Record_2 r) {
 	if (*t == NULL) {
-		*t = (TreeClass *)malloc(sizeof(TreeClass));
+		*t = (Tree_2 *)malloc(sizeof(Tree_2));
 		(*t)->esq = NULL;
 		(*t)->dir = NULL;
 		(*t)->reg = r;
@@ -20,7 +20,7 @@ void TreeClass::insertItemClass(TreeClass **t, RecordClass r) {
 
 }
 
-void TreeClass::pesquisaClass(TreeClass **t, TreeClass **aux, RecordClass r) {
+void Tree_2::pesquisaClass(Tree_2 **t, Tree_2 **aux, Record_2 r) {
 	if (*t == NULL) {
 		printf("[ERRO]: Node not found!\n");
 		return;
@@ -32,7 +32,7 @@ void TreeClass::pesquisaClass(TreeClass **t, TreeClass **aux, RecordClass r) {
 	*aux = *t;
 }
 
-void TreeClass::antecessorClass(TreeClass **t, TreeClass *aux) {
+void Tree_2::antecessorClass(Tree_2 **t, Tree_2 *aux) {
 	if ((*t)->dir != NULL) {
 		antecessorClass(&(*t)->dir, aux);
 		return;
@@ -44,11 +44,11 @@ void TreeClass::antecessorClass(TreeClass **t, TreeClass *aux) {
 	free(aux);
 }
 
-void TreeClass::removeItemClass(TreeClass **t, RecordClass r) {
-	TreeClass *aux;
+void Tree_2::removeItemClass(Tree_2 **t, Record_2 r) {
+	Tree_2 *aux;
 
 	if (*t == NULL) {
-		printf("[ERROR]: RecordClass not found!!!\n");
+		printf("[ERROR]: Record_2 not found!!!\n");
 		return;
 	}
 
@@ -72,7 +72,7 @@ void TreeClass::removeItemClass(TreeClass **t, RecordClass r) {
 	free(aux);
 }
 
-void TreeClass::preordemClass(TreeClass *t) {
+void Tree_2::preordemClass(Tree_2 *t) {
 	if (!(t == NULL)) {
 		printf("%d ", t->reg.key);
 		preordemClass(t->esq);
@@ -80,7 +80,7 @@ void TreeClass::preordemClass(TreeClass *t) {
 	}
 }
 
-void TreeClass::centralClass(TreeClass *t) {
+void Tree_2::centralClass(Tree_2 *t) {
 	if (!(t == NULL)) {
 		centralClass(t->esq);
 		printf("%d ", t->reg.key);
@@ -88,7 +88,7 @@ void TreeClass::centralClass(TreeClass *t) {
 	}
 }
 
-void TreeClass::posordemClass(TreeClass *t) {
+void Tree_2::posordemClass(Tree_2 *t) {
 	if (!(t == NULL)) {
 		posordemClass(t->esq);
 		posordemClass(t->dir);

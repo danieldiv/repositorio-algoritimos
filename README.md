@@ -240,6 +240,8 @@
 
 ## Arvores
 
+> Arvore binaria com nó não possui exclusão
+
 <html>
   <table>
     <tr>

@@ -1,12 +1,12 @@
-#include "./tree/binary_tree_c.h"
+#include "./tree/binary_tree_1.hpp"
 
-Tree *createTree() {
+Tree_1 *createTree() {
 	return NULL;
 }
 
-void insertItem(Tree **t, Record r) {
+void insertItem(Tree_1 **t, Record_1 r) {
 	if (*t == NULL) {
-		*t = (Tree *)malloc(sizeof(Tree));
+		*t = (Tree_1 *)malloc(sizeof(Tree_1));
 		(*t)->esq = NULL;
 		(*t)->dir = NULL;
 		(*t)->reg = r;
@@ -20,7 +20,7 @@ void insertItem(Tree **t, Record r) {
 
 }
 
-void pesquisa(Tree **t, Tree **aux, Record r) {
+void pesquisa(Tree_1 **t, Tree_1 **aux, Record_1 r) {
 	if (*t == NULL) {
 		printf("[ERRO]: Node not found!\n");
 		return;
@@ -32,7 +32,7 @@ void pesquisa(Tree **t, Tree **aux, Record r) {
 	*aux = *t;
 }
 
-void antecessor(Tree **t, Tree *aux) {
+void antecessor(Tree_1 **t, Tree_1 *aux) {
 	if ((*t)->dir != NULL) {
 		antecessor(&(*t)->dir, aux);
 		return;
@@ -44,11 +44,11 @@ void antecessor(Tree **t, Tree *aux) {
 	free(aux);
 }
 
-void removeItem(Tree **t, Record r) {
-	Tree *aux;
+void removeItem(Tree_1 **t, Record_1 r) {
+	Tree_1 *aux;
 
 	if (*t == NULL) {
-		printf("[ERROR]: Record not found!!!\n");
+		printf("[ERROR]: Record_1 not found!!!\n");
 		return;
 	}
 
@@ -72,7 +72,7 @@ void removeItem(Tree **t, Record r) {
 	free(aux);
 }
 
-void preordem(Tree *t) {
+void preordem(Tree_1 *t) {
 	if (!(t == NULL)) {
 		printf("%d ", t->reg.key);
 		preordem(t->esq);
@@ -80,7 +80,7 @@ void preordem(Tree *t) {
 	}
 }
 
-void central(Tree *t) {
+void central(Tree_1 *t) {
 	if (!(t == NULL)) {
 		central(t->esq);
 		printf("%d ", t->reg.key);
@@ -88,7 +88,7 @@ void central(Tree *t) {
 	}
 }
 
-void posordem(Tree *t) {
+void posordem(Tree_1 *t) {
 	if (!(t == NULL)) {
 		posordem(t->esq);
 		posordem(t->dir);
