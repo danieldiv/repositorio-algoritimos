@@ -251,12 +251,12 @@
         </a>
       </td>
       <td> <!-- C -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/binary_tree_c.cpp">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/binary_tree_1.cpp">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
           </a>
       </td>
       <td> <!-- C++ -->
-        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/binary_tree_cplusplus.cpp">
+        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/binary_tree_2.cpp">
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"/>
         </a>
       </td>
