@@ -263,16 +263,18 @@
     </tr>
     <tr>
       <td>
-        Binaria com no
+        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/tree/binary_tree_3.hpp">
+          Binaria com no
+        </a>
       </td>
-      <td> <!-- C -->
+      <td> <!-- nao possui em C -->
           <a href="#">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
           </a>
       </td>
-      <td> <!-- nao possui em C++ -->
-        <a href="#">
-          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
+      <td> <!-- C++ -->
+        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/binary_tree_3.cpp">
+          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"/>
         </a>
       </td>
     </tr>
