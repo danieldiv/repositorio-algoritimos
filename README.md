@@ -244,18 +244,18 @@
   <table>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/include/binary_tree.hpp">
+        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/tree/binary_tree_c.h">
           Binaria
         </a>
       </td>
       <td> <!-- C -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/binary_tree.cpp">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/binary_tree_c.cpp">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
           </a>
       </td>
-      <td> <!-- nao possui em C++ -->
-        <a href="#">
-          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
+      <td> <!-- C++ -->
+        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/binary_tree_cplusplus.cpp">
+          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"/>
         </a>
       </td>
     </tr>
