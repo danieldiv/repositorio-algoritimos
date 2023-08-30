@@ -244,7 +244,7 @@
   <table>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/tree/binary_tree_c.h">
+        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/tree/main/src/tree">
           Binaria
         </a>
       </td>
@@ -259,6 +259,22 @@
         </a>
       </td>
     </tr>
+    <tr>
+      <td>
+        Binaria com no
+      </td>
+      <td> <!-- C -->
+          <a href="#">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+          </a>
+      </td>
+      <td> <!-- nao possui em C++ -->
+        <a href="#">
+          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
+        </a>
+      </td>
+    </tr>
+    <tr>
     <tr>
       <td>
         AVL

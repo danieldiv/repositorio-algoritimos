@@ -15,9 +15,9 @@ template <typename T, typename U> void controlVector(vector<T> &vec);
 template <typename T, typename U> void controlMap(map<T, vector<U>> &mapeamento);
 
 int main() {
-	// _arquivo();
-	// _class_template();
-	// _util();
+	_arquivo();
+	_class_template();
+	_util();
 	_arvores();
 
 	// map<int, int> mapeamento;
