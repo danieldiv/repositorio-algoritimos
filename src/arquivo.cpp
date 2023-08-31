@@ -137,7 +137,6 @@ void Arquivo::readFileIntervalo(int intervalo, char *arquivo) {
 
 	if (fp != NULL) {
 		if (intervalo > 0) {
-
 			fseek(fp, 0, SEEK_END); // aponta para o fim da ultima linha
 			size_t filesize = ftell(fp); // pega a posicao atual, neste caso a ultima posicao do arquivo
 
