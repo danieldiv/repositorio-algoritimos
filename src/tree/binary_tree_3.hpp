@@ -18,9 +18,9 @@ public:
 
 class NO {
 public:
-	Record_3 reg;
 	NO *esq;
 	NO *dir;
+	Record_3 reg;
 
 	NO(Record_3 reg) :esq(nullptr), dir(nullptr), reg(reg) {}
 	~NO() { delete esq; delete dir; }

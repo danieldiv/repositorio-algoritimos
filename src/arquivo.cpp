@@ -13,7 +13,6 @@ Arquivo::~Arquivo() {}
 void Arquivo::readFile(char *path) {
 	char *str = (char *)malloc(100);
 	sprintf(str, "src/resource/%s.txt", path);
-
 	FILE *file = fopen(str, "r");
 
 	char *result, linha[100];
@@ -29,6 +28,7 @@ void Arquivo::readFile(char *path) {
 			}
 		}
 	}
+	free(str);
 	fclose(file);
 }
 
@@ -137,35 +137,48 @@ void Arquivo::readFileIntervalo(int intervalo, char *arquivo) {
 
 	if (fp != NULL) {
 		if (intervalo > 0) {
-			long int tam;
-			char *texto = (char *)malloc(sizeof(char) * 100);
 
 			fseek(fp, 0, SEEK_END); // aponta para o fim da ultima linha
-			tam = ftell(fp); // pega a posicao atual, neste caso a ultima posicao do arquivo
+			size_t filesize = ftell(fp); // pega a posicao atual, neste caso a ultima posicao do arquivo
 
-			long int index;
-
-			for (long int i = 0; i <= tam; i += intervalo) {
-				texto = (char *)malloc(sizeof(char) * (intervalo + 1));
+			if (filesize < 0) {
+				printf(VERMELHO "Erro ao ler arquivo\n" RESET);
+				return;
+			}
+			for (long int i = 0; i < filesize; i += intervalo) {
+				if (intervalo + i > filesize)
+					intervalo = filesize - i;
+				char *buffer = (char *)malloc(intervalo + 1);
+				if (buffer == NULL) {
+					printf(VERMELHO "Erro ao alocar memoria\n" RESET);
+					return;
+				}
 				fseek(fp, i, SEEK_SET); // seta a posicao informada
-				fread(texto, 1, intervalo, fp); // busca no arquivo o intervalo informado
+				fread(buffer, 1, intervalo, fp); // busca no arquivo o intervalo informado
+				buffer[intervalo] = '\0'; // adicionando o caracter nulo, para indicar o fim da string
 
-				index = strcspn(texto, "\n"); // encontra a posicao que possui o primeiro \n
+				if (strlen(buffer) > 0) {
+					size_t index = strcspn(buffer, "\n"); // encontra a posicao que possui o primeiro \n
 
-				if (index != intervalo && (i + index) < tam) {
-					if (index > 1) {
-						texto = (char *)malloc(sizeof(char) * (index + 1));
-						fseek(fp, i, SEEK_SET);
-						fread(texto, 1, index - 1, fp);
-						printf("%s\n", texto);
-					}
-					printf(AZUL "---> [fim da linha]\n" RESET);
-					i -= intervalo - index - 1;
-				} else
-					printf("%s\n", texto);
+					if (index != intervalo && (i + index) < filesize) {
+						if (index > 1) {
+							char *aux = (char *)malloc(sizeof(char) * (index + 1));
+							fseek(fp, i, SEEK_SET);
+							fread(aux, 1, index - 1, fp);
+							if (strlen(buffer) > 0) {
+								aux[index - 1] = '\0'; // adicionando o caracter nulo, para indicar o fim da string
+								printf("%s\n", aux);
+							}
+							free(aux);
+						}
+						printf(AZUL "---> [fim da linha]\n" RESET);
+						i -= intervalo - index - 1;
+					} else
+						printf("%s\n", buffer);
+				}
+				free(buffer);
 			}
 			printf(VERDE "---> [fim do arquivo]\n" RESET);
-			free(texto);
 		} else
 			printf(VERMELHO "intervalo nao pode ser <= 0\n" RESET);
 		fclose(fp);

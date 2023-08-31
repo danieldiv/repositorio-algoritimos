@@ -17,9 +17,9 @@ template <typename T, typename U> void controlMap(map<T, vector<U>> &mapeamento)
 
 int main() {
 	_arquivo();
-	_class_template();
-	_util();
-	_arvores();
+	// _class_template();
+	// _util();
+	// _arvores();
 
 	return EXIT_SUCCESS;
 }
@@ -132,24 +132,24 @@ void _class_template() {
 
 	cout << "======================" << endl << endl;
 
-	// map<int, int> mapeamento;
+	map<int, int> mapeamento;
 
-	// mapeamento.insert({ 2,6 });
-	// mapeamento.insert({ 1,5 });
-	// mapeamento.insert({ 6,26 });
+	mapeamento.insert({ 2,6 });
+	mapeamento.insert({ 1,5 });
+	mapeamento.insert({ 6,26 });
 
-	// int val = 2;
-	// auto it = mapeamento.find(val);
+	int val = 2;
+	auto it = mapeamento.find(val);
 
-	// cout << "o find retorna o indice do mapeamento" << endl;
-	// if (it != mapeamento.end()) cout << "encontrou" << endl;
-	// else cout << "nao encontrou" << endl;
+	cout << "o find retorna o indice do mapeamento" << endl;
+	if (it != mapeamento.end()) cout << "encontrou" << endl;
+	else cout << "nao encontrou" << endl;
 
-	// bool b = mapeamento.contains(val);
+	bool b = mapeamento.contains(val);
 
-	// cout << "\no contains retorna true ou false" << endl;
-	// if (b) cout << "encontrou" << endl;
-	// else cout << "nao encontrou" << endl;
+	cout << "\no contains retorna true ou false" << endl;
+	if (b) cout << "encontrou" << endl;
+	else cout << "nao encontrou" << endl;
 }
 
 /**
@@ -174,6 +174,8 @@ void _arquivo() {
 	cout << endl << endl;
 
 	r.readFileIntervalo(11, str);
+	free(str);
+	return;
 
 	cout << endl << "\nC++" << endl << endl;
 
@@ -305,7 +307,7 @@ void _arvores() {
 	int vetor[] = { 33, 47, 28, 19, 25, 60, 8, 39 };
 	int tam = sizeof(vetor) / sizeof(vetor[0]);
 
-	Tree_1 *aux;
+	// Tree_1 *aux;
 
 	printf("Elementos arvore: { ");
 	for (int i = 0; i < tam; i++) {
@@ -346,7 +348,7 @@ void _arvores() {
 	Record_2 rec_2;
 	raiz_2 = raiz_2->createTreeClass();
 
-	Tree_2 *auxClass;
+	// Tree_2 *auxClass;
 
 	printf("Elementos arvore: { ");
 	for (int i = 0; i < tam; i++) {

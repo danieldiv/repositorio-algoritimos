@@ -1,6 +1,7 @@
-CXX      := -g++
+CXX      := -g++ -std=c++20
 # CXXFLAGS := -Wall -Wextra -Werror
 LDFLAGS  := -lstdc++ -lm
+CFLAGS   := -fsanitize=address,undefined -fno-omit-frame-pointer -g
 BUILD    := ./build
 OBJ_DIR  := $(BUILD)/objects
 APP_DIR  := $(BUILD)/
@@ -18,7 +19,7 @@ $(OBJ_DIR)/%.o: %.cpp
 
 $(APP_DIR)/$(TARGET): $(OBJECTS)
 	@mkdir -p $(@D)
-	$(CXX) $(CXXFLAGS) $(INCLUDE) -o $(APP_DIR)/$(TARGET) $(OBJECTS) $(LDFLAGS)
+	$(CXX) $(CXXFLAGS) $(INCLUDE) -o $(APP_DIR)/$(TARGET) $(OBJECTS) $(LDFLAGS) $(CFLAGS)
 
 .PHONY: all build clean debug release run
 
