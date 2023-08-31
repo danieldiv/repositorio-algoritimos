@@ -14,7 +14,7 @@ public:
 	// C
 	void readFile(char *path);
 	void createFile();
-	void readFileIntervalo(int intervalo, char *arquivo);
+	void readFileIntervalo(size_t intervalo, char *arquivo);
 
 	// C++
 	void readFile(string &path);

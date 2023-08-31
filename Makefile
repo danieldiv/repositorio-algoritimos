@@ -1,5 +1,5 @@
 CXX      := -g++ -std=c++20
-# CXXFLAGS := -Wall -Wextra -Werror
+CXXFLAGS := -Wall -Wextra -Werror
 LDFLAGS  := -lstdc++ -lm
 CFLAGS   := -fsanitize=address,undefined -fno-omit-frame-pointer -g
 BUILD    := ./build

@@ -128,7 +128,7 @@ void Arquivo::createFile(string &path) {
  *
  * @param intervalo de quanto em quanto ira ler o arquivo
  */
-void Arquivo::readFileIntervalo(int intervalo, char *arquivo) {
+void Arquivo::readFileIntervalo(size_t intervalo, char *arquivo) {
 	char *path = (char *)malloc(sizeof(char) * 100);
 	FILE *fp;
 
@@ -140,11 +140,11 @@ void Arquivo::readFileIntervalo(int intervalo, char *arquivo) {
 			fseek(fp, 0, SEEK_END); // aponta para o fim da ultima linha
 			size_t filesize = ftell(fp); // pega a posicao atual, neste caso a ultima posicao do arquivo
 
-			if (filesize < 0) {
+			if (filesize == 0) {
 				printf(VERMELHO "Erro ao ler arquivo\n" RESET);
 				return;
 			}
-			for (long int i = 0; i < filesize; i += intervalo) {
+			for (size_t i = 0; i < filesize; i += intervalo) {
 				if (intervalo + i > filesize)
 					intervalo = filesize - i;
 				char *buffer = (char *)malloc(intervalo + 1);
