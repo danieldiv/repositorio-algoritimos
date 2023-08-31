@@ -87,7 +87,7 @@ void Arquivo::readFile(string &path) {
  * utilizada em C++
  */
 void Arquivo::readFileTokenizando(string &path) {
-	path.insert(0, "src/resource/");
+	// path.insert(0, "src/resource/");
 
 	ifstream myfile(path);
 	string line;
@@ -97,7 +97,7 @@ void Arquivo::readFileTokenizando(string &path) {
 		while (myfile >> buffer)
 			cout << buffer << endl;
 		myfile.close();
-	} else cout << "Nao foi possivel abrir o arquivo" << endl;
+	} else cout << "Nao foi possivel abrir o arquivo tokenizado: " << path << endl;
 }
 
 /**
@@ -120,7 +120,7 @@ void Arquivo::createFile(string &path) {
 		myfile << "dado 4" << 5.7 << " " << true << " " << 99 << " teste" << endl;
 
 		myfile.close();
-	} else cout << "Nao foi possivel abrir o arquivo" << endl;
+	} else cout << "Nao foi possivel abrir o arquivo: " << path << endl;
 }
 
 /**

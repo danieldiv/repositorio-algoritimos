@@ -4,6 +4,14 @@ Tree_2 *Tree_2::createTreeClass() {
 	return NULL;
 }
 
+void Tree_2::freeRaiz_2(Tree_2 *t) {
+	if (t != NULL) {
+		freeRaiz_2(t->esq);
+		freeRaiz_2(t->dir);
+		free(t);
+	}
+}
+
 void Tree_2::insertItemClass(Tree_2 **t, Record_2 r) {
 	if (*t == NULL) {
 		*t = (Tree_2 *)malloc(sizeof(Tree_2));

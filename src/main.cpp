@@ -17,9 +17,9 @@ template <typename T, typename U> void controlMap(map<T, vector<U>> &mapeamento)
 
 int main() {
 	_arquivo();
-	// _class_template();
-	// _util();
-	// _arvores();
+	_class_template();
+	_util();
+	_arvores();
 
 	return EXIT_SUCCESS;
 }
@@ -175,7 +175,6 @@ void _arquivo() {
 
 	r.readFileIntervalo(11, str);
 	free(str);
-	return;
 
 	cout << endl << "\nC++" << endl << endl;
 
@@ -197,22 +196,22 @@ void _util() {
 	Arquivo r;
 	Util u;
 
-	char *str = (char *)malloc(sizeof(char) * 100);
+	char *str1 = (char *)malloc(sizeof(char) * 100);
 	char *str2 = (char *)malloc(sizeof(char) * 100);
 
 	cout << "COMPARAR STRINGS" << endl << endl;
 
-	strcpy(str, "daniel");
+	strcpy(str1, "daniel");
 	strcpy(str2, "daniel");
 
 	cout << "C" << endl << endl;
-	cout << str << " - " << str2 << " -> ";
-	cout << u.compararString(str, str2) << endl;
+	cout << str1 << " - " << str2 << " -> ";
+	cout << u.compararString(str1, str2) << endl;
 
 	strcpy(str2, "alves");
 
-	cout << str << " - " << str2 << " -> ";
-	cout << u.compararString(str, str2) << endl;
+	cout << str1 << " - " << str2 << " -> ";
+	cout << u.compararString(str1, str2) << endl;
 
 	string s1, s2, texto;
 
@@ -230,11 +229,11 @@ void _util() {
 	cout << "TOKENIZANDO UMA STRING POR VIRGULA" << endl << endl;
 
 	texto = "texto de string,possui,virgulas";
-	str = (char *)malloc(sizeof(char) * 100);
-	strcpy(str, "texto de char,possui,virgulas");
+	char *str3 = (char *)malloc(sizeof(char) * 100);
+	strcpy(str3, "texto de char,possui,virgulas");
 
 	cout << "C" << endl << endl;
-	u.tokenizar(str);
+	u.tokenizar(str3);
 
 	cout << "\nC++" << endl << endl;
 	u.tokenizar(texto);
@@ -294,61 +293,66 @@ void _util() {
 	u.matrizTridimensional();
 
 	cout << "======================" << endl;
+
+	free(str1);
+	free(str2);
+	free(str3);
+	free(vec);
 }
 
 void _arvores() {
 	cout << "Arvore binaria simples C\n\n";
 
-	Tree_1 *raiz;
+	Tree_1 *raiz_1;
 	Record_1 r;
 
-	raiz = createTree();
+	raiz_1 = createTree();
 
 	int vetor[] = { 33, 47, 28, 19, 25, 60, 8, 39 };
 	int tam = sizeof(vetor) / sizeof(vetor[0]);
-
-	// Tree_1 *aux;
 
 	printf("Elementos arvore: { ");
 	for (int i = 0; i < tam; i++) {
 		r.key = vetor[i];
 		printf("%d ", r.key);
-		insertItem(&raiz, r);
+		insertItem(&raiz_1, r);
 	}
 	printf("}\n\n");
 
 	printf("Pre Ordem: { ");
-	preordem(raiz);
+	preordem(raiz_1);
 
 	printf("}\nCentral:   { ");
-	central(raiz);
+	central(raiz_1);
 
 	printf("}\nPos Ordem: { ");
-	posordem(raiz);
+	posordem(raiz_1);
 	printf("}\n");
 
 	r.key = 39;
-	removeItem(&raiz, r);
+	removeItem(&raiz_1, r);
 
 	printf("\nRemove (39) \nCentral:   { ");
-	central(raiz);
+	central(raiz_1);
 
 	printf("}\nPre Ordem: { ");
-	preordem(raiz);
+	preordem(raiz_1);
 
 	printf("}\nPos Ordem: { ");
-	posordem(raiz);
+	posordem(raiz_1);
 	printf("}\n");
 
 	cout << "======================" << endl << endl;
 
 	cout << "Arvore binaria simples C++\n\n";
 
-	Tree_2 *raiz_2 = new Tree_2();
+	Tree_2 *raiz_2;
+	// Tree_2 *raiz_2 = new Tree_2();
 	Record_2 rec_2;
 	raiz_2 = raiz_2->createTreeClass();
 
-	// Tree_2 *auxClass;
+
+
 
 	printf("Elementos arvore: { ");
 	for (int i = 0; i < tam; i++) {
@@ -381,6 +385,8 @@ void _arvores() {
 	raiz_2->posordemClass(raiz_2);
 	printf("}\n");
 
+
+
 	cout << "======================" << endl << endl;
 
 	cout << "Arvore binaria simples com nó C++\n\n";
@@ -400,4 +406,7 @@ void _arvores() {
 	raiz_3.preOrdem();
 	raiz_3.central();
 	raiz_3.posOrdem();
+
+	freeRaiz_1(raiz_1);
+	raiz_2->freeRaiz_2(raiz_2);
 }

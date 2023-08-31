@@ -4,6 +4,14 @@ Tree_1 *createTree() {
 	return NULL;
 }
 
+void freeRaiz_1(Tree_1 *t) {
+	if (t != NULL) {
+		freeRaiz_1(t->esq);
+		freeRaiz_1(t->dir);
+		free(t);
+	}
+}
+
 void insertItem(Tree_1 **t, Record_1 r) {
 	if (*t == NULL) {
 		*t = (Tree_1 *)malloc(sizeof(Tree_1));

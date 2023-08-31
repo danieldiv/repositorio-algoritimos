@@ -171,4 +171,12 @@ void Util::matrizTridimensional() {
 		}
 		cout << endl;
 	}
+
+	for (int i = 0; i < TAM; i++) {
+		for (int j = 0; j < N; j++) {
+			free(m[i][j]);
+		}
+		free(m[i]);
+	}
+	free(m);
 }

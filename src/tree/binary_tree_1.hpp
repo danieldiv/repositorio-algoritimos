@@ -26,6 +26,7 @@ void pesquisa(Tree_1 **t, Tree_1 **aux, Record_1 r);
 
 void antecessor(Tree_1 **t, Tree_1 *aux);
 void removeItem(Tree_1 **t, Record_1 r);
+void freeRaiz_1(Tree_1 *t);
 
 void preordem(Tree_1 *t);
 void central(Tree_1 *t);

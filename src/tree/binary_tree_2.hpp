@@ -18,12 +18,15 @@ public:
 	Record_2 reg;
 	Tree_2 *esq, *dir;
 
+	~Tree_2() {}
+
 	Tree_2 *createTreeClass();
 	void insertItemClass(Tree_2 **t, Record_2 r);
 	void pesquisaClass(Tree_2 **t, Tree_2 **aux, Record_2 r);
 
 	void antecessorClass(Tree_2 **t, Tree_2 *aux);
 	void removeItemClass(Tree_2 **t, Record_2 r);
+	void freeRaiz_2(Tree_2 *t);
 
 	void preordemClass(Tree_2 *t);
 	void centralClass(Tree_2 *t);
