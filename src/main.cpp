@@ -1,10 +1,15 @@
 #include "./include/util.hpp"
 #include "./include/arquivo.hpp"
+
 #include "./tree/binary_tree_1.hpp"
 #include "./tree/binary_tree_2.hpp"
 #include "./tree/binary_tree_3.hpp"
+#include "./tree/avl_tree.hpp"
+
 
 #define MAX 4
+#define endl '\n'
+#define dbg(x) cout << #x << x << endl
 
 void _class_template();
 void _arquivo();
@@ -16,9 +21,9 @@ template <typename T, typename U> void controlVector(vector<T> &vec);
 template <typename T, typename U> void controlMap(map<T, vector<U>> &mapeamento);
 
 int main() {
-	_arquivo();
-	_class_template();
-	_util();
+	// _arquivo();
+	// _class_template();
+	// _util();
 	_arvores();
 
 	return EXIT_SUCCESS;
@@ -409,4 +414,53 @@ void _arvores() {
 
 	freeRaiz_1(raiz_1);
 	raiz_2->freeRaiz_2(raiz_2);
+
+	// arvore AVL
+
+	Tree_AVL *raiz_avl = createTree_AVL();
+	Tree_1 *raiz_binaria = createTree();
+
+	vector<Record_AVL> vec_rec_avl;
+	auto vetor_aux = { 10,5,3,24,87,34,9 };
+
+	Record_AVL rec_AVL;
+
+	for (auto v : vetor_aux) {
+		rec_AVL.key = v;
+		vec_rec_avl.push_back(rec_AVL);
+	}
+	for (auto ra : vec_rec_avl) {
+		insertItem_AVL(&raiz_avl, ra);
+		Record_1 r;
+		r.key = ra.key;
+		insertItem(&raiz_binaria, r);
+	}
+
+	cout << endl << "Arvore Binaria AVL em C";
+	cout << endl << "comparando com arvore binaria simples" << endl;
+
+	cout << endl << "Pre Ordem AVL: { ";
+	preordem_AVL(raiz_avl);
+	cout << "}\nPre Ordem BIN: { ";
+	preordem(raiz_binaria);
+	cout << "}" << endl;
+
+
+	cout << endl << "Removendo valores ( 10, 6, 3 )" << endl;
+
+	rec_AVL.key = 10;
+	removeItem_AVL(&raiz_avl, &raiz_avl, rec_AVL);
+	rec_AVL.key = 6;
+	removeItem_AVL(&raiz_avl, &raiz_avl, rec_AVL);
+	rec_AVL.key = 3;
+	removeItem_AVL(&raiz_avl, &raiz_avl, rec_AVL);
+
+	cout << endl << "Pre Ordem AVL: { ";
+	preordem_AVL(raiz_avl);
+	cout << "}\nPre Ordem BIN: { ";
+	preordem(raiz_binaria);
+	cout << "}" << endl;
+
+	free_AVL(raiz_avl);
+	freeRaiz_1(raiz_binaria);
 }

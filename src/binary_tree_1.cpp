@@ -25,7 +25,6 @@ void insertItem(Tree_1 **t, Record_1 r) {
 		if (r.key > (*t)->reg.key)
 			insertItem(&(*t)->dir, r);
 	}
-
 }
 
 void pesquisa(Tree_1 **t, Tree_1 **aux, Record_1 r) {
