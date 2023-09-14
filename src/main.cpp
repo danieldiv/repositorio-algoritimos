@@ -12,9 +12,9 @@
 #define endl '\n'
 #define dbg(x) cout << #x << x << endl
 
-// void _class_template();
-// void _arquivo();
-// void _util();
+void _class_template();
+void _arquivo();
+void _util();
 void _arvores();
 
 template <typename T> T function_template(T a, T b);
@@ -24,9 +24,9 @@ template <typename T, typename U> void controlMap(map<T, vector<U>> &mapeamento)
 #include <unordered_map>
 
 int main() {
-	// _arquivo();
-	// _class_template();
-	// _util();
+	_arquivo();
+	_class_template();
+	_util();
 	_arvores();
 
 	return EXIT_SUCCESS;
