@@ -1,0 +1,73 @@
+
+
+// NO_Huffman *createTree_Huffman(std::vector<NO_Huffman *> &filaPrioridade) {
+// 	if (filaPrioridade.size() == 0) {
+// 		std::cout << "Fila de prioridade vazia" << std::endl;
+// 		return NULL;
+// 	}
+// 	if (filaPrioridade.size() == 1) return filaPrioridade.front();
+
+// 	NO_Huffman *x = new NO_Huffman;
+// 	NO_Huffman *y = new NO_Huffman;
+// 	NO_Huffman *z = new NO_Huffman;
+
+// 	x = filaPrioridade.front();
+// 	filaPrioridade.erase(filaPrioridade.begin());
+// 	y = filaPrioridade.front();
+// 	filaPrioridade.erase(filaPrioridade.begin());
+
+// 	z->frequencia = x->frequencia + y->frequencia;
+// 	z->esquerda = x;
+// 	z->direita = y;
+
+// 	if (filaPrioridade.size() == 0) return z;
+
+// 	for (size_t i = 0; i < filaPrioridade.size(); i++) {
+// 		if (z->frequencia <= filaPrioridade[i]->frequencia) {
+// 			filaPrioridade.insert(filaPrioridade.begin() + i, z);
+// 			return createTree_Huffman(filaPrioridade);
+// 		}
+// 	}
+// 	filaPrioridade.push_back(z);
+// 	return createTree_Huffman(filaPrioridade);
+// }
+
+// void preordem_Huffman(NO_Huffman *raiz) {
+// 	if (raiz == NULL) return;
+// 	std::cout << raiz->frequencia << std::endl;
+// 	preordem_Huffman(raiz->esquerda);
+// 	preordem_Huffman(raiz->direita);
+// }
+
+// void liberaTree_Huffman(NO_Huffman *raiz) {
+// 	if (raiz == NULL) return;
+// 	liberaTree_Huffman(raiz->esquerda);
+// 	liberaTree_Huffman(raiz->direita);
+// 	delete raiz;
+// }
+
+
+// Huffman_Tree(size_t frequencia, char caracter)
+	// 	: frequencia_(frequencia), caracter_(caracter) {}
+	// ~Huffman_Tree() {}
+
+	// void preordem_Huffman(Huffman_Tree &raiz);
+	// void liberaTree_Huffman(Huffman_Tree &raiz);
+	// size_t getFrequencia();
+	// char getCaracter();
+	// void setFrequencia(size_t frequencia);
+	// void setCaracter(char caracter);
+
+// NO_Huffman *createTree_Huffman(std::vector<NO_Huffman *> &filaPrioridade);
+
+// void preordem_Huffman(NO_Huffman *raiz);
+// void liberaTree_Huffman(NO_Huffman *raiz);
+
+// typedef struct NO_Huffman NO_Huffman;
+
+// struct NO_Huffman {
+// 	size_t frequencia;
+// 	char caracter;
+// 	NO_Huffman *esquerda;
+// 	NO_Huffman *direita;
+// };

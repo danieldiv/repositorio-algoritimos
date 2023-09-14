@@ -5,20 +5,23 @@
 #include "./tree/binary_tree_2.hpp"
 #include "./tree/binary_tree_3.hpp"
 #include "./tree/avl_tree.hpp"
+#include "./tree/huffman_tree.hpp"
 
 
 #define MAX 4
 #define endl '\n'
 #define dbg(x) cout << #x << x << endl
 
-void _class_template();
-void _arquivo();
-void _util();
+// void _class_template();
+// void _arquivo();
+// void _util();
 void _arvores();
 
 template <typename T> T function_template(T a, T b);
 template <typename T, typename U> void controlVector(vector<T> &vec);
 template <typename T, typename U> void controlMap(map<T, vector<U>> &mapeamento);
+
+#include <unordered_map>
 
 int main() {
 	// _arquivo();
@@ -356,9 +359,6 @@ void _arvores() {
 	Record_2 rec_2;
 	raiz_2 = raiz_2->createTreeClass();
 
-
-
-
 	printf("Elementos arvore: { ");
 	for (int i = 0; i < tam; i++) {
 		rec_2.key = vetor[i];
@@ -390,8 +390,6 @@ void _arvores() {
 	raiz_2->posordemClass(raiz_2);
 	printf("}\n");
 
-
-
 	cout << "======================" << endl << endl;
 
 	cout << "Arvore binaria simples com nó C++\n\n";
@@ -421,7 +419,7 @@ void _arvores() {
 	Tree_1 *raiz_binaria = createTree();
 
 	vector<Record_AVL> vec_rec_avl;
-	auto vetor_aux = { 10,5,3,24,87,34,9 };
+	auto vetor_aux = { 10,5,3,24,24,87,34,9 };
 
 	Record_AVL rec_AVL;
 
@@ -463,4 +461,22 @@ void _arvores() {
 
 	free_AVL(raiz_avl);
 	freeRaiz_1(raiz_binaria);
+
+	cout << "\n======================" << endl << endl;
+
+	cout << "Arvore de Huffman" << endl << endl;
+
+	Huffman_Tree raiz_huffman;
+
+	raiz_huffman.insere(new NO_Huffman("f", 5));
+	raiz_huffman.insere(new NO_Huffman("e", 9));
+	raiz_huffman.insere(new NO_Huffman("c", 12));
+	raiz_huffman.insere(new NO_Huffman("b", 13));
+	raiz_huffman.insere(new NO_Huffman("d", 16));
+	raiz_huffman.insere(new NO_Huffman("a", 45));
+
+	raiz_huffman.constroi();
+	raiz_huffman.imprime();
+
+	cout << "\n\n======================" << endl << endl;
 }
