@@ -466,17 +466,17 @@ void _arvores() {
 
 	cout << "Arvore de Huffman" << endl << endl;
 
-	Huffman_Tree raiz_huffman;
+	auto raiz_huffman = std::make_shared<Huffman_Tree>();
 
-	raiz_huffman.insere(new NO_Huffman("f", 5));
-	raiz_huffman.insere(new NO_Huffman("e", 9));
-	raiz_huffman.insere(new NO_Huffman("c", 12));
-	raiz_huffman.insere(new NO_Huffman("b", 13));
-	raiz_huffman.insere(new NO_Huffman("d", 16));
-	raiz_huffman.insere(new NO_Huffman("a", 45));
+	raiz_huffman->insere(std::make_shared<NO_Huffman>("f", 5));
+	raiz_huffman->insere(std::make_shared<NO_Huffman>("e", 9));
+	raiz_huffman->insere(std::make_shared<NO_Huffman>("c", 12));
+	raiz_huffman->insere(std::make_shared<NO_Huffman>("b", 13));
+	raiz_huffman->insere(std::make_shared<NO_Huffman>("d", 16));
+	raiz_huffman->insere(std::make_shared<NO_Huffman>("a", 45));
 
-	raiz_huffman.constroi();
-	raiz_huffman.imprime();
+	raiz_huffman->constroi();
+	raiz_huffman->imprime();
 
 	cout << "\n\n======================" << endl << endl;
 }
