@@ -281,7 +281,9 @@
     <tr>
     <tr>
       <td>
-        AVL
+        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/tree/avl_tree.hpp">
+          AVL
+        </a>
       </td>
       <td> <!-- C -->
           <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/avl_tree.cpp">
