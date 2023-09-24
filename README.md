@@ -238,17 +238,18 @@
   </table>
 </html>
 
-## Arvores
-
-> Arvore binaria com nó ainda não possui exclusão
+## [Arvores](https://github.com/danieldiv/repositorio-c-e-cplusplus/tree/main/src/tree)
 
 <html>
   <table>
     <tr>
+      <td>Tipo</td>
+      <td colspan="2">Comun</td>
+      <td>Nó</td>
+    </tr>
+    <tr>
       <td>
-        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/tree/main/src/tree">
-          Binaria
-        </a>
+        Binaria
       </td>
       <td> <!-- C -->
           <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/binary_tree_1.cpp">
@@ -260,19 +261,7 @@
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"/>
         </a>
       </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/tree/binary_tree_3.hpp">
-          Binaria com no
-        </a>
-      </td>
-      <td> <!-- nao possui em C -->
-          <a href="#">
-              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-          </a>
-      </td>
-      <td> <!-- C++ -->
+      <td> <!-- C++ com no -->
         <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/binary_tree_3.cpp">
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"/>
         </a>
@@ -281,9 +270,7 @@
     <tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/tree/avl_tree_1.hpp">
-          AVL
-        </a>
+        AVL
       </td>
       <td> <!-- C -->
           <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/avl_tree_1.cpp">
@@ -295,23 +282,11 @@
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
         </a>
       </td>
-    <tr>
-      <td>
-        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/tree/avl_tree_2.hpp">
-          AVL com no
-        </a>
-      </td>
-      <td> <!-- no possui C -->
-          <a href="#">
-              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-          </a>
-      </td>
-      <td> <!-- C++ -->
+      <td> <!-- C++ com no -->
         <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/avl_tree_2.cpp">
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"/>
         </a>
       </td>
-    </tr>
     </tr>
     <tr>
       <td>
