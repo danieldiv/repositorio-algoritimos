@@ -4,7 +4,8 @@
 #include "./tree/binary_tree_1.hpp"
 #include "./tree/binary_tree_2.hpp"
 #include "./tree/binary_tree_3.hpp"
-#include "./tree/avl_tree.hpp"
+#include "./tree/avl_tree_1.hpp"
+#include "./tree/avl_tree_2.hpp"
 #include "./tree/huffman_tree.hpp"
 
 
@@ -415,13 +416,14 @@ void _arvores() {
 
 	// arvore AVL
 
-	Tree_AVL *raiz_avl = createTree_AVL();
+	Tree_AVL_1 *raiz_avl = createTree_AVL();
 	Tree_1 *raiz_binaria = createTree();
 
-	vector<Record_AVL> vec_rec_avl;
-	auto vetor_aux = { 10,5,3,24,24,87,34,9 };
+	vector<Record_AVL_1> vec_rec_avl;
+	// auto vetor_aux = { 10,5,3,24,24,87,34,9 };
+	auto vetor_aux = { 10,20,30,40,50,34 };
 
-	Record_AVL rec_AVL;
+	Record_AVL_1 rec_AVL;
 
 	for (auto v : vetor_aux) {
 		rec_AVL.key = v;
@@ -442,7 +444,6 @@ void _arvores() {
 	cout << "}\nPre Ordem BIN: { ";
 	preordem(raiz_binaria);
 	cout << "}" << endl;
-
 
 	cout << endl << "Removendo valores ( 10, 6, 3 )" << endl;
 
@@ -479,4 +480,12 @@ void _arvores() {
 	raiz_huffman->imprime();
 
 	cout << "\n\n======================" << endl << endl;
+
+	cout << "Arvore AVL com no" << endl << endl;
+
+	auto raiz_avl_no = std::make_shared<Tree_AVL_2>();
+
+	for (auto &v : vetor_aux) raiz_avl_no->insert(Record_AVL_NO(v));
+
+	raiz_avl_no->preOrdem();
 }
