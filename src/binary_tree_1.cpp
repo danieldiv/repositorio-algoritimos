@@ -1,4 +1,4 @@
-#include "./tree/binary_tree_1.hpp"
+#include "./tree/binary_tree_1.h"
 
 Tree_1 *createTree() {
 	return NULL;
@@ -81,8 +81,7 @@ void removeItem(Tree_1 **t, Record_1 r) {
 
 void preordem(Tree_1 *t) {
 	if (!(t == NULL)) {
-		// printf("%d ", t->reg.key);
-		std::cout << t->reg.key << " ";
+		printf("%d ", t->reg.key);
 		preordem(t->esq);
 		preordem(t->dir);
 	}
@@ -91,8 +90,7 @@ void preordem(Tree_1 *t) {
 void central(Tree_1 *t) {
 	if (!(t == NULL)) {
 		central(t->esq);
-		// printf("%d ", t->reg.key);
-		std::cout << t->reg.key << " ";
+		printf("%d ", t->reg.key);
 		central(t->dir);
 	}
 }
@@ -101,7 +99,6 @@ void posordem(Tree_1 *t) {
 	if (!(t == NULL)) {
 		posordem(t->esq);
 		posordem(t->dir);
-		// printf("%d ", t->reg.key);
-		std::cout << t->reg.key << " ";
+		printf("%d ", t->reg.key);
 	}
 }

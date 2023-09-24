@@ -1,11 +1,9 @@
-#ifndef BINARY_TREE_1_HPP
-#define BINARY_TREE_1_HPP
+#ifndef BINARY_TREE_1_H
+#define BINARY_TREE_1_H
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-
-#include <iostream>
 
 typedef struct Record_1 Record_1;
 typedef struct Tree_1 Tree_1;

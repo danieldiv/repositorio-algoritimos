@@ -1,7 +1,7 @@
 #include "./include/util.hpp"
 #include "./include/arquivo.hpp"
 
-#include "./tree/binary_tree_1.hpp"
+#include "./tree/binary_tree_1.h"
 #include "./tree/binary_tree_2.hpp"
 #include "./tree/binary_tree_3.hpp"
 #include "./tree/avl_tree_1.hpp"
