@@ -281,7 +281,7 @@
     <tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/tree/avl_tree.hpp">
+        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/tree/avl_tree_1.hpp">
           AVL
         </a>
       </td>
@@ -295,12 +295,29 @@
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
         </a>
       </td>
+    <tr>
+      <td>
+        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/tree/avl_tree_2.hpp">
+          AVL com no
+        </a>
+      </td>
+      <td> <!-- no possui C -->
+          <a href="#">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+          </a>
+      </td>
+      <td> <!-- C++ -->
+        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/avl_tree_2.cpp">
+          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"/>
+        </a>
+      </td>
+    </tr>
     </tr>
     <tr>
       <td>
         RB
       </td>
-      <td> <!-- C -->
+      <td> <!-- no possui C -->
           <a href="#">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
           </a>
