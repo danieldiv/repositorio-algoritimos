@@ -1,4 +1,4 @@
-CXX      := -g++ -std=c++20
+CXX      := -g++ -std=c++23
 CXXFLAGS := -Wall -Wextra -Werror
 LDFLAGS  := -lstdc++ -lm
 CFLAGS   := -fsanitize=address,undefined -fno-omit-frame-pointer -g
