@@ -370,9 +370,7 @@
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/tree/huffman_tree.hpp">
-          Huffman
-        </a>
+        Huffman
       </td>
       <td> <!-- C -->
           <a href="#">
