@@ -243,8 +243,8 @@
 <html>
   <table>
     <tr>
-      <td>Tipo</td>
-      <td colspan="2">Comun</td>
+      <td></td>
+      <td colspan="2" align="center">Comun</td>
       <td>Nó</td>
     </tr>
     <tr>
