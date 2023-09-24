@@ -1,5 +1,5 @@
-#ifndef ARQUIVO_HPP
-#define ARQUIVO_HPP
+#ifndef ARQUIVO_H
+#define ARQUIVO_H
 
 #include "util.hpp"
 

@@ -1,5 +1,5 @@
-#ifndef BINARY_TREE_2_HPP
-#define BINARY_TREE_2_HPP
+#ifndef BINARY_TREE_2_H
+#define BINARY_TREE_2_H
 
 #include <stdio.h>
 #include <stdlib.h>

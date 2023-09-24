@@ -1,5 +1,5 @@
-#ifndef AVL_TREE_2_HPP
-#define AVL_TREE_2_HPP
+#ifndef AVL_TREE_2_H
+#define AVL_TREE_2_H
 
 #include <iostream>
 #include <memory>

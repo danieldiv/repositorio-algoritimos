@@ -1,5 +1,5 @@
-#ifndef HUFFMAN_TREE_HPP
-#define HUFFMAN_TREE_HPP
+#ifndef HUFFMAN_TREE_H
+#define HUFFMAN_TREE_H
 
 #include <iostream>
 #include <string>

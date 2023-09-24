@@ -1,5 +1,5 @@
-#ifndef AVL_TREE_1_HPP
-#define AVL_TREE_1_HPP
+#ifndef AVL_TREE_1_H
+#define AVL_TREE_1_H
 
 #include <stdio.h>
 #include <stdlib.h>

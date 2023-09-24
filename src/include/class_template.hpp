@@ -1,5 +1,5 @@
-#ifndef CLASS_TEMPLATE_HPP
-#define CLASS_TEMPLATE_HPP
+#ifndef CLASS_TEMPLATE_H
+#define CLASS_TEMPLATE_H
 
 #include <iostream>
 #include <vector>

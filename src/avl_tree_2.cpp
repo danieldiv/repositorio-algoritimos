@@ -1,4 +1,4 @@
-#include "./tree/avl_tree_2.hpp"
+#include "./tree/avl_tree_2.h"
 
 std::shared_ptr<NO_AVL> Tree_AVL_2::insertRecord(std::shared_ptr<NO_AVL> no, Record_AVL_NO reg) {
 	if (no == nullptr) return std::make_shared<NO_AVL>(reg);

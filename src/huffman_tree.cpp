@@ -1,4 +1,4 @@
-#include "./tree/huffman_tree.hpp"
+#include "./tree/huffman_tree.h"
 
 /**
  * @brief insercao na fila de prioridade
