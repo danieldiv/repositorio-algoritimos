@@ -380,14 +380,14 @@
           </a>
       </td>
       <td> <!-- C++ -->
-        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/huffman_tree.cpp">
-          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"/>
-        </a>
-      </td>
-      <td> <!-- no -->
           <a href="#">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
           </a>
+      </td>
+      <td> <!-- no -->
+        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/huffman_tree.cpp">
+          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"/>
+        </a>
       </td>
     </tr>
   </table>
