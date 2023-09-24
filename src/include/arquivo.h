@@ -1,7 +1,7 @@
 #ifndef ARQUIVO_H
 #define ARQUIVO_H
 
-#include "util.hpp"
+#include "util.h"
 
 #include <fstream>
 

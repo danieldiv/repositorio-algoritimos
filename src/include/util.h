@@ -1,7 +1,7 @@
 #ifndef UTIL_H
 #define UTIL_H
 
-#include "class_template.hpp"
+#include "class_template.h"
 
 #include <sstream>
 #include <string>

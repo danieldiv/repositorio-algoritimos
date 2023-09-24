@@ -1,5 +1,5 @@
-#include "./include/util.hpp"
-#include "./include/arquivo.hpp"
+#include "./include/util.h"
+#include "./include/arquivo.h"
 
 #include "./tree/binary_tree_1.h"
 #include "./tree/binary_tree_2.h"

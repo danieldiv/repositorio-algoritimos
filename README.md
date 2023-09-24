@@ -131,7 +131,7 @@
         <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/include/class_template.hpp#L35">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/include/class_template.h#L35">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
@@ -157,7 +157,7 @@
           <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/include/class_template.hpp#L51">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/include/class_template.h#L51">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
@@ -170,7 +170,7 @@
           <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/include/class_template.hpp#L72">
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/include/class_template.h#L72">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
@@ -207,7 +207,7 @@
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/include/util.hpp#L12">
+        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/include/util.h#L12">
           String em minusculo
         </a>
       </td>
