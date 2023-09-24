@@ -25,9 +25,9 @@ template <typename T, typename U> void controlMap(map<T, vector<U>> &mapeamento)
 #include <unordered_map>
 
 int main() {
-	_arquivo();
-	_class_template();
-	_util();
+	// _arquivo();
+	// _class_template();
+	// _util();
 	_arvores();
 
 	return EXIT_SUCCESS;
@@ -469,15 +469,21 @@ void _arvores() {
 
 	auto raiz_huffman = std::make_shared<Huffman_Tree>();
 
-	raiz_huffman->insere(std::make_shared<NO_Huffman>("f", 5));
-	raiz_huffman->insere(std::make_shared<NO_Huffman>("e", 9));
-	raiz_huffman->insere(std::make_shared<NO_Huffman>("c", 12));
-	raiz_huffman->insere(std::make_shared<NO_Huffman>("b", 13));
-	raiz_huffman->insere(std::make_shared<NO_Huffman>("d", 16));
-	raiz_huffman->insere(std::make_shared<NO_Huffman>("a", 45));
+	raiz_huffman->insere(std::make_shared<NO_Huffman>("huffman", 3));
+	raiz_huffman->insere(std::make_shared<NO_Huffman>("um", 5));
+	raiz_huffman->insere(std::make_shared<NO_Huffman>("codigo", 8));
+	raiz_huffman->insere(std::make_shared<NO_Huffman>("escrevendo", 9));
+	raiz_huffman->insere(std::make_shared<NO_Huffman>("texto", 12));
+	raiz_huffman->insere(std::make_shared<NO_Huffman>("a", 13));
+	raiz_huffman->insere(std::make_shared<NO_Huffman>("partir", 16));
+	raiz_huffman->insere(std::make_shared<NO_Huffman>("do", 45));
 
 	raiz_huffman->constroi();
 	raiz_huffman->imprime();
+
+	cout << endl << "Decodificando" << endl << endl;
+	for (auto &code : { "1110", "11011", "1111", "100", "101", "0", "1100", "11010" })
+		raiz_huffman->decode(code);
 
 	cout << "\n\n======================" << endl << endl;
 
