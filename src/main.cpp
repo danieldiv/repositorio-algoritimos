@@ -7,6 +7,7 @@
 #include "./tree/avl_tree_1.h"
 #include "./tree/avl_tree_2.h"
 #include "./tree/huffman_tree.h"
+#include "./tree/rb_tree.h"
 
 #define MAX 4
 #define endl '\n'
@@ -24,9 +25,9 @@ template <typename T, typename U> void controlMap(map<T, vector<U>> &mapeamento)
 #include <unordered_map>
 
 int main() {
-	_arquivo();
-	_class_template();
-	_util();
+	// _arquivo();
+	// _class_template();
+	// _util();
 	_arvores();
 
 	return EXIT_SUCCESS;
@@ -420,7 +421,8 @@ void _arvores() {
 
 	vector<Record_AVL_1> vec_rec_avl;
 	// auto vetor_aux = { 10,5,3,24,24,87,34,9 };
-	auto vetor_aux = { 10,20,30,40,50,34 };
+	// auto vetor_aux = { 10,20,30,40,50,34 };
+	auto vetor_aux = { 10,2,7,5,3,9,16,4,11,1,6,23,14 };
 
 	Record_AVL_1 rec_AVL;
 
@@ -493,4 +495,31 @@ void _arvores() {
 	for (auto &v : vetor_aux) raiz_avl_no->insert(Record_AVL_NO(v));
 
 	raiz_avl_no->preOrdem();
+
+	cout << "\n======================" << endl << endl;
+
+	cout << "Arvore RB em C" << endl << endl;
+
+	Record_RB rec_rb;
+	TreeRB *raiz_rb;
+	inicializaTreeRB(&raiz_rb);
+
+	for (auto &v : vetor_aux) {
+		rec_rb.key = v;
+		insertItemRB(&raiz_rb, rec_rb);
+	}
+
+	preordemRB(raiz_rb);
+	cout << endl << endl;
+	cout << "removendo o valor 16" << endl << endl;
+	rec_rb.key = 16;
+	search_delete(&raiz_rb, raiz_rb, rec_rb);
+	preordemRB(raiz_rb);
+	cout << endl;
+
+	// auto raiz_rb = std::make_shared<Tree_RB>();
+
+	// for (auto &v : vetor_aux) raiz_rb->insert(Record_RB(v));
+
+	// raiz_rb->preOrdem();
 }
