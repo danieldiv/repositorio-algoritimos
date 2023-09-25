@@ -292,9 +292,9 @@
       <td>
         RB
       </td>
-      <td> <!-- no possui C -->
-          <a href="#">
-              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+      <td> <!-- C -->
+          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/rb_tree.cpp">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
           </a>
       </td>
       <td> <!-- nao possui em C++ -->
