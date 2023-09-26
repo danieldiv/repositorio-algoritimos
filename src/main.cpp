@@ -26,9 +26,9 @@ template <typename T, typename U> void controlMap(map<T, vector<U>> &mapeamento)
 #include <unordered_map>
 
 int main() {
-	// _arquivo();
-	// _class_template();
-	// _util();
+	_arquivo();
+	_class_template();
+	_util();
 	_arvores();
 
 	return EXIT_SUCCESS;
