@@ -1,16 +1,16 @@
-#include "./tree/rb_tree.h"
+#include "./tree/rb_tree_1.h"
 
 #include <string.h>
 
-TreeRB *temp, *nill;
+TreeRB_1 *temp, *nill;
 
 /**
  * @brief Prepara a estrutura RB para receber valores
  *
  * @param root ponteiro da estrutura RB
  */
-void inicializaTreeRB(TreeRB **root) {
-	nill = (TreeRB *)malloc(sizeof(TreeRB));
+void inicializaTreeRB(TreeRB_1 **root) {
+	nill = (TreeRB_1 *)malloc(sizeof(TreeRB_1));
 	nill->color = black;
 	nill->LC = NULL;
 	nill->RC = NULL;
@@ -25,10 +25,8 @@ void inicializaTreeRB(TreeRB **root) {
  * @param root ponteiro da estrutura RB
  * @param r valor a ser inserido
  */
-void insertItemRB(TreeRB **root, Record_RB r) {
-	int chk = 0;
-
-	if ((temp = (TreeRB *)malloc(sizeof(TreeRB))) != NULL) {
+void insertItemRB(TreeRB_1 **root, Record_RB_1 r) {
+	if ((temp = (TreeRB_1 *)malloc(sizeof(TreeRB_1))) != NULL) {
 		temp->P = nill;
 		temp->LC = nill;
 		temp->RC = nill;
@@ -44,8 +42,8 @@ void insertItemRB(TreeRB **root, Record_RB r) {
  * @param root ponteiro raiz da estrutura RB
  * @param item ponteiro da estrutura RB
  */
-void rotacaoEsquerda(TreeRB **root, TreeRB *item) {
-	TreeRB *aux;
+void rotacaoEsquerda(TreeRB_1 **root, TreeRB_1 *item) {
+	TreeRB_1 *aux;
 	aux = item->RC;
 	item->RC = aux->LC;
 	if (aux->LC != nill)
@@ -67,8 +65,8 @@ void rotacaoEsquerda(TreeRB **root, TreeRB *item) {
  * @param root ponteiro raiz da estrutura RB
  * @param item ponteiro da estrutura RB
  */
-void rotacaoDireita(TreeRB **root, TreeRB *item) {
-	TreeRB *aux;
+void rotacaoDireita(TreeRB_1 **root, TreeRB_1 *item) {
+	TreeRB_1 *aux;
 	aux = item->LC;
 	item->LC = aux->RC;
 	if (aux->RC != nill)
@@ -90,8 +88,8 @@ void rotacaoDireita(TreeRB **root, TreeRB *item) {
  * @param root ponteiro raiz da estrutrua RB
  * @param aux ponteiro auxiliar da estrutura RB
  */
-void fix_insert(TreeRB **root, TreeRB *aux) {
-	TreeRB *y;
+void fix_insert(TreeRB_1 **root, TreeRB_1 *aux) {
+	TreeRB_1 *y;
 	while (aux->P->color == red) {
 		if (aux->P == aux->P->P->LC) {
 			y = aux->P->P->RC;
@@ -145,7 +143,7 @@ void fix_insert(TreeRB **root, TreeRB *aux) {
  * @param y ponteiro auxiliar da estrutura RB
  * @param temp ponteiro auxiliar da estrutura RB
  */
-void rb_insert(TreeRB **root, TreeRB *x, TreeRB *y, TreeRB *temp) {
+void rb_insert(TreeRB_1 **root, TreeRB_1 *x, TreeRB_1 *y, TreeRB_1 *temp) {
 	while (x != nill) {
 		y = x;
 		if (temp->reg.key < x->reg.key)
@@ -172,7 +170,7 @@ void rb_insert(TreeRB **root, TreeRB *x, TreeRB *y, TreeRB *temp) {
  *
  * @param aux_succ ponteiro auxiliar da estrutura RB
  */
-TreeRB *tree_successor(TreeRB *aux_succ) {
+TreeRB_1 *tree_successor(TreeRB_1 *aux_succ) {
 	while (aux_succ->LC != nill)
 		aux_succ = aux_succ->LC;
 	return aux_succ;
@@ -183,7 +181,7 @@ TreeRB *tree_successor(TreeRB *aux_succ) {
  * @param z valor a ser pesquisa
  * @param quant ponteiro para armazenar a quantidade de pesquisa
  */
-void searchRB(TreeRB *aux, Record_RB z, double *quant) {
+void searchRB(TreeRB_1 *aux, Record_RB_1 z, double *quant) {
 	while (aux != nill && z.key != aux->reg.key) {
 		(*quant)++;
 		if (z.key < aux->reg.key)
@@ -200,7 +198,7 @@ void searchRB(TreeRB *aux, Record_RB z, double *quant) {
  * @param aux ponteiro da estrutura RB utilizado como pesquisa do elemento
  * @param z valor utilizado para pesquisa
  */
-void search_delete(TreeRB **root, TreeRB *aux, Record_RB z) {
+void search_delete(TreeRB_1 **root, TreeRB_1 *aux, Record_RB_1 z) {
 	while (aux != nill && z.key != aux->reg.key) {
 		if (z.key < aux->reg.key)
 			aux = aux->LC;
@@ -221,7 +219,7 @@ void search_delete(TreeRB **root, TreeRB *aux, Record_RB z) {
  * @param x ponteiro auxiliar da estrutura RB
  * @param w ponteiro auxiliar da estrutura RB
  */
-void RB_delete_fix(TreeRB **root, TreeRB *x, TreeRB *w) {
+void RB_delete_fix(TreeRB_1 **root, TreeRB_1 *x, TreeRB_1 *w) {
 	while (x != (*root) && x->color == black) {
 		if (x == x->P->LC) {
 			w = x->P->RC;
@@ -279,7 +277,7 @@ void RB_delete_fix(TreeRB **root, TreeRB *x, TreeRB *w) {
  * @param y ponteiro auxiliar da estrutura RB
  * @param x ponteiro auxiliar da estrutura RB
  */
-void RB_delete(TreeRB **root, TreeRB *z, TreeRB *y, TreeRB *x) {
+void RB_delete(TreeRB_1 **root, TreeRB_1 *z, TreeRB_1 *y, TreeRB_1 *x) {
 	enum type originalcolor;	//keep track of x which moves into y's original position
 	originalcolor = y->color;	//Keep track of original color
 
@@ -327,7 +325,7 @@ void RB_delete(TreeRB **root, TreeRB *z, TreeRB *y, TreeRB *x) {
  * @param aux ponteiro auxiliar da estrutura RB
  * @param auxchild ponteiro da estrutura RB
  */
-void RB_transplant(TreeRB **root, TreeRB *aux, TreeRB *auxchild) {
+void RB_transplant(TreeRB_1 **root, TreeRB_1 *aux, TreeRB_1 *auxchild) {
 	if (aux->P == nill)
 		(*root) = auxchild;
 	else if (aux == aux->P->LC)
@@ -342,7 +340,7 @@ void RB_transplant(TreeRB **root, TreeRB *aux, TreeRB *auxchild) {
  *
  * @param aux ponteiro da estrutura RB utilizado para impressao
  */
-void preordemRB(TreeRB *aux) {
+void preordemRB(TreeRB_1 *aux) {
 	if (aux != NULL && aux->reg.key != 0) {
 		printf("%.0lf ", aux->reg.key);
 		preordemRB(aux->LC);
@@ -355,7 +353,7 @@ void preordemRB(TreeRB *aux) {
  *
  * @param aux ponteiro da estrutura RB utilizado para impressao
  */
-void centralRB(TreeRB *aux) {
+void centralRB(TreeRB_1 *aux) {
 	if (aux != NULL && aux->reg.key != 0) {
 		centralRB(aux->LC);
 		printf("%lf ", aux->reg.key);
@@ -368,7 +366,7 @@ void centralRB(TreeRB *aux) {
  *
  * @param aux ponteiro da estrutura RB utilizado para impressao
  */
-void posordemRB(TreeRB *aux) {
+void posordemRB(TreeRB_1 *aux) {
 	if (aux != NULL && aux->reg.key != 0) {
 		posordemRB(aux->LC);
 		posordemRB(aux->RC);

@@ -6,8 +6,9 @@
 #include "./tree/binary_tree_3.h"
 #include "./tree/avl_tree_1.h"
 #include "./tree/avl_tree_2.h"
+#include "./tree/rb_tree_1.h"
+#include "./tree/rb_tree_2.h"
 #include "./tree/huffman_tree.h"
-#include "./tree/rb_tree.h"
 
 #define MAX 4
 #define endl '\n'
@@ -500,8 +501,8 @@ void _arvores() {
 
 	cout << "Arvore RB em C" << endl << endl;
 
-	Record_RB rec_rb;
-	TreeRB *raiz_rb;
+	Record_RB_1 rec_rb;
+	TreeRB_1 *raiz_rb;
 	inicializaTreeRB(&raiz_rb);
 
 	for (auto &v : vetor_aux) {
@@ -517,8 +518,22 @@ void _arvores() {
 	preordemRB(raiz_rb);
 	cout << endl;
 
-	// auto raiz_rb = std::make_shared<Tree_RB>();
+	cout << "\nArvore RB em C++" << endl << endl;
 
+	// RB_Tree_2 *raiz_rb_2 = new RB_Tree_2();
+	auto raiz_rb_2 = make_shared<RB_Tree_2>();
+	Record_RB_2 rec_rb_2;
+
+	for (auto &v : vetor_aux) {
+		rec_rb_2.key = v;
+		raiz_rb_2->insert(rec_rb_2);
+	}
+	raiz_rb_2->preOrdem();
+
+
+	// auto raiz_rb = std::make_shared<RB_Tree_2>();
+
+	// // for (auto &v : vetor_aux) raiz_rb->in
 	// for (auto &v : vetor_aux) raiz_rb->insert(Record_RB(v));
 
 	// raiz_rb->preOrdem();
