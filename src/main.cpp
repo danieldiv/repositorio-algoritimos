@@ -310,6 +310,10 @@ void _util() {
 	free(vec);
 }
 
+/**
+ * @brief realiza operacoes com arvores
+ *
+ */
 void _arvores() {
 	cout << "Arvore binaria simples C\n\n";
 
@@ -520,21 +524,9 @@ void _arvores() {
 
 	cout << "\nArvore RB em C++" << endl << endl;
 
-	// RB_Tree_2 *raiz_rb_2 = new RB_Tree_2();
 	auto raiz_rb_2 = make_shared<RB_Tree_2>();
 	Record_RB_2 rec_rb_2;
 
-	for (auto &v : vetor_aux) {
-		rec_rb_2.key = v;
-		raiz_rb_2->insert(rec_rb_2);
-	}
+	for (auto &v : vetor_aux) raiz_rb_2->insert(Record_RB_2(v));
 	raiz_rb_2->preOrdem();
-
-
-	// auto raiz_rb = std::make_shared<RB_Tree_2>();
-
-	// // for (auto &v : vetor_aux) raiz_rb->in
-	// for (auto &v : vetor_aux) raiz_rb->insert(Record_RB(v));
-
-	// raiz_rb->preOrdem();
 }
