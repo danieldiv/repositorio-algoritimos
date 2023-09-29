@@ -1,4 +1,4 @@
-#include "./tree/rb_tree_2.h"
+#include "tree/rb_tree_2.h"
 
 void RB_Tree_2::deleteRecursive(NO_RB *no) {
 	if (no != nullptr) {

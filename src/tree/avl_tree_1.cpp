@@ -1,4 +1,4 @@
-#include "./tree/avl_tree_1.h"
+#include "tree/avl_tree_1.h"
 
 Tree_AVL_1 *createTree_AVL() { return NULL; }
 

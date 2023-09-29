@@ -1,4 +1,4 @@
-#include "./include/arquivo.h"
+#include "arquivo.h"
 
 Arquivo::Arquivo() {}
 Arquivo::~Arquivo() {}
@@ -12,7 +12,7 @@ Arquivo::~Arquivo() {}
  */
 void Arquivo::readFile(char *path) {
 	char *str = (char *)malloc(100);
-	sprintf(str, "src/resource/%s.txt", path);
+	sprintf(str, "resource/%s.txt", path);
 	FILE *file = fopen(str, "r");
 
 	char *result, linha[100];
@@ -39,7 +39,7 @@ void Arquivo::readFile(char *path) {
  */
 void Arquivo::createFile() {
 	char *str = (char *)malloc(100);
-	strcpy(str, "src/resource/newFile2.txt");
+	strcpy(str, "resource/newFile2.txt");
 
 	FILE *file = fopen(str, "w");
 
@@ -67,7 +67,7 @@ void Arquivo::createFile() {
  * utilizada em C++
  */
 void Arquivo::readFile(string &path) {
-	path.insert(0, "src/resource/");
+	path.insert(0, "resource/");
 
 	ifstream myfile(path);
 	string line;
@@ -87,7 +87,7 @@ void Arquivo::readFile(string &path) {
  * utilizada em C++
  */
 void Arquivo::readFileTokenizando(string &path) {
-	// path.insert(0, "src/resource/");
+	// path.insert(0, "resource/");
 
 	ifstream myfile(path);
 	string line;
@@ -108,7 +108,7 @@ void Arquivo::readFileTokenizando(string &path) {
  * utilizada em C++
  */
 void Arquivo::createFile(string &path) {
-	path.insert(0, "src/resource/");
+	path.insert(0, "resource/");
 
 	ofstream myfile(path);
 	string line;
@@ -132,7 +132,7 @@ void Arquivo::readFileIntervalo(size_t intervalo, char *arquivo) {
 	char *path = (char *)malloc(sizeof(char) * 100);
 	FILE *fp;
 
-	sprintf(path, "src/resource/%s.txt", arquivo);
+	sprintf(path, "resource/%s.txt", arquivo);
 	fp = fopen(path, "r");
 
 	if (fp != NULL) {
