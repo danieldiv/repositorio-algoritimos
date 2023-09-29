@@ -27,5 +27,4 @@
 *.exe
 *.out
 *.app
-
-./build
+*.o
