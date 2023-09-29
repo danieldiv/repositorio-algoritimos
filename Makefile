@@ -2,7 +2,7 @@
 CC := g++ -std=c++23
 CXXFLAGS := -Wall -Wextra -Werror
 LDFLAGS  := -lstdc++ -lm
-CFLAGS   := -fsanitize=address,undefined -fno-omit-frame-pointer -g
+# CFLAGS   := -fsanitize=address,undefined -fno-omit-frame-pointer -g
 INCLUDE  := -Iinclude
 
 # Diretorios

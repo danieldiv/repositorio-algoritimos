@@ -5,6 +5,8 @@
 
 #include <fstream>
 
+// teste
+
 class Arquivo {
 private:
 public:
