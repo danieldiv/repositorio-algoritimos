@@ -1,4 +1,4 @@
-#include "./tree/rb_tree_1.h"
+#include "tree/rb_tree_1.h"
 
 #include <string.h>
 

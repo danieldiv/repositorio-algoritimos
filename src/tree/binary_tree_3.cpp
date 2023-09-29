@@ -1,4 +1,4 @@
-#include "./tree/binary_tree_3.h"
+#include "tree/binary_tree_3.h"
 
 NO *Tree_3::insertRecord(NO *atual, Record_3 reg) {
 	if (atual == nullptr) return new NO(reg);

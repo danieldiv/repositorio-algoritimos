@@ -1,45 +1,52 @@
-CXX      := -g++ -std=c++23
+# Compilador e opcoes
+CC := g++ -std=c++23
 CXXFLAGS := -Wall -Wextra -Werror
 LDFLAGS  := -lstdc++ -lm
 CFLAGS   := -fsanitize=address,undefined -fno-omit-frame-pointer -g
-BUILD    := ./build
-OBJ_DIR  := $(BUILD)/objects
-APP_DIR  := $(BUILD)/
-TARGET   := app
-INCLUDE  := -Iinclude/
-SRC      :=  $(wildcard src/*.cpp)
+INCLUDE  := -Iinclude
 
-OBJECTS := $(SRC:%.cpp=$(OBJ_DIR)/%.o)
+# Diretorios
+BUILD   := ./build
+SRC_DIR := src
+OBJ_DIR := $(BUILD)/objects
+APP_DIR := $(BUILD)/
 
-all: build $(APP_DIR)/$(TARGET)
+# Lista de pastas de origem (adicionar mais conforme necessario)
+SOURCE_FOLDERS := util tree
 
-$(OBJ_DIR)/%.o: %.cpp
-	@mkdir -p $(@D)
-	$(CXX) $(CXXFLAGS) $(INCLUDE) -o $@ -c $<
+# Lista de arquivos de origem em cada pasta
+SOURCE_FILES := $(foreach folder,$(SOURCE_FOLDERS),$(wildcard $(SRC_DIR)/$(folder)/*.cpp)) $(SRC_DIR)/main.cpp
 
-$(APP_DIR)/$(TARGET): $(OBJECTS)
-	@mkdir -p $(@D)
-	$(CXX) $(CXXFLAGS) $(INCLUDE) -o $(APP_DIR)/$(TARGET) $(OBJECTS) $(LDFLAGS) $(CFLAGS)
+# Lista de arquivos de objeto correspondentes
+OBJECTS := $(patsubst $(SRC_DIR)/%.cpp,$(OBJ_DIR)/%.o,$(SOURCE_FILES))
 
-.PHONY: all build clean debug release run
+# Nome do executavel final
+TARGET := $(APP_DIR)/app
 
-build:
-	@mkdir -p $(APP_DIR)
-	@mkdir -p $(OBJ_DIR)
+# Regra padrao para construir o alvo
+all: $(TARGET)
 
-debug: CXXFLAGS += -DDEBUG -g
-debug: all
+# Regra para construir o alvo
+$(TARGET): $(OBJECTS)
+	$(CC) $(CXXFLAGS) $(INCLUDE) $(LDFLAGS) $(CFLAGS) $^ -o $@
 
-release: CXXFLAGS += -O3
-release: all
+# Regra generica para compilar arquivos de origem em objetos
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
+	$(CC) $(CXXFLAGS) $(INCLUDE) -c $< -o $@
 
+# Garante que as pastas de destino existam
+$(shell mkdir -p $(OBJ_DIR))
+
+# Garante que a pasta bin e os diretorios existam quando executa o make
+$(shell mkdir -p $(OBJ_DIR) $(foreach folder,$(SOURCE_FOLDERS),$(OBJ_DIR)/$(folder)))
+
+# Limpar arquivos intermediarios e o alvo
 clean:
-	-@rm -rvf $(OBJ_DIR)/*
-	-@rm -rvf $(APP_DIR)/*
+	rm -rvf $(OBJ_DIR) $(TARGET)
 
 run:
-	./$(BUILD)/$(TARGET)
+	./$(TARGET)
 
-c: clean all run
+.PHONY: all clean
 
 r: all run

@@ -1,14 +1,14 @@
-#include "./include/util.h"
-#include "./include/arquivo.h"
+#include "util.h"
+#include "arquivo.h"
 
-#include "./tree/binary_tree_1.h"
-#include "./tree/binary_tree_2.h"
-#include "./tree/binary_tree_3.h"
-#include "./tree/avl_tree_1.h"
-#include "./tree/avl_tree_2.h"
-#include "./tree/rb_tree_1.h"
-#include "./tree/rb_tree_2.h"
-#include "./tree/huffman_tree.h"
+#include "tree/binary_tree_1.h"
+#include "tree/binary_tree_2.h"
+#include "tree/binary_tree_3.h"
+#include "tree/avl_tree_1.h"
+#include "tree/avl_tree_2.h"
+#include "tree/rb_tree_1.h"
+#include "tree/rb_tree_2.h"
+#include "tree/huffman_tree.h"
 
 #define MAX 4
 #define endl '\n'
@@ -22,8 +22,6 @@ void _arvores();
 template <typename T> T function_template(T a, T b);
 template <typename T, typename U> void controlVector(vector<T> &vec);
 template <typename T, typename U> void controlMap(map<T, vector<U>> &mapeamento);
-
-#include <unordered_map>
 
 int main() {
 	_arquivo();
@@ -155,11 +153,11 @@ void _class_template() {
 	if (it != mapeamento.end()) cout << "encontrou" << endl;
 	else cout << "nao encontrou" << endl;
 
-	bool b = mapeamento.contains(val);
+	// bool b = mapeamento.contains(val);
 
-	cout << "\no contains retorna true ou false" << endl;
-	if (b) cout << "encontrou" << endl;
-	else cout << "nao encontrou" << endl;
+	// cout << "\no contains retorna true ou false" << endl;
+	// if (b) cout << "encontrou" << endl;
+	// else cout << "nao encontrou" << endl;
 }
 
 /**
@@ -203,6 +201,8 @@ void _arquivo() {
  *
  */
 void _util() {
+
+	cout << "UTILIZANDO FUNCOES UTEIS" << endl << endl;
 	Arquivo r;
 	Util u;
 

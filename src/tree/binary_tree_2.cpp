@@ -1,4 +1,4 @@
-#include "./tree/binary_tree_2.h"
+#include "tree/binary_tree_2.h"
 
 Tree_2 *Tree_2::createTreeClass() {
 	return NULL;
