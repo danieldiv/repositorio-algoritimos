@@ -12,7 +12,7 @@ OBJ_DIR := $(BUILD)/objects
 APP_DIR := $(BUILD)/
 
 # Lista de pastas de origem (adicionar mais conforme necessario)
-SOURCE_FOLDERS := util tree
+SOURCE_FOLDERS := util tree tests
 
 # Lista de arquivos de origem em cada pasta
 SOURCE_FILES := $(foreach folder,$(SOURCE_FOLDERS),$(wildcard $(SRC_DIR)/$(folder)/*.cpp)) $(SRC_DIR)/main.cpp

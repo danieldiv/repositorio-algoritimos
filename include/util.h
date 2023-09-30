@@ -19,6 +19,7 @@
 
 #define N 5
 #define TAM 3
+#define MAX 4
 
 class Util {
 private:
