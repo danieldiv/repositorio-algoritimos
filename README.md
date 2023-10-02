@@ -6,8 +6,6 @@
 ![VSCode](https://img.shields.io/badge/IDE-VSCode-informational)
 ![ISO](https://img.shields.io/badge/ISO-Linux-blueviolet)
 
-* Todos os links para codigos estao desatualizados
-
 ## Compilacao
 
 > make clean
@@ -25,12 +23,12 @@
         Ler arquivo
       </td>
       <td> <!-- C -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.cpp#L13">
+          <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/util/arquivo.cpp#L13">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
           </a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.cpp#L69">
+          <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/util/arquivo.cpp#L69">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
@@ -40,7 +38,7 @@
         Ler arquivo em partes
       </td>
       <td> <!-- C -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.cpp#L131">
+          <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/util/arquivo.cpp#L131">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
           </a>
       </td>
@@ -60,7 +58,7 @@
         </a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.cpp#L89">
+          <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/util/arquivo.cpp#L89">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
@@ -70,12 +68,12 @@
         Criar arquivo
       </td>
       <td> <!-- C -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.cpp#L40">
+          <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/util/arquivo.cpp#L40">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
           </a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/arquivo.cpp#L110">
+          <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/util/arquivo.cpp#L110">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
@@ -85,12 +83,12 @@
         Tokenizar string
       </td>
       <td> <!-- C -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L13">
+          <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/util/util.cpp#L13">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
           </a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L33">
+          <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/util/util.cpp#L33">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
@@ -100,12 +98,12 @@
       Comparando strings
     </td>
     <td> <!-- C -->
-        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L62">
+        <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/util/util.cpp#L62">
             <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
         </a>
     </td>
     <td> <!-- C++ -->
-        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L72">
+        <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/util/util.cpp#L62">
             <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
         </a>
     </td>
@@ -120,7 +118,7 @@
         </a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/funcoes-uteis-c-e-cplusplus/blob/main/src/main.cpp#L49">
+          <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/tests/test_template.cpp#L12">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
@@ -133,7 +131,7 @@
         <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/include/class_template.h#L35">
+          <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/tests/test_template.cpp#L25">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
@@ -146,7 +144,7 @@
           <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L48">
+          <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/util/util.cpp#L48">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
@@ -159,7 +157,7 @@
           <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/include/class_template.h#L51">
+          <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/include/class_template.h#L51">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
@@ -172,7 +170,7 @@
           <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/include/class_template.h#L72">
+          <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/include/class_template.h#L72">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
@@ -182,7 +180,7 @@
         Modificar cor terminal
       </td>
       <td> <!-- C -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L85">
+          <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/util/util.cpp#L85">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
           </a>
       </td>
@@ -197,19 +195,19 @@
         </a>
       </td>
       <td> <!-- C -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L91">
+          <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/util/util.cpp#L91">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
           </a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L113">
+          <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/util/util.cpp#L113">
              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/include/util.h#L12">
+        <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/include/util.h#L12">
           String em minusculo
         </a>
       </td>
@@ -217,7 +215,7 @@
           <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
       </td>
       <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L135">
+          <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/util/util.cpp#L135">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
@@ -229,7 +227,7 @@
         </a>
       </td>
       <td> <!-- C -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/util.cpp#L146">
+          <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/util/util.cpp#L144">
              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
           </a>
       </td>
@@ -254,17 +252,17 @@
         Binaria
       </td>
       <td> <!-- C -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/binary_tree_1.cpp">
+          <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/tree/binary_tree_1.cpp">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
           </a>
       </td>
       <td> <!-- C++ -->
-        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/binary_tree_2.cpp">
+        <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/tree/binary_tree_2.cpp">
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"/>
         </a>
       </td>
       <td> <!-- C++ com no -->
-        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/binary_tree_3.cpp">
+        <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/tree/binary_tree_3.cpp">
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"/>
         </a>
       </td>
@@ -275,7 +273,7 @@
         AVL
       </td>
       <td> <!-- C -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/avl_tree_1.cpp">
+          <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/tree/avl_tree_1.cpp">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
           </a>
       </td>
@@ -285,7 +283,7 @@
         </a>
       </td>
       <td> <!-- C++ com no -->
-        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/avl_tree_2.cpp">
+        <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/tree/avl_tree_2.cpp">
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"/>
         </a>
       </td>
@@ -295,12 +293,12 @@
         RB
       </td>
       <td> <!-- C -->
-          <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/rb_tree_1.cpp">
+          <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/tree/rb_tree_1.cpp">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
           </a>
       </td>
       <td> <!-- C++ -->
-        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/rb_tree_2.cpp">
+        <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/tree/rb_tree_2.cpp">
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"/>
         </a>
       </td>
@@ -385,7 +383,7 @@
           </a>
       </td>
       <td> <!-- no -->
-        <a href="https://github.com/danieldiv/repositorio-c-e-cplusplus/blob/main/src/huffman_tree.cpp">
+        <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/tree/huffman_tree.cpp">
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"/>
         </a>
       </td>
