@@ -367,5 +367,31 @@
           </a>
       </td>
     </tr>
+    <tr>
+      <td>BFS</td>
+      <td> <!-- C -->
+          <a href="#">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+          </a>
+      </td>
+      <td> <!-- C++ -->
+          <a href="#">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+          </a>
+      </td>
+    </tr>
+    <tr>
+      <td>DFS</td>
+      <td> <!-- C -->
+          <a href="#">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+          </a>
+      </td>
+      <td> <!-- C++ -->
+          <a href="#">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+          </a>
+      </td>
+    </tr>
   </table>
 </html>
