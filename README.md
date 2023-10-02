@@ -336,3 +336,36 @@
 - https://cplusplus.com/reference/
 - https://stackoverflow.com/a/16118872
 - https://en.cppreference.com/w/cpp/container
+
+## Grafos
+
+<html>
+  <table>
+    <tr>
+      <td>Lista de adjacencia</td>
+      <td> <!-- C -->
+          <a href="#">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+          </a>
+      </td>
+      <td> <!-- C++ -->
+          <a href="#">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+          </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Matriz de adjacencia</td>
+      <td> <!-- C -->
+          <a href="#">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+          </a>
+      </td>
+      <td> <!-- C++ -->
+          <a href="#">
+              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+          </a>
+      </td>
+    </tr>
+  </table>
+</html>
