@@ -37,7 +37,7 @@
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
-      <td> <!-- nao possui template -->
+      <td align="center"> <!-- nao possui template -->
           <a href="#">
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
         </a>
@@ -57,7 +57,7 @@
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
         </a>
       </td>
-      <td> <!-- nao possui template -->
+      <td align="center"> <!-- nao possui template -->
           <a href="#">
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
         </a>
@@ -77,7 +77,7 @@
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
-      <td> <!-- nao possui template -->
+      <td align="center"> <!-- nao possui template -->
           <a href="#">
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
         </a>
@@ -97,7 +97,7 @@
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
-      <td> <!-- nao possui template -->
+      <td align="center"> <!-- nao possui template -->
           <a href="#">
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
         </a>
@@ -117,7 +117,7 @@
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
-      <td> <!-- nao possui template -->
+      <td align="center"> <!-- nao possui template -->
           <a href="#">
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
         </a>
@@ -137,7 +137,7 @@
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
-      <td> <!-- nao possui template -->
+      <td align="center"> <!-- nao possui template -->
           <a href="#">
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
         </a>
@@ -157,7 +157,7 @@
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
-      <td> <!-- nao possui template -->
+      <td align="center"> <!-- nao possui template -->
           <a href="#">
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
         </a>
@@ -175,7 +175,7 @@
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
-      <td> <!-- nao possui template -->
+      <td align="center"> <!-- nao possui template -->
           <a href="#">
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
         </a>
@@ -193,7 +193,7 @@
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
-      <td> <!-- nao possui template -->
+      <td align="center"> <!-- nao possui template -->
           <a href="#">
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
         </a>
@@ -211,7 +211,7 @@
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
-      <td> <!-- nao possui template -->
+      <td align="center"> <!-- nao possui template -->
           <a href="#">
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
         </a>
@@ -229,7 +229,7 @@
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
-      <td> <!-- nao possui template -->
+      <td align="center"> <!-- nao possui template -->
           <a href="#">
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
         </a>
@@ -247,7 +247,7 @@
       <td> <!-- nao possui em C++ -->
           <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
       </td>
-      <td> <!-- nao possui template -->
+      <td align="center"> <!-- nao possui template -->
           <a href="#">
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
         </a>
@@ -269,7 +269,7 @@
              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
-      <td> <!-- nao possui template -->
+      <td align="center"> <!-- nao possui template -->
           <a href="#">
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
         </a>
@@ -289,7 +289,7 @@
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
-      <td> <!-- nao possui template -->
+      <td align="center"> <!-- nao possui template -->
           <a href="#">
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
         </a>
@@ -309,7 +309,7 @@
       <td> <!-- nao possui em C++ -->
           <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
       </td>
-      <td> <!-- nao possui template -->
+      <td align="center"> <!-- nao possui template -->
           <a href="#">
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
         </a>
