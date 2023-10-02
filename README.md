@@ -19,11 +19,6 @@
 <html>
   <table>
     <tr>
-      <td></td>
-      <td colspan="2">Comum</td>
-      <td>Template</td>
-    </tr>
-    <tr>
       <td>
         Ler arquivo
       </td>
@@ -37,11 +32,6 @@
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
-      <td align="center"> <!-- nao possui template -->
-          <a href="#">
-          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
-        </a>
-      </td>
     </tr>
     <tr>
       <td>
@@ -54,11 +44,6 @@
       </td>
       <td> <!-- nao possui em C++ -->
         <a href="#">
-          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
-        </a>
-      </td>
-      <td align="center"> <!-- nao possui template -->
-          <a href="#">
           <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
         </a>
       </td>
@@ -77,11 +62,6 @@
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
-      <td align="center"> <!-- nao possui template -->
-          <a href="#">
-          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
-        </a>
-      </td>
     </tr>
     <tr>
       <td>
@@ -96,11 +76,6 @@
           <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/util/arquivo.cpp#L110">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
-      </td>
-      <td align="center"> <!-- nao possui template -->
-          <a href="#">
-          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
-        </a>
       </td>
     </tr>
     <tr>
@@ -117,31 +92,21 @@
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
-      <td align="center"> <!-- nao possui template -->
-          <a href="#">
-          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
-        </a>
-      </td>
     </tr>
     <tr>
-      <td>
-        Comparando strings
-      </td>
-      <td> <!-- C -->
-          <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/util/util.cpp#L62">
-              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
-          </a>
-      </td>
-      <td> <!-- C++ -->
-          <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/util/util.cpp#L62">
-              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
-          </a>
-      </td>
-      <td align="center"> <!-- nao possui template -->
-          <a href="#">
-          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
+     <td>
+      Comparando strings
+    </td>
+    <td> <!-- C -->
+        <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/util/util.cpp#L62">
+            <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
         </a>
-      </td>
+    </td>
+    <td> <!-- C++ -->
+        <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/util/util.cpp#L62">
+            <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
+        </a>
+    </td>
     </tr>
     <tr>
       <td>
@@ -157,11 +122,6 @@
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
-      <td align="center"> <!-- nao possui template -->
-          <a href="#">
-          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
-        </a>
-      </td>
     </tr>
     <tr>
       <td>
@@ -174,11 +134,6 @@
           <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/tests/test_template.cpp#L25">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
-      </td>
-      <td align="center"> <!-- nao possui template -->
-          <a href="#">
-          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
-        </a>
       </td>
     </tr>
     <tr>
@@ -193,11 +148,6 @@
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
-      <td align="center"> <!-- nao possui template -->
-          <a href="#">
-          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
-        </a>
-      </td>
     </tr>
     <tr>
       <td>
@@ -210,11 +160,6 @@
           <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/include/class_template.h#L51">
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
-      </td>
-      <td align="center"> <!-- nao possui template -->
-          <a href="#">
-          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
-        </a>
       </td>
     </tr>
     <tr>
@@ -229,11 +174,6 @@
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
-      <td align="center"> <!-- nao possui template -->
-          <a href="#">
-          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
-        </a>
-      </td>
     </tr>
     <tr>
       <td>
@@ -246,11 +186,6 @@
       </td>
       <td> <!-- nao possui em C++ -->
           <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
-      </td>
-      <td align="center"> <!-- nao possui template -->
-          <a href="#">
-          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
-        </a>
       </td>
     </tr>
     <tr>
@@ -269,11 +204,6 @@
              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
-      <td align="center"> <!-- nao possui template -->
-          <a href="#">
-          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
-        </a>
-      </td>
     </tr>
     <tr>
       <td>
@@ -289,11 +219,6 @@
               <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
           </a>
       </td>
-      <td align="center"> <!-- nao possui template -->
-          <a href="#">
-          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
-        </a>
-      </td>
     </tr>
     <tr>
       <td>
@@ -308,11 +233,6 @@
       </td>
       <td> <!-- nao possui em C++ -->
           <a href="#"><img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/></a>
-      </td>
-      <td align="center"> <!-- nao possui template -->
-          <a href="#">
-          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
-        </a>
       </td>
     </tr>
   </table>
