@@ -1,4 +1,4 @@
-#include "graph/bfs.h"
+#include "graph.h"
 
 void BFS(Graph g, int s) {
 	int *cor = (int *)malloc(g->V * sizeof(int));
@@ -43,6 +43,6 @@ void BFS(Graph g, int s) {
 }
 
 std::string getName(int posicao) {
-	std::string nomes[] = {"s", "w", "r", "v", "t", "x", "u", "y"};
+	std::string nomes[] = { "s", "w", "r", "v", "t", "x", "u", "y" };
 	return (posicao == -1) ? "NULL" : nomes[posicao];
 }

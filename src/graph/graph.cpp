@@ -1,4 +1,4 @@
-#include "graph/graph.h"
+#include "graph.h"
 
 Vertex vertex_create(int value) {
 	Vertex v = (Vertex)malloc(sizeof(Vertex));
