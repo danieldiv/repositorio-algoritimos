@@ -32,10 +32,14 @@ void BFS(Graph g, int s) {
 		}
 		cor[u] = PRETO;
 	}
+
 	for (int i = 0; i < g->V; i++) {
 		std::cout << "d[" << getName(i) << "]: " << getName(d[i]) << " -> ";
 		std::cout << "pi[" << getName(i) << "]: " << getName(pi[i]) << std::endl;
 	}
+	free(cor);
+	free(d);
+	free(pi);
 }
 
 std::string getName(int posicao) {
