@@ -11,10 +11,12 @@
 #include "tree/rb_tree_1.h"
 #include "tree/rb_tree_2.h"
 #include "tree/huffman_tree.h"
+#include "graph/graph.h"
 
 void execute_arquivo();
 void execute_class_template();
 void execute_tree();
 void execute_util();
+void execute_graph();
 
 #endif
