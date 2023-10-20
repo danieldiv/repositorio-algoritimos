@@ -44,8 +44,10 @@ Graph graph_create(int V);
 void graph_add_edge(Graph G, Vertex v1, Vertex v2);
 void graph_destroy(Graph G);
 void graph_print(Graph G);
+std::string getName(int posicao);
 
 void BFS(Graph g, int s);
-std::string getName(int posicao);
+void DFS(Graph g);
+void DFS_VISIT(Graph g, int v);
 
 #endif

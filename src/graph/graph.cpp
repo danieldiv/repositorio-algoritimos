@@ -46,11 +46,16 @@ void graph_print(Graph G) {
 	for (int v = 0; v < G->V; v++) {
 		Vertex aux = G->adj[v];
 		while (aux != NULL) {
-			printf("%d -> ", aux->value);
+			std::cout << getName(aux->value) << " -> ";
 			aux = aux->prox;
 		}
 		if (aux != NULL)
-			printf("%d ", aux->value);
+			std::cout << getName(aux->value);
 		printf("\n");
 	}
+}
+
+std::string getName(int posicao) {
+	std::string nomes[] = { "s", "w", "r", "v", "t", "x", "u", "y" };
+	return (posicao == -1) ? "NULL" : nomes[posicao];
 }

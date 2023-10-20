@@ -7,37 +7,7 @@
 void execute_graph() {
 	cout << endl << "GRAFO" << endl << endl;
 
-	Graph G = graph_create(10);
-
-	graph_add_edge(G, G->adj[0], G->adj[2]);
-	graph_add_edge(G, G->adj[0], G->adj[1]);
-	graph_add_edge(G, G->adj[1], G->adj[0]);
-	graph_add_edge(G, G->adj[1], G->adj[4]);
-	graph_add_edge(G, G->adj[1], G->adj[5]);
-	graph_add_edge(G, G->adj[2], G->adj[0]);
-	graph_add_edge(G, G->adj[2], G->adj[3]);
-	graph_add_edge(G, G->adj[3], G->adj[2]);
-	graph_add_edge(G, G->adj[4], G->adj[1]);
-	graph_add_edge(G, G->adj[4], G->adj[5]);
-	graph_add_edge(G, G->adj[4], G->adj[6]);
-	graph_add_edge(G, G->adj[5], G->adj[1]);
-	graph_add_edge(G, G->adj[5], G->adj[4]);
-	graph_add_edge(G, G->adj[5], G->adj[6]);
-	graph_add_edge(G, G->adj[5], G->adj[7]);
-	graph_add_edge(G, G->adj[6], G->adj[4]);
-	graph_add_edge(G, G->adj[6], G->adj[5]);
-	graph_add_edge(G, G->adj[6], G->adj[7]);
-	graph_add_edge(G, G->adj[7], G->adj[6]);
-	graph_add_edge(G, G->adj[7], G->adj[5]);
-
-	graph_print(G);
-	graph_destroy(G);
-
-	cout << endl << "BFS" << endl << endl;
-
-	G = graph_create(8);
-
-
+	Graph G = graph_create(8);
 
 	graph_add_edge(G, G->adj[s_], G->adj[r_]);
 	graph_add_edge(G, G->adj[s_], G->adj[w_]);
@@ -61,7 +31,11 @@ void execute_graph() {
 	graph_add_edge(G, G->adj[y_], G->adj[x_]);
 
 	graph_print(G);
-	cout << endl;
+
+	cout << endl << "BFS" << endl << endl;
 	BFS(G, s_);
+
+	cout << endl << "DFS" << endl;
+	DFS(G);
 	graph_destroy(G);
 }

@@ -49,7 +49,8 @@
     "streambuf": "cpp",
     "typeinfo": "cpp",
     "ctime": "cpp",
-    "iomanip": "cpp"
+    "iomanip": "cpp",
+    "cinttypes": "cpp"
   },
   "prettier.tabWidth": 2
 }
