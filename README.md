@@ -331,7 +331,7 @@
   </table>
 </html>
 
-## Grafos
+## [Grafos](https://github.com/danieldiv/repositorio-algoritimos/blob/main/include/graph.h)
 
 <html>
   <table>
@@ -369,9 +369,9 @@
           </a>
       </td>
       <td> <!-- C++ -->
-          <a href="#">
-              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-          </a>
+        <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/graph/bfs.cpp">
+          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"/>
+        </a>
       </td>
     </tr>
     <tr>
@@ -382,9 +382,9 @@
           </a>
       </td>
       <td> <!-- C++ -->
-          <a href="#">
-              <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-          </a>
+        <a href="https://github.com/danieldiv/repositorio-algoritimos/blob/main/src/graph/dfs.cpp">
+          <img align="center" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"/>
+        </a>
       </td>
     </tr>
   </table>

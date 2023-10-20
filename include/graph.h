@@ -10,12 +10,14 @@
 #define u_ 6
 #define y_ 7
 
+// const char *nomes[] = { "s", "w", "r", "v", "t", "x", "u", "y" };
+
 #include <iostream>
 #include <queue>
 #include <string>
 
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 typedef struct graph *Graph;
 typedef struct TipoVertex *Vertex;
